@@ -1,3 +1,5 @@
+package suite1;
+
 public class PrimitivosCaracteres {
     public static void main(String[] args) {
         char caracter = '\u0040';

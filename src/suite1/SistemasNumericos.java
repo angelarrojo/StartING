@@ -1,3 +1,5 @@
+package suite1;
+
 import javax.swing.*;
 
 public class SistemasNumericos {

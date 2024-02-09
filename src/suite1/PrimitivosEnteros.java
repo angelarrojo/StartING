@@ -1,3 +1,5 @@
+package suite1;
+
 public class PrimitivosEnteros {
     public static void main(String[] args) {
 

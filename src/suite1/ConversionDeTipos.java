@@ -1,3 +1,5 @@
+package suite1;
+
 public class ConversionDeTipos {
     public static void main(String[] args) {
         String numeroStr = "50";
