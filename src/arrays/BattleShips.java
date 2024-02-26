@@ -64,7 +64,7 @@ public class BattleShips {
         }
 
         //Last section of Ocean Map
-        System.out.print("  ");
+        System.out.print("   ");
         for(int i = 0; i < numCols; i++)
             System.out.print(i + " ");
         System.out.println();
