@@ -13,7 +13,7 @@ public class DatabaseUtils {
 
     public static void connect() throws SQLException {
 
-        Connection connection = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
+        Connection connection = DriverManager.getConnection("jdbc:h2:mem://localhost/~/test", "sa", "");
         statement = connection.createStatement();
 
         String crearTablaCategorias = "CREATE TABLE IF NOT EXISTS CATEGORIAS (ID INT PRIMARY KEY AUTO_INCREMENT, NOMBRE VARCHAR(30),TIPO VARCHAR(30),DESCRIPCION VARCHAR(30))";
@@ -24,7 +24,7 @@ public class DatabaseUtils {
         statement.execute(crearTablaCuentas);
         System.out.println("CREADO TABLA CUENTAS");
 
-        String sql =
+        String sqlInserts =
                 """
                                 INSERT INTO CATEGORIAS (NOMBRE, TIPO, DESCRIPCION) VALUES('Ahorro', 'Débito', 'Cuenta Naranja');
                                 INSERT INTO CATEGORIAS (NOMBRE, TIPO, DESCRIPCION) VALUES('Hipoteca', 'Crédito', 'Hipoteca Fija 2%');
@@ -38,4 +38,7 @@ public class DatabaseUtils {
                         """;
 
     }
+
+        statement.execute(sqlInserts);
+        System.out.println("INSERTS CREADOS EN  TABLA CUENTAS Y TABLA CATEGORIAS");
 }
