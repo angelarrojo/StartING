@@ -21,6 +21,10 @@ public class JDBCMain {
             System.out.println("3 | SELECT | OBTENER TODOS LAS CUENTAS DE TARJETAS");
             System.out.println("4 | UPDATE | ACTUALIZAR NOMBRE DE CLIENTE");
             System.out.println("5 | DELETE | ELIMINAR UNA CUENTA POR CLIENTE Y ID DE CUENTA");
+            System.out.println("6 | SELECT | OBTENER LISTA DE LOS CLIENTES");
+            System.out.println("7 | SELECT | OBTENER LISTA DE LAS CATEGORIAS");
+            System.out.println("8 | SELECT | OBTENER RELACION CLIENTES CON CATEGORIAS");
+
             System.out.print("\nELIGA UNA OPCIÓN: ");
 
             String sqlInstruction;
@@ -37,6 +41,7 @@ public class JDBCMain {
 
                     sqlInstruction = String.format("INSERT INTO CATEGORIAS (NOMBRE, TIPO, DESCRIPCION) VALUES('%s','%s','%s')", nombreCategoria, tipoCategoria, descripcionCategoria);
                     System.out.println("SQL INSTRUCTION: " + sqlInstruction);
+
 
                     DatabaseUtils.statement.execute(sqlInstruction);
                     System.out.println(DELIMITER);
@@ -98,9 +103,75 @@ public class JDBCMain {
                     sqlInstruction = String.format("DELETE FROM CUENTAS WHERE NOMBRE = '%s' AND ID = %s", nombreTitular, idCuenta);
                     System.out.println("SQL INSTRUCTION: " + sqlInstruction);
 
+
                     DatabaseUtils.statement.execute(sqlInstruction);
                     System.out.println(DELIMITER);
                     break;
+
+                case 6:
+                    sqlInstruction = String.format("SELECT * FROM CUENTAS");
+                    System.out.println("SQL INSTRUCTION: " + sqlInstruction);
+
+                    //NOMBRE, SALDO, FECHA_APERTURA, CATEGORIA_ID
+                    result = DatabaseUtils.statement.executeQuery(sqlInstruction);
+                    while (result.next()) {
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("ID: ").append(result.getString("ID")).append("\n")
+                                .append("NOMBRE: ").append(result.getString("NOMBRE")).append("\n")
+                                .append("SALDO: ").append(result.getString("SALDO")).append("\n")
+                                .append("FECHA_APERTURA: ").append(result.getString("FECHA_APERTURA")).append("\n")
+                                .append("CATEGORIA_ID: ").append(result.getString("CATEGORIA_ID")).append("\n");
+
+                        System.out.println(sb.toString());
+                    }
+
+                    System.out.println(DELIMITER);
+                    break;
+    
+                case 7:
+                    sqlInstruction = String.format("SELECT * FROM CATEGORIAS");
+                    System.out.println("SQL INSTRUCTION: " + sqlInstruction);
+
+                    //NOMBRE, TIPO, DESCRIPCION
+                    result = DatabaseUtils.statement.executeQuery(sqlInstruction);
+                    while (result.next()) {
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("ID: ").append(result.getString("ID")).append("\n")
+                                .append("NOMBRE: ").append(result.getString("NOMBRE")).append("\n")
+                                .append("TIPO: ").append(result.getString("TIPO")).append("\n")
+                                .append("DESCRIPTION: ").append(result.getString("DESCRIPCION")).append("\n");
+
+                        System.out.println(sb.toString());
+                    }
+
+
+                    System.out.println(DELIMITER);
+                    break;   
+
+                case 8:
+                    sqlInstruction = String.format("SELECT CU.ID AS CUENTA_ID, CU.NOMBRE AS CUENTA_NOMBRE, CU.SALDO, CU.FECHA_APERTURA, CU.CATEGORIA_ID, CAT.ID AS CATEGORIA_ID, CAT.NOMBRE AS CATEGORIA_NOMBRE, CAT.TIPO, CAT.DESCRIPCION " +
+                            "FROM CUENTAS CU JOIN CATEGORIAS CAT ON CAT.ID = CU.CATEGORIA_ID");
+                    System.out.println("SQL INSTRUCTION: " + sqlInstruction);
+
+                    //NOMBRE, SALDO, FECHA_APERTURA, CATEGORIA_ID
+                    //NOMBRE, TIPO, DESCRIPCION
+                    result = DatabaseUtils.statement.executeQuery(sqlInstruction);
+                    while (result.next()) {
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("CUENTA ID: ").append(result.getString("CUENTA_ID")).append("\n")
+                                .append("CUENTA NOMBRE: ").append(result.getString("CUENTA_NOMBRE")).append("\n")
+                                .append("SALDO: ").append(result.getString("SALDO")).append("\n")
+                                .append("FECHA APERTURA: ").append(result.getString("FECHA_APERTURA")).append("\n")
+                                .append("CATEGORIA ID: ").append(result.getString("CATEGORIA_ID")).append("\n")
+                                .append("CATEGORIA NOMBRE: ").append(result.getString("CATEGORIA_NOMBRE")).append("\n")
+                                .append("TIPO: ").append(result.getString("TIPO")).append("\n")
+                                .append("DESCRIPCION: ").append(result.getString("DESCRIPCION")).append("\n");
+
+                        System.out.println(sb.toString());
+                    }
+
+                    System.out.println(DELIMITER);
+                    break;      
 
                 default:
                     System.out.println("INVALID OPTION");
