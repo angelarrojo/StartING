@@ -42,7 +42,6 @@ public class JDBCMain {
                     sqlInstruction = String.format("INSERT INTO CATEGORIAS (NOMBRE, TIPO, DESCRIPCION) VALUES('%s','%s','%s')", nombreCategoria, tipoCategoria, descripcionCategoria);
                     System.out.println("SQL INSTRUCTION: " + sqlInstruction);
 
-
                     DatabaseUtils.statement.execute(sqlInstruction);
                     System.out.println(DELIMITER);
                     break;
@@ -150,7 +149,9 @@ public class JDBCMain {
 
                 case 8:
                     sqlInstruction = String.format("SELECT CU.ID AS CUENTA_ID, CU.NOMBRE AS CUENTA_NOMBRE, CU.SALDO, CU.FECHA_APERTURA, CU.CATEGORIA_ID, CAT.ID AS CATEGORIA_ID, CAT.NOMBRE AS CATEGORIA_NOMBRE, CAT.TIPO, CAT.DESCRIPCION " +
-                            "FROM CUENTAS CU JOIN CATEGORIAS CAT ON CAT.ID = CU.CATEGORIA_ID");
+                            "FROM CUENTAS CU " +
+                            "JOIN CATEGORIAS CAT " +
+                            "ON CAT.ID = CU.CATEGORIA_ID");
                     System.out.println("SQL INSTRUCTION: " + sqlInstruction);
 
                     //NOMBRE, SALDO, FECHA_APERTURA, CATEGORIA_ID
