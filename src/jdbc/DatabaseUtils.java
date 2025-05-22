@@ -16,7 +16,7 @@ public class DatabaseUtils {
     public static void connect() throws SQLException {
 
         // Obtenemos la conexión a la bbdd en memoria..
-        Connection connection = DriverManager.getConnection("jdbc:h2:mem://localhost/~/test", "sa", "");
+        connection = DriverManager.getConnection("jdbc:h2:mem://localhost/~/test", "sa", "");
         // Preaparamos el objeto statement para ejecutar SQL plano
         statement = connection.createStatement();
 

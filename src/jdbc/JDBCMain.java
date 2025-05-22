@@ -1,5 +1,6 @@
 package jdbc;
 
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ public class JDBCMain {
 
         while (true) {
             System.out.println("1 | INSERT | CREAR NUEVA CATEGORIA DE CUENTA");
+            System.out.println("11 | INSERT | CREAR NUEVA CATEGORIA DE CUENTA WITH A PREPAREDSTATEMENT");
             System.out.println("2 | INSERT | CREAR NUEVA CUENTA");
             System.out.println("3 | SELECT | OBTENER TODOS LAS CUENTAS DE TARJETAS");
             System.out.println("4 | UPDATE | ACTUALIZAR NOMBRE DE CLIENTE");
@@ -29,6 +31,7 @@ public class JDBCMain {
 
             String sqlInstruction;
             switch (scan.nextInt()) {
+
                 case 1:
                     System.out.print("NOMBRE DE LA CATEGORIA: ");
                     String nombreCategoria = scan.next();
@@ -45,6 +48,36 @@ public class JDBCMain {
                     DatabaseUtils.statement.execute(sqlInstruction);
                     System.out.println(DELIMITER);
                     break;
+
+                case 11:
+                    System.out.print("NOMBRE DE LA CATEGORIA: ");
+                    String nombreCat = scan.next();
+
+                    System.out.print("TIPO DE LA CATEGORIA: ");
+                    String tipo = scan.next();
+
+                    System.out.print("DESCRIPCION DE LA CATEGORIA: ");
+                    String descripcion = scan.next();
+
+                    String sqlSentence = "INSERT INTO CATEGORIAS (NOMBRE, TIPO, DESCRIPCION) VALUES (?, ?, ?)";
+                    try (PreparedStatement preparedStatement = DatabaseUtils.connection.prepareStatement(sqlSentence)) {
+                        preparedStatement.setString(1, nombreCat);
+                        preparedStatement.setString(2, tipo);
+                        preparedStatement.setString(3, descripcion);
+
+
+
+                        preparedStatement.executeUpdate();
+// System.out.println("Rows affected: " + rowsAffected);
+
+//                        preparedStatement.execute();
+//                        System.out.println("Inserted row");
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(DELIMITER);
+                    break;
+
 
                 case 2:
                     System.out.print("NOMBRE DEL TITULAR DE LA CUENTA: ");
@@ -102,7 +135,6 @@ public class JDBCMain {
                     sqlInstruction = String.format("DELETE FROM CUENTAS WHERE NOMBRE = '%s' AND ID = %s", nombreTitular, idCuenta);
                     System.out.println("SQL INSTRUCTION: " + sqlInstruction);
 
-
                     DatabaseUtils.statement.execute(sqlInstruction);
                     System.out.println(DELIMITER);
                     break;
@@ -142,7 +174,6 @@ public class JDBCMain {
 
                         System.out.println(sb.toString());
                     }
-
 
                     System.out.println(DELIMITER);
                     break;   
