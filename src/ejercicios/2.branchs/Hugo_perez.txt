@@ -54,3 +54,10 @@ PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego anana debajo del ques
  2 files changed, 16 insertions(+), 1 deletion(-)
 9- Correr el comando git graph y observar el resultado. ¿Qué observa?
 observo todas los m¡commit o cosas creadas pero mucho mas extendido
+10- Agregar cebolla
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Agregue cebolla debajo de la salsa"
+[ejercicio2_HugoPerezhp_github 1d051c6] Agregue cebolla debajo de la salsa
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ 11- Correr el comando git graph y observar el resultado. ¿Qué observa?
+ Veo en que rama estoy y lo que he cambiado y he guardado
+11-
