@@ -1,0 +1,14 @@
+¿Cómo se inicializa un repositorio local? git init
+
+¿Cómo dejar de controlar un directorio? Eliminando la carpeta oculta .git (comando rm -rf .git en consola).
+
+Si agrego un archivo nuevo, ¿está siendo controlado? No automáticamente. Git detecta que hay un archivo nuevo (Untracked), pero no lo controla hasta que haces git add.
+
+¿Comando para agregar un archivo? git add <nombre_del_archivo>
+
+¿Cómo determinar archivos modificados? git status
+
+¿Comando para hacer un commit? git commit -m "mensaje descriptivo"
+
+¿Qué es un commit? Es un "punto de guardado" o una instantánea del estado del código en un momento concreto, que permite volver atrás si algo falla.
+commit 3d0fa927a9641bdf371b5963d8c67267694522c4 (HEAD -> ejercicio1_tuUsuarioGithub). El historial muestra commits en orden
