@@ -3,6 +3,3 @@ jamón
 queso
 lechuga
 tomate
-ketchup
-mayonesa
-mostaza
