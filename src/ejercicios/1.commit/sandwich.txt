@@ -1,9 +1,4 @@
 pan
 queso
-Lechuga
-Pepinillo
-Carne
+medallón
 pan
-Mostaza
-Mayonesa
-Ketchup
