@@ -15,6 +15,11 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
 
 $ git branch ejercicio3_marcosgarrido3_github main
 
+ notepad 3.conflicts/milanesa.txt
+
+$ git checkout -b suprema
+Switched to a new branch 'suprema'
+
 
 
 
