@@ -1,0 +1,26 @@
+2.1. Preguntas
+1- ¿Qué es un branch?
+Se desarrola funciones o llegar a corregir erroes sin que el codigo main cambie
+2- ¿Por qué pueden ser útiles los branches?
+Para poder trabajar en equipo, organizarte y poder probar cosas nuevas
+3- ¿Cómo se crea una branch?
+git branch (poner el nombre de la rama)
+4- ¿Cómo se cambia a una branch?
+git checkout (nombre de la rama)
+5- ¿Cómo se elimina una branch?
+git branch -d (nombre de la rama)
+6- ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+git chechout -b (nombre de la rama)
+7- ¿Qué es un merge?
+Se une dos ramas difernetes a una sola rama
+8- ¿Cómo se realiza un merge?
+Pones en la rama donde quieres los cambios y el comando es git merge (nombre de la rama nueva)
+9- ¿Que es un tag?
+Es para marcar cosas importantes como versiones
+10- ¿Cómo se crea un tag?
+git tag -a nombre de la tag -m
+
+2.2 Practico
+1- crear un branch
+git branch ejercicio2_HugoPerezhp_github main
+2- Moverse al branch
