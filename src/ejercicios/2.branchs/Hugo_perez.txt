@@ -34,4 +34,18 @@ PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego nuevo engridente"
  3 files changed, 109 insertions(+)
  create mode 100644 src/ejercicios/1.commit/hugo_perez.txt
  create mode 100644 src/ejercicios/2.branchs/Hugo_perez.txt
- 5-
+ 5-Agregar oregano
+ PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego oregano en pizza"
+ [ejercicio2_HugoPerezhp_github 2c833d8] Se agrego oregano en pizza
+  2 files changed, 7 insertions(+)
+5- Correr el comando git graph y observar el resultado. ¿Qué observa?
+Veo como un historial de los commit y de las cosas que he borrado o creado
+6- Quedate en la branch
+PS C:\Users\formacion\Desktop\Hp> git branch
+  ejercicio1_Hugoperezhp_github
+* ejercicio2_HugoPerezhp_github
+  main
+7- Crear branch
+PS C:\Users\formacion\Desktop\Hp> git checkout -b anana
+Switched to a new branch 'anana'
+8-
