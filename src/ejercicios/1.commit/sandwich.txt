@@ -1,4 +1,8 @@
-pan
-queso
-medallón
-pan
+﻿
+- Pan de molde 
+- Pechuga de pavo
+- Queso 
+- Lechuga
+- Tomate
+- Pepinillos
+- Cebolla morada
