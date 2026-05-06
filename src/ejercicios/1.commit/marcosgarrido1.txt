@@ -45,3 +45,9 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+$ git add 1.commit/marcosgarrido1.txt
+
+$ git commit -m "Agrego cambios al sandwich"
+[marcosgarrido1 a9f082c] Agrego cambios al sandwich
+ 1 file changed, 47 insertions(+)
+
