@@ -4,3 +4,6 @@ Lechuga
 Pepinillo
 Carne
 pan
+Mostaza
+Mayonesa
+Ketchup
