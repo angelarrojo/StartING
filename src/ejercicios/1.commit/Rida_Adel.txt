@@ -12,3 +12,10 @@ Si agrego un archivo nuevo, ¿está siendo controlado? No automáticamente. Git 
 
 ¿Qué es un commit? Es un "punto de guardado" o una instantánea del estado del código en un momento concreto, que permite volver atrás si algo falla.
 commit 3d0fa927a9641bdf371b5963d8c67267694522c4 (HEAD -> ejercicio1_tuUsuarioGithub). El historial muestra commits en orden
+
+4961a1f (HEAD -> ejercicio1_tuUsuarioGithub) Agrego mi sandwich.txt
+3d0fa92 Versión final del sándwich
+a8695ef Agrego mi sandwich.txt
+Esta salida muestra el historial resumido. Cada línea es un punto de guardado (commit) con su código único (hash) y el mensaje que escribí. El más reciente aparece arriba del todo
+
+He probado el comando git diff. Los resultados muestran líneas con un símbolo + en verde, lo que significa que esa información ha sido añadida al archivo.
