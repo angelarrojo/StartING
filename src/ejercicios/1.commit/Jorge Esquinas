@@ -87,3 +87,7 @@ git log --stat con este comando se ven las modificaciones de cada archivo
 git diff 0dafa8d 4a10041 con esta comando veo que las diferencias de los archivos que he cambiado
 16
 me ha renombrado el archivo .txt
+17
+con el comando git status sale los archivo borrados
+18
+git log --stat veo todas las modificaciones de todos los que he ido subiendo
