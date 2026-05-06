@@ -1,12 +1,4 @@
-﻿
-- Pan de molde 
-- Pechuga de pavo
-- Queso 
-- Lechuga
-- Tomate
-- Pepinillos
-- Cebolla morada
-Salsas:
-- Mayonesa casera
-- Mostaza antigua
-- Un toque de sriracha
+﻿-pan
+-queso
+-medallón
+-pan
