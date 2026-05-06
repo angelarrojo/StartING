@@ -48,4 +48,9 @@ PS C:\Users\formacion\Desktop\Hp> git branch
 7- Crear branch
 PS C:\Users\formacion\Desktop\Hp> git checkout -b anana
 Switched to a new branch 'anana'
-8-
+8- Agregar commit
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego anana debajo del queso"
+[anana e4b660c] Se agrego anana debajo del queso
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+9- Correr el comando git graph y observar el resultado. ¿Qué observa?
+observo todas los m¡commit o cosas creadas pero mucho mas extendido
