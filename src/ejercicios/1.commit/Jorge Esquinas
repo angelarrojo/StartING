@@ -12,3 +12,78 @@ Para añadir un archivo al repositorio local se utiliza el comando git add nombr
 Para hacer un commit hay que utilizar el comando git commit -m "mensaje"
 En sus propias palabras, ¿qué es un compromiso?
 Guarda la informacion de los programas
+11.
+PS C:\Users\1SMR\Desktop\StartING\src\ejercicios\1.commit> git log
+commit 4a100413a5e2432389ad48b9707ac9318bb745f0 (HEAD -> ejercicio1_jorge-esquinas)
+Author: Jorge <Jorgeesquinas09@gmail.com>
+Date:   Wed May 6 19:02:52 2026 +0200
+
+    agrego salsas
+
+commit 0dafa8d44b25b1b640e69b7a7048541b8a3d0c37
+:...skipping...
+commit 4a100413a5e2432389ad48b9707ac9318bb745f0 (HEAD -> ejercicio1_jorge-esquinas)
+Author: Jorge <Jorgeesquinas09@gmail.com>
+Date:   Wed May 6 19:02:52 2026 +0200
+
+    agrego salsas
+
+commit 0dafa8d44b25b1b640e69b7a7048541b8a3d0c37
+Author: Jorge <Jorgeesquinas09@gmail.com>
+Date:   Wed May 6 18:54:54 2026 +0200
+
+    agrego mi sandwich.txt
+
+commit 766878c512091d12f8c4808e2f98e456241e999e (main, ejercicio1)
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+Date:   Tue May 5 17:41:47 2026 +0200
+
+    Enlace roto arreglado
+
+commit e868b2477f24884d1b7cb298c052321f99756a9f
+Author: Paulo Franklim dos Santos de Carvalho <paulo.franklim.dos.santos.de.carvalho@ing.com>
+Date:   Tue Feb 27 11:58:42 2024 +0100
+
+    String hands on exercise
+:...skipping...
+commit 4a100413a5e2432389ad48b9707ac9318bb745f0 (HEAD -> ejercicio1_jorge-esquinas)
+Author: Jorge <Jorgeesquinas09@gmail.com>
+Date:   Wed May 6 19:02:52 2026 +0200
+
+    agrego salsas
+
+commit 0dafa8d44b25b1b640e69b7a7048541b8a3d0c37
+Author: Jorge <Jorgeesquinas09@gmail.com>
+Date:   Wed May 6 18:54:54 2026 +0200
+
+    agrego mi sandwich.txt
+
+commit 766878c512091d12f8c4808e2f98e456241e999e (main, ejercicio1)
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+Date:   Tue May 5 17:41:47 2026 +0200
+
+    Enlace roto arreglado
+
+commit e868b2477f24884d1b7cb298c052321f99756a9f
+Author: Paulo Franklim dos Santos de Carvalho <paulo.franklim.dos.santos.de.carvalho@ing.com>
+Date:   Tue Feb 27 11:58:42 2024 +0100
+
+    String hands on exercise
+
+commit 1c74a938ec89a208dd3daec9027ba079971cb01e
+Author: gonzazea <gonzalo.zea.grijalba@gmail.com>
+Date:   Mon Feb 26 20:58:58 2024 +0100
+
+    condicionales y metodos
+
+    con este comando veo quien ha modificado todo en mi rama
+    los commit se muestran de presenta a pasado.
+    12.1
+    git log --oneline
+    con este comando hago lo mismo pero veo menos datos que git log
+12.2
+git log --stat con este comando se ven las modificaciones de cada archivo
+13
+git diff 0dafa8d 4a10041 con esta comando veo que las diferencias de los archivos que he cambiado
+16
+me ha renombrado el archivo .txt
