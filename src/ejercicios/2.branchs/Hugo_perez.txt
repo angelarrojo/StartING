@@ -1,5 +1,26 @@
+2.1. Preguntas
+¿Qué es un branch?
+Es para poder hacer funciones nuevas y corregir errores
+¿Por qué pueden ser útiles los branches?
+Para trabajar en equipo, probar ideas y organizar cada su trabajo
+¿Cómo se crea una branch?
+Git branch (nombre que queramos)
+¿Cómo se cambia a una branch?
+Git checkout (nombre que hayamos puesto)
+¿Cómo se elimina una branch?
+Git checkout -d nombre que hayamos puesto
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Git checkout -b nombre que hayamos puesto
+¿Qué es un merge?
+Es para unir dos ramas en una
+¿Cómo se realiza un merge?
+Git checkout merge nombre que hayamos puesto
+¿Qué es un tag?
+Es para marcar algo en específico
+¿Cómo se crea un tag?
+Git tag -a nombre que queramos en el tag -m "breve descripción"
 
-2.2 Practico
+2.2 Práctico
 1- crear un branch
 git branch ejercicio2_HugoPerezhp_github main
 2- Moverse al branch
@@ -8,7 +29,7 @@ src/ejercicios/1.commit/hugo_perez.txt
 src/ejercicios/2.branchs/Hugo_perez.txt
 Already on 'ejercicio2_HugoPerezhp_github'
 4- Agregar condimentos
-PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego nuevo engridente"
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agregó nuevo engridente"
 [ejercicio2_HugoPerezhp_github 2b24e1e] Se agrego nuevo engridente
  3 files changed, 109 insertions(+)
  create mode 100644 src/ejercicios/1.commit/hugo_perez.txt
