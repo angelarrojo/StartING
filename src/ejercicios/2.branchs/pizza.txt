@@ -1,5 +1,6 @@
 oregano
 Albaca
+anana
 queso
 salsa de tomate
 Cebolla
