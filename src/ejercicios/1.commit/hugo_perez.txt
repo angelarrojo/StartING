@@ -1,0 +1,22 @@
+1.1 Preguntas
+1- ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+El comando que se usaria seria git init, se crea una carpeta oculta y hay podemos escribir todos los cambiamos que hagamos
+2- ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+El comando es git rm --r, el git rm puede eliminar archivos, -r eliminas la carpeta y el contenido
+3- Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No, tendrias que autorizar que ese archvivo es importante
+4- ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Se usa git add
+5- ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+El comando para ver que se a modificado es git status
+6- ¿Qué comando se utiliza para hacer un commit?
+Se usa git commit -m
+7- En sus propias palabras, ¿qué es un commit?
+Es cuando has acabado tu trabajo y decir lo que has hecho en ese commit para tener un orden
+
+1.2 Practico
+1. [] Crear una branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio1_vuestro_usuario_github main`).
+git branch ejercicio1_Hugoperezhp_github main
+2. Moverse a la branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git checkout)
+git checkout ejercicio1_Hugoperezhp_github
+Switched to branch 'ejercicio1_Hugoperezhp_github'

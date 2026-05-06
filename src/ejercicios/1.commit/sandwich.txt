@@ -1,4 +1,6 @@
 pan
 queso
-medallón
+Lechuga
+Pepinillo
+Carne
 pan
