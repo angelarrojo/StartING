@@ -6,3 +6,7 @@
 - Tomate
 - Pepinillos
 - Cebolla morada
+Salsas:
+- Mayonesa casera
+- Mostaza antigua
+- Un toque de sriracha
