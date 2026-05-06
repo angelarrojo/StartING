@@ -1,0 +1,47 @@
+# 1. Commits
+
+Para el primer ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+## Ejercicio 1
+
+### 1.1. Preguntas
+
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+6. ¿Qué comando se utiliza para hacer un commit?
+7. En sus propias palabras, ¿qué es un commit?
+
+### 1.2. Ejercicio Práctico
+
+$ git branch marcosgarrido1
+$ git checkout marcosgarrido1
+A       src/ejercicios/1.commit/marcosgarrido1.txt
+Switched to branch 'marcosgarrido1'
+
+$ git branch
+  main
+* marcosgarrido1
+
+$ notepad 1.commit/sandwich.txt
+
+$ git add 1.commit/sandwich.txt
+
+$ git commit -m "Agrego mi sandwich.txt"
+[marcosgarrido1 1d607d2] Agrego mi sandwich.txt
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 100644 src/ejercicios/1.commit/marcosgarrido1.txt
+
+$ git status
+On branch marcosgarrido1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.commit/marcosgarrido1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
