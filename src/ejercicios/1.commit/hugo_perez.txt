@@ -1,0 +1,77 @@
+1.1 Preguntas
+1- ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+El comando que se usaría sería git init, se crea una carpeta oculta y hay podemos escribir todos los cambiamos que hagamos
+2- ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+El comando es git rm --r, el git rm puede eliminar archivos, -r eliminas la carpeta y el contenido
+3- Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No, tendrías que autorizar que ese archivo es importante
+4- ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Se usa git add
+5- ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+El comando para ver que se ha modificado es git status
+6- ¿Qué comando se utiliza para hacer un commit?
+Se usa git commit -m
+7- En sus propias palabras, ¿qué es un commit?
+Es cuando has acabado tu trabajo y decir lo que has hecho en ese commit para tener un orden
+
+1.2 Práctico
+1- [] Crear una branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio1_vuestro_usuario_github main`).
+Git branch ejercicio1_Hugoperezhp_github main
+2- Moverse a la branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git checkout)
+git checkout ejercicio1_Hugoperezhp_github
+Switched to branch 'ejercicio1_Hugoperezhp_github'
+3-Agregar el archivo `sandwich.txt` al repositorio local. Para esto, se debe ejecutar el comando `git add sandwich.txt`.
+Changes not staged for commit:
+  (use "git add <file>..." To update what will be committed)
+  (use "git restore <file>..." To discard changes in working directory)
+        modified:   src/ejercicios/1.commit/sandwich.txt
+4-Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git add sandwich.txt`.
+Cuando puse el comando git status me salía en rojo y tenía que guardarlo y cuando puse git add sandwch.txt me dio error, pero cuando puse donde se encontraba me lo guardo y se puso en verde
+5- Realizar un commit con el mensaje "Agrego mi sandwich.txt". Para esto, se debe ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+Git commit -m "Agrego mi sandwich.txt"
+[ejercicio1_Hugoperezhp_github 2f1910b] Agrego mi sandwich.txt
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 src/ejercicios/1.commit/hugo_perez.txt
+6- Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+Cuando puse git status después de añadir el commit no me aperecio nada del sandwich, pero sí de que tenía que guardar mi archivo de hugo_perez.txt
+7- Agregar salsas de su preferencia a `sandwich.txt` y realizar un commit con el mensaje "Agrego salsas".
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Agrego salsas sandwich.txt"
+[ejercicio1_Hugoperezhp_github 1985796] Agrego salsas sandwich.txt
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+8- Escriba la salida del comando `git log` en el archivo `nombre_apellido.txt`. Y explique que significa. ¿En qué orden aparecen los commits?
+Me salen todos los commints desde el primero que hice hasta ahora, salen primero los más nuevos y luego van saliendo los viejos
+9- Pruebe las variaciones del comando `git log` y explique que observa en cada una de ellas.
+9.1 `git log --oneline`
+Lo que veo es como que he agreado cada cosa, pero más corta sin tanta información como en git log
+9.2. `git log --stat`
+Se ve lo que he agregado y cambiado, la hora, cuando he estado guardando cada cosa y el día, se ve todo al completo
+10- Inspeccione diferencias entre los commits, use el comando git diff <hash> <hash> y explique que significa cada uno de los resultados.
+Cuando use ese comando no sabía que era hash y lo busque y era como el codigo del commit cuando puse git diff c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 vi agrego salsas 2f1910babb7279293a2f4b5acf756c6cffd92ddd vi el comentario de agregar sandiwch
+10.1. En Windows, pruebe `git difftool --tool=meld <hash>`
+Cuando puse este comando me dio error y no sabía por qué lo busque y era porque no tenía instalado un sotware como meld, pero buscando vi que era igual que aquí que se veia todos los comentarios más actualizados pero en windows
+10.2. En Linux, pruebe `git difftool --tool=opendiff <hash>`
+Puse este comando e igual me dio error, pero buscando me di cuenta de que era igual que windows que te abre el terminal y ves todo lo actualizado
+11- Agregar el archivo `sandwich2.txt` al repositorio local.
+PS C:\Users\formacion\Desktop\Hp> git status
+On branch ejercicio1_Hugoperezhp_github
+Changes to be committed:
+  (use "git restore --staged <file>..." To unstage)
+        new file: src/ejercicios/1.commit/Sandwich2.txt
+12-Renombrar el archivo `sandwich2.txt` a `sandwich2_feo.txt`. Para esto, se debe ejecutar el comando `git mv sandwich2.txt sandwich2_feo.txt`. Explique que cambio en la salida del comando `git status` luego de hacer un commit con esos cambios y de `git log --oneline`.
+Comando de cambiar de nombre: git mv src/ejercicios/1.commit/Sandwich2.txt src/ejercicios/1.commit/Sandwich2_feo.txt, cuando probe como ponia me daba error y era porque tenía que poner la ruta exacta
+Al usar el git status pone que se ha modificado el arhcivo new file:src/ejercicios/1.commit/Sandwich2_feo.txt
+                                                                  modified:   src/ejercicios/1.commit/hugo_perez.txt
+Hice un commit git commit -m "Cambio de nombre"
+               [ejercicio1_Hugoperezhp_github dc09430] Cambio de nombre
+                2 files changed, 41 insertions(+), 3 deletions(-)
+                créate mode 100644 src/ejercicios/1.commit/Sandwich2_feo.txt
+Use el comando git log --onoline y lo nuevo qué salió fue el commit dc09430 (HEAD -> ejercicio1_Hugoperezhp_github) Cambio de nombre
+13. Borre el archivo `sandwich2_feo.txt`. Para esto, se debe ejecutar el comando `git rm sandwich2_feo.txt`. Explique que cambio en la salida del comando `git status` luego de hacer un commit con esos cambios y de `git log --oneline`.
+Cuando puse el comando git status me salió que lo había borrado deleted:src/ejercicios/1.commit/Sandwich2_feo.txt
+Puse el commit git commit -m "Borre archivo sandwinch2_feo.txt"
+               [ejercicio1_Hugoperezhp_github 805f28f] Borre archivo sandwinch2_feo.txt
+                1 file changed, 7 deletions(-)
+                delete mode 100644 src/ejercicios/1.commit/Sandwich2_feo.txt
+Use el comando git log --oneline y me salía que 805f28f (HEAD -> ejercicio1_Hugoperezhp_github) Borre archivo sandwinch2_feo.txt
+14- Inspeccione la bitácora usando `git log --stat` y explique lo que ve.
+Veo todos los commit que se han puesto, también veo la ruta del archivo y las cosas que he cambiado y cosas que he borrado
