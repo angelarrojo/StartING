@@ -39,4 +39,20 @@ PS C:\Users\formacion\Desktop\Hp> git commit -m "Agregue cebolla debajo de la sa
 2 files changed, 21 insertions(+), 1 deletion(-)
 11- Correr el comando git graph y observar el resultado. ¿Qué observa?
 Veo en que rama estoy y lo que he cambiado y he guardado
-11-
+12-Correr el comando git graph y observar el resultado. ¿Qué observa? (al usar merge anana)
+Veo como que esta unido a mi arhcivo principal
+13- ¿Qué branches están "mergeadas" a ejercicio2_vuestro_usuario_github? (Puede usar el comando git branch --merged).
+PS C:\Users\formacion\Desktop\Hp> git branch --merged
+  anana
+* ejercicio2_HugoPerezhp_github
+  main
+14-Ver los tags creados. (Puede usar el comando git tag).
+PS C:\Users\formacion\Desktop\Hp> git tag
+pizza
+15- Ver el tag pizza. (Puede usar el comando git show pizza).
+PS C:\Users\formacion\Desktop\Hp> git show pizza
+tag pizza
+Tagger: Angel-RG08 <fp24ifcm0132@aulatomillo.org>
+Date:Wed May 6 23:59:49 2026 +0200
+
+Receta de la pizza.
