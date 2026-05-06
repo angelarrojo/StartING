@@ -25,8 +25,8 @@ git tag -a nombre de la tag -m
 git branch ejercicio2_HugoPerezhp_github main
 2- Moverse al branch
 PS C:\Users\formacion\Desktop\Hp> git checkout ejercicio2_HugoPerezhp_github
-A       src/ejercicios/1.commit/hugo_perez.txt
-A       src/ejercicios/2.branchs/Hugo_perez.txt
+src/ejercicios/1.commit/hugo_perez.txt
+src/ejercicios/2.branchs/Hugo_perez.txt
 Already on 'ejercicio2_HugoPerezhp_github'
 4- Agregar condimentos
 PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego nuevo engridente"
@@ -57,7 +57,7 @@ observo todas los m¡commit o cosas creadas pero mucho mas extendido
 10- Agregar cebolla
 PS C:\Users\formacion\Desktop\Hp> git commit -m "Agregue cebolla debajo de la salsa"
 [ejercicio2_HugoPerezhp_github 1d051c6] Agregue cebolla debajo de la salsa
- 2 files changed, 21 insertions(+), 1 deletion(-)
- 11- Correr el comando git graph y observar el resultado. ¿Qué observa?
- Veo en que rama estoy y lo que he cambiado y he guardado
+2 files changed, 21 insertions(+), 1 deletion(-)
+11- Correr el comando git graph y observar el resultado. ¿Qué observa?
+Veo en que rama estoy y lo que he cambiado y he guardado
 11-
