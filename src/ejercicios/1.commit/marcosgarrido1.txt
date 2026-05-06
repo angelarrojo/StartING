@@ -55,3 +55,11 @@ f474ab3 Agrego cambios al sandwich
 a9f082c Agrego cambios al sandwich
 1d607d2 Agrego mi sandwich.txt
 
+$ git checkout 1d607d2 -- 1.commit/sandwich.txt
+
+$ git add 1.commit/marcosgarrido1.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (marcosgarrido1)
+$ git commit -m "Guardo informe del ejercicio"
+[marcosgarrido1 fdee8e1] Guardo informe del ejercicio
+ 1 file changed, 18 insertions(+), 14 deletions(-)

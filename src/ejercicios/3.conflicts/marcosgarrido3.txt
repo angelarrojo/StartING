@@ -1,0 +1,20 @@
+# 3. Conflicts
+
+Para este ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+## Ejercicio 3
+
+### 3.1. Preguntas
+
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+
+### 3.2. Ejercicio Práctico
+
+$ git branch ejercicio3_marcosgarrido3_github main
+
+
+
+
