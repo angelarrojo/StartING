@@ -15,8 +15,39 @@ Se usa git commit -m
 Es cuando has acabado tu trabajo y decir lo que has hecho en ese commit para tener un orden
 
 1.2 Practico
-1. [] Crear una branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio1_vuestro_usuario_github main`).
+1- [] Crear una branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio1_vuestro_usuario_github main`).
 git branch ejercicio1_Hugoperezhp_github main
-2. Moverse a la branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git checkout)
+2- Moverse a la branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git checkout)
 git checkout ejercicio1_Hugoperezhp_github
 Switched to branch 'ejercicio1_Hugoperezhp_github'
+3-Agregar el archivo `sandwich.txt` al repositorio local. Para esto, se debe ejecutar el comando `git add sandwich.txt`.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/sandwich.txt
+4-Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git add sandwich.txt`.
+Cuando puse el comando git status me salia en rojo y tenia que guardarlo y cuando puse git add sandwch.txt me dio error pero cuando puse donde se encontraba me lo guardo y se puso en verde
+5- Realizar un commit con el mensaje "Agrego mi sandwich.txt". Para esto, se debe ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+git commit -m "Agrego mi sandwich.txt"
+[ejercicio1_Hugoperezhp_github 2f1910b] Agrego mi sandwich.txt
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 src/ejercicios/1.commit/hugo_perez.txt
+6- Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+Cuando puse git status despues de añadir el commit no me aperecio nada del sandwich pero si de que tenia que guardar mi archivo de hugo_perez.txt
+7- Agregar salsas de su preferencia a `sandwich.txt` y realizar un commit con el mensaje "Agrego salsas".
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Agrego salsas sandwich.txt"
+[ejercicio1_Hugoperezhp_github 1985796] Agrego salsas sandwich.txt
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+8- Escriba la salida del comando `git log` en el archivo `nombre_apellido.txt`. Y explique que significa. ¿En qué orden aparecen los commits?
+Me salen todos los commints desde el primero que hice hasta ahora, salen primero los mas nuevos y luego van saliendo los viejos
+9- Pruebe las variaciones del comando `git log` y explique que observa en cada una de ellas.
+9.1 `git log --oneline`
+Lo que veo es como que he agreado cada cosa pero mas corta sin tanta informacion como en git log
+9.2. `git log --stat`
+Se ve lo que he agregado y cambiado, la hora, cuando he estado guardando cada cosa y el dia, se ve todo al completo
+10- Inspeccione diferencias entre los commits, use el comando git diff <hash> <hash> y explique que significa cada uno de los resultados.
+Cuando use ese comando no sabia que era hash y lo busque y era como el codigo del commit cuando puse git diff c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 vi agrego salsas 2f1910babb7279293a2f4b5acf756c6cffd92ddd vi el comentario de agregar sandiwch
+10.1. En Windows, pruebe `git difftool --tool=meld <hash>`
+Cuando puse este comando me dio error y no sabia porque lo busque y era porque no tenia instalado un sotware como meld pero buscando vi que era igual que aqui que se veia todos los comentarios mas actualizados pero en windows
+10.2. En Linux, pruebe `git difftool --tool=opendiff <hash>`
+Puse este comando e igual me dio error pero buscando me di cuenta que era igual que windows que te abre el terminal y ves todo lo actualizado
