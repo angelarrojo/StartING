@@ -7,3 +7,5 @@ queso
 tomate
 mortadela
 salchichon
+mallonesa
+ketchup
