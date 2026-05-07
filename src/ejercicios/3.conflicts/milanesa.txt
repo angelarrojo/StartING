@@ -1,5 +1,2 @@
 pan rallado
-<<<<<<< HEAD
-=======
-Pollo
->>>>>>> suprema
+lomo
