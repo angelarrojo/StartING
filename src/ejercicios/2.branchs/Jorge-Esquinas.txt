@@ -18,3 +18,11 @@ git merge nombre_rama
 Un tag es una etiqueta  que marca el punto del historial del repositorio.
 ¿Cómo se crea un tag?
 git tag nombre_tag
+6.
+Se observa el historias de commits del repositorio.
+10.
+Se observa el historial del commit y de las ramas del repositorio en forma grafica.
+13.
+Seobserva graficamente el historial de los commit del repositorio y las ramas que esigten.
+15.
+Se observa el istorial del commit y la rama con la grafica.
