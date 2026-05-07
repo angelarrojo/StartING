@@ -22,3 +22,8 @@ Switched to a new branch 'suprema'
 A       src/ejercicios/3.conflicts/Hugo_Perez.txt
 Already on 'suprema'
 6- Nuevos cambios usnaod commit
+git commit -am "Cambio de lomo a pollo"
+[suprema 394fd4b] Cambio de lomo a pollo
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 src/ejercicios/3.conflicts/Hugo_Perez.txt
+7- Moverse a la branch ejercicio 3
