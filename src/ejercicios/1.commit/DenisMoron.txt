@@ -74,3 +74,114 @@ El operador '<' está reservado para uso futuro.
     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
     + FullyQualifiedErrorId : RedirectionNotSupported
   me da error no se porque
+
+  PS C:\Users\1SMR\Desktop\Nueva carpeta> git status
+  On branch fix
+  Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+          new file:   DenisMoron.txt
+          new file:   andwich.txt
+          modified:   src/ejercicios/1.commit/DenisMoron.txt
+          modified:   src/ejercicios/1.commit/README.md
+          modified:   src/ejercicios/1.commit/sandwich.txt
+          new file:   src/ejercicios/1.commit/sandwich2.txt
+
+  me aparece el nuevo txt que hemos creado
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git status
+On branch fix
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   DenisMoron.txt
+        new file:   andwich.txt
+        modified:   src/ejercicios/1.commit/DenisMoron.txt
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+        new file:   src/ejercicios/1.commit/sandwich2_feo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/DenisMoron.txt
+
+  se ve que hemos cambiado el nombre
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git log --stat
+commit a8bb3a756b6a600262c8d9eff1af29b716803eaa (HEAD -> fix)
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 13:57:51 2026 +0200
+
+    Agrego mi sandwich2.txt
+
+ DenisMoron.txt
+
+veo los cambios de los archivos sanwich2 y DenisMoron
+
+EJERCICIO 2
+
+ PS C:\Users\1SMR\Desktop\Nueva carpeta> git graph
+ * a8bb3a7 (HEAD -> fix, origin/fix) Agrego mi sandwich2.txt
+ * a635eb8 Agrego mi sandwich.txt
+ * 9ce641a cambio url
+ * c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, main, ejercicio2_DenisMoron, ejercicio1_DenisMoron) git exercises
+ * 555dfee update Readme.md
+ * e868b24 (origin/hotfix) String hands on exercise
+ :
+ veo los cambios realizados
+
+ PS C:\Users\1SMR\Desktop\Nueva carpeta> git graph
+ * a8bb3a7 (HEAD -> anana, origin/fix, fix) Agrego mi sandwich2.txt
+ * a635eb8 Agrego mi sandwich.txt
+ * 9ce641a cambio url
+ * c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, main, ejercicio2_DenisMoron, ejercicio1_DenisMoron) git exercises
+ * 555dfee update Readme.md
+ * e868b24 (origin/hotfix) String hands on exercise
+ :
+
+ veo los cambios realizados
+
+ PS C:\Users\1SMR\Desktop\Nueva carpeta> git graph
+ * a8bb3a7 (HEAD -> anana, origin/fix, fix) Agrego mi sandwich2.txt
+ * a635eb8 Agrego mi sandwich.txt
+ * 9ce641a cambio url
+ * c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, main, ejercicio2_DenisMoron, ejercicio1_DenisMoron) git exercises
+ * 555dfee update Readme.md
+ * e868b24 (origin/hotfix) String hands on exercise
+ :
+
+ veo los cambios realizados
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git graph
+* a8bb3a7 (HEAD -> anana, origin/fix, fix) Agrego mi sandwich2.txt
+* a635eb8 Agrego mi sandwich.txt
+* 9ce641a cambio url
+* c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, main, ejercicio2_DenisMoron, ejercicio1_DenisMoron) git exercises
+* 555dfee update Readme.md
+* e868b24 (origin/hotfix) String hands on exercise
+:
+
+veo los cambios realizados
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git branch --merged
+* anana
+  ejercicio1_DenisMoron
+  ejercicio2_DenisMoron
+  fix
+  main
+
+  esta fusionada la branch de anana
+
+  PS C:\Users\1SMR\Desktop\Nueva carpeta> git tag -a pizza -m "receta"
+  PS C:\Users\1SMR\Desktop\Nueva carpeta> git tag
+  pizza
+  PS C:\Users\1SMR\Desktop\Nueva carpeta> git show pizza
+  tag pizza
+  Tagger: 1SMR <fp25adgb0165@gmail.com>
+  Date:   Thu May 7 13:07:32 2026 +0200
+
+  receta
+
+  commit a8bb3a756b6a600262c8d9eff1af29b716803eaa (HEAD -> anana, tag: pizza, origin/fix, fix)
+  :
+
+  EJERCICIO 3
