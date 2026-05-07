@@ -34,3 +34,23 @@ Changed not staged for commit: Son los cambios nuevos que Git detecta pero que a
 
 9. Los archivos que salian en "Changes to be commited" no salen ya que han sido procesados, basicamente han pasado al repositorio local
 
+11. commit ebd375a8ff0fecac7228dfc5ee60ee426dea034f (HEAD -> ejercicio1_JulioCillero12_github)
+    Author: Julio Cillero <fp25ifcm0157@aulatomillo.org>
+    Date:   Thu May 7 14:27:10 2026 +0200
+
+        Agrego salsas
+
+    commit 14485f8f5dc5ca40e87ff87ef7027954b320949c
+    Author: Julio Cillero <fp25ifcm0157@aulatomillo.org>
+    Date:   Thu May 7 14:15:07 2026 +0200
+Explicacion:
+git log muestra el historial de commits que hemos hecho en el repositorio, su orden va que los mas recientes arriba y los primeros abajo, por orden de hora
+
+12. git log --oneline: Muestra el historial de commits de forma compacta
+git log --stat: Muestra el historial detallando archivos modificados o eliminaciones
+13. El comando git diff sirve para comparar las diferencias entre dos versiones del proyecto, las lineas con un + representan lo que se ha añadido y - lo que se ha quitado
+
+17. Git status: Despues de poner el commit se ve un mensaje que pone nothing "to commit, working tree clean" esto significa que se ha borrado correctamente
+git log  --oneline: Aparece el commit que he puesto con un identificador
+
+18. Poniendo git log --stat nos muestra un historial super preciso, incluyendo todos los commits o las estadisticas de los archivos
