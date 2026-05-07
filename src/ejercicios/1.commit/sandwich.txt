@@ -1,4 +1,7 @@
 pan
 queso
 medallón
+pollo
+mayonesa
+tomate
 pan
