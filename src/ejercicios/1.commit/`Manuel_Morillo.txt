@@ -17,4 +17,12 @@ No tiene porque ya que para que esre controlado tendrias que poner tu mismo  un 
 
   En sus propias palabras, ¿qué es un commit?
   Un commit es una descripcion de un proyecto tiene que ser detllaada ya que es muy importante tanto para ti como los demas a la hora de traabajar.
-  
+  Esto es la explicacion del ejercicio 5 ya que la salida del comando  estan todos los datos guardados.
+  C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git status
+  On branch main
+  Your branch is ahead of 'origin/main' by 2 commits.
+    (use "git push" to publish your local commits)
+
+  nothing to commit, working tree clean
+
+  C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
