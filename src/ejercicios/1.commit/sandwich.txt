@@ -2,3 +2,5 @@ pan
 queso
 medallón
 pan
+jamon
+chorizo
