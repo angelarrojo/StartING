@@ -1,0 +1,24 @@
+Ejercicio 3
+3.1. Preguntas
+¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+¿Se puede evitar un conflicto? ¿Cómo?
+
+3.2. Ejercicio Práctico
+1- Crear branch
+git branch ejercicio3_HugoperezHP_github main
+2- Moverse a el
+A       src/ejercicios/3.conflicts/Hugo_Perez.txt
+Switched to branch 'ejercicio2_HugoPerezhp_github'
+3- Verificacion de cual estamos
+  anana
+  ejercicio1_Hugoperezhp_github
+  ejercicio2_HugoPerezhp_github
+* ejercicio3_HugoperezHP_github
+  main
+4- Crar branch suprema
+Switched to a new branch 'suprema'
+5- Moverse a la branch suprema
+A       src/ejercicios/3.conflicts/Hugo_Perez.txt
+Already on 'suprema'
+6- Nuevos cambios usnaod commit
