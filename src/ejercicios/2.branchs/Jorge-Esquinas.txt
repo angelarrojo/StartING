@@ -1,0 +1,20 @@
+¿Qué es un branch?
+Un branch es una rama del repositorio que permite trabajar tu solo de forma independiente.
+¿Por qué pueden ser útiles las sucursales?
+Porque permiten desarrollar funciones y corregir errores o probar cambios.
+¿Cómo se crea una rama?
+git branch nombre_rama.
+¿Cómo se cambia a una sucursal?
+git checkout nombre_rama
+¿Cómo se elimina una rama?
+git branch -d nombre_rama
+¿Cómo se crea una rama y se cambia a ella en un solo paso?
+git chechut -b nombre_rama
+¿Qué es un merge?
+Un mergeles la union de los cambios de la rama.
+¿Cómo se realiza un merge?
+git merge nombre_rama
+¿Qué es un tag?
+Un tag es una etiqueta  que marca el punto del historial del repositorio.
+¿Cómo se crea un tag?
+git tag nombre_tag
