@@ -27,3 +27,47 @@ git commit -am "Cambio de lomo a pollo"
  2 files changed, 25 insertions(+), 1 deletion(-)
  create mode 100644 src/ejercicios/3.conflicts/Hugo_Perez.txt
 7- Moverse a la branch ejercicio 3
+git checkout ejercicio3_HugoperezHP_github
+Switched to branch 'ejercicio3_HugoperezHP_github'
+8- Crear branch bife
+git checkout -b bife
+Switched to a new branch 'bife'
+9- Moverse a branch bife
+git checkout bife
+Already on 'bife'
+10- Haga un git diff ejercicio3_vuestro_usuario_github suprema y un git diff ejercicio3_vuestro_usuario_github bife. ¿Qué observa?
+Veo que me dice que tengo que revisar el contenido
+11- Moverse a la branch ejercicio3_vuestro_usuario_github. Corra un git status, ¿qué observa?
+PS C:\Users\formacion\Desktop\Hp> git status
+On branch ejercicio3_HugoperezHP_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/ejercicios/3.conflicts/milanesa.txt
+12- Ejecute git merge bife. Funcionó?
+git merge bife
+Already up to date.
+13- Ejecute git merge suprema. Funcionó?
+No me funciono porque en un sitio tengo un contenido y en otro tengo otro y el programa no sabe con que quedarse
+14- Ejecute git status. Que observa?
+git status
+On branch ejercicio3_HugoperezHP_github
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   src/ejercicios/3.conflicts/Hugo_Perez.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   src/ejercicios/3.conflicts/milanesa.txt
+15- Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
+2.	pan rallado
+<<<<<<< HEAD
+bife
+=======
+Pollo
+>>>>>>> suprema
+16- Aborte el merge. (Puede usar el comando git merge --abort)
+Me desaparecio lo que tenia
+
