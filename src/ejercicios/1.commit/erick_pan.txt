@@ -1,0 +1,140 @@
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Para iniciar un repositorio local en GIT necesitamos entrar en GIT BASH utilizando el comando cd para cambiar a la capeta y al proyecto, luego para poder ejecutarlo un repositorio local necesitamos poner este comando: git init, significa que hemos creado un repositorio vacío
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Para hacerlo necesitamos poner este comando: git rm -r --cache (rm: eliminar un archivo/directorio) (-r: recursivo) (--cached: elimina los archivos de índice)
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No, porque cuando añades un archivo nuevo te lo clasifica como untrack (sin rastear)
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Para agregar un archivo tienes que poner este comando: git add <nombre_de_archivo>
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+Utilizamos: git status, que es un resumen rápido que te dice qué archivo fueron modificado borrado o nuevos
+6. ¿Qué comando se utiliza para hacer un commit?
+Utilizamos: git commit, para crear un commit pero podemos añadir -m para añadir un mensaje
+7. En sus propias palabras, ¿qué es un commit?
+Significa que vas a guardar un cambio que has hecho (importante) en el proyecto y que va acompañado de un mensaje
+
+5. El git status sirve para ver el estado actual de mi respositorio, mostrando que archivo fue modificado
+PS C:\Users\formacion\Desktop\Prácticas> git status
+On branch ejercicio1_erick_pan_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/erick_pan.txt
+        new file:   src/ejercicios/2.branchs/erick_pan.txt2
+        new file:   src/ejercicios/3.conflicts/erick_pan.txt3
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/erick_pan.txt
+        modified:   src/ejercicios/1.commit/sandwich.txt
+        modified:   src/ejercicios/2.branchs/erick_pan.txt2
+        modified:   src/ejercicios/3.conflicts/erick_pan.txt3
+
+7. Se agregó un nuevo archivo que es erick_pan.txt y se modificó el archivo sandwoch.txt
+PS C:\Users\formacion\Desktop\Prácticas\src\ejercicios\1.commit> git status
+On branch ejercicio1_erick_pan_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   erick_pan.txt
+        modified:   sandwich.txt
+        new file:   ../2.branchs/erick_pan.txt2
+        new file:   ../3.conflicts/erick_pan.txt3
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   erick_pan.txt
+        modified:   ../2.branchs/erick_pan.txt2
+        modified:   ../3.conflicts/erick_pan.txt3
+
+9. Que el sandwich.txt se fue a mi respositorio
+n branch ejercicio1_erick_pan_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   erick_pan.txt
+        modified:   sandwich.txt
+        new file:   ../2.branchs/erick_pan.txt2
+        new file:   ../3.conflicts/erick_pan.txt3
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   erick_pan.txt
+        modified:   ../2.branchs/erick_pan.txt2
+        modified:   ../3.conflicts/erick_pan.txt3
+
+11. El comando git log me sale el autor, la fecha, mensaje descriptivo
+commit ff458e4cc25ab09970f467787eb7a3a549bc651c
+Author: Erick_Pan <fp25ifcm0168@aulatomillo.org>
+Date:   Thu May 7 13:01:42 2026 +0200
+
+    Agrego mi sandwich.txt
+
+12.1. El git log --oneline nos el historial más resumido
+58d1f14 (HEAD -> ejercicio1_erick_pan_github) Agrego salsa
+ff458e4 Agrego mi sandwich.txt
+c8ff807 (origin/main, origin/HEAD, main) git exercises
+555dfee update Readme.md
+e868b24 String hands on exercise
+1c74a93 condicionales y metodos
+bf80ceb jdbc example main class
+551b9b4 Adds arrays
+
+12.2. El git log --stat nos enseña los commits de que archivo fueron modificadoz, líneas agregado y eliminado
+commit 58d1f1428a3036bf5687846c9b07aed8c5ecdf18 (HEAD -> ejercicio1_erick_pan_github)
+Author: Erick_Pan <fp25ifcm0168@aulatomillo.org>
+Date:   Thu May 7 13:09:39 2026 +0200
+
+    Agrego salsa
+
+ src/ejercicios/1.commit/sandwich.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+ 16. Se añadio un nuevo archivo que es sandwich2_feo.txt
+ On branch ejercicio1_erick_pan_github
+ Changes to be committed:
+   (use "git restore --staged <file>..." to unstage)
+         new file:   sandwich2_feo.txt
+
+ Changes not staged for commit:
+   (use "git add <file>..." to update what will be committed)
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   README.md
+         modified:   erick_pan.txt
+         modified:   ../2.branchs/erick_pan.txt2
+         modified:   ../3.conflicts/erick_pan.txt3
+
+oneline
+
+ 8d1f14 (HEAD -> ejercicio1_erick_pan_github) Agrego salsa
+ ff458e4 Agrego mi sandwich.txt
+ c8ff807 (origin/main, origin/HEAD, main) git exercises
+ 555dfee update Readme.md
+ e868b24 String hands on exercise
+ 1c74a93 condicionales y metodos
+ bf80ceb jdbc example main class
+ 551b9b4 Adds arrays
+ 3b06e33 Adds strings package
+
+ 17. Cambio que no sale el sandwich2_feo.txt porque lo he eliminado
+ On branch ejercicio1_erick_pan_github
+ Changes not staged for commit:
+   (use "git add <file>..." to update what will be committed)
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   README.md
+         modified:   erick_pan.txt
+         modified:   ../2.branchs/erick_pan.txt2
+         modified:   ../3.conflicts/erick_pan.txt3
+
+ 18. El git log --stat muestra cada commit, archivo que fueron modificado, líneas cambiado
+ commit 58d1f1428a3036bf5687846c9b07aed8c5ecdf18 (HEAD -> ejercicio1_erick_pan_github)
+ Author: Erick_Pan <fp25ifcm0168@aulatomillo.org>
+ Date:   Thu May 7 13:09:39 2026 +0200
+
+     Agrego salsa
+
+  src/ejercicios/1.commit/sandwich.txt | 2 ++
+  1 file changed, 2 insertions(+)
