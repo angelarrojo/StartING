@@ -4,4 +4,6 @@ medallón
 pollo
 mayonesa
 tomate
+Mostaza
+Ketchup
 pan
