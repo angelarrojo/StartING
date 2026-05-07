@@ -1,0 +1,99 @@
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+todos los cambios pero sin guardar
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/ivan_arroyo
+        modified:   src/ejercicios/1.commit/sandwich.txt
+ha habido un cambio en la salida, se ha añadido una fila mas al poner el comando
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/ivan_arroyo
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/ivan_arroyo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/ivan_arroyo
+        modified:   src/ejercicios/1.commit/sandwich.txt
+se ha añadido un commit
+
+
+commit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 (HEAD -> main, origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD,
+ ejercicio1_ivanarroyohernandez_github)
+Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+Date:   Wed May 6 00:03:49 2026 +0200
+
+    git exercises
+
+commit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+Date:   Tue May 5 17:41:47 2026 +0200
+Este es el commit segun el orden de los pasos realizados
+
+
+commit e868b2477f24884d1b7cb298c052321f99756a9f (origin/hotfix)
+Author: Paulo Franklim dos Santos de Carvalho <paulo.franklim.dos.santos.de.carvalho@ing.com>
+Date:   Tue Feb 27 11:58:42 2024 +0100
+Ahora aparece un hotfix
+
+
+commit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+commit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 (HEAD -> main, origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, ejercicio1_ivanarroyohernandez_github)
+Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+Date:   Wed May 6 00:03:49 2026 +0200
+
+    git exercises
+
+commit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+es lo que he hecho hoy
+
+
+git difftool --tool=meld <hash>
+En línea: 1 Carácter: 26
++ git difftool --tool=meld <hash>
++                          ~
+El operador '<' está reservado para uso futuro.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+nose
+
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/ivan_arroyo
+        new file:   src/ejercicios/1.commit/sandwich2_feo.txt
+Cambiamos el nombre al archivo
+
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/ivan_arroyo
+        modified:   src/ejercicios/1.commit/sandwich.txt
+He borrado el sandiwch.2_feo.txt
+
+
+git log --oneline
+c8ff807 (HEAD -> main, origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, ejercicio1_ivanarroyohernandez_github) git exercises
+555dfee update Readme.md
+e868b24 (origin/hotfix) String hands on exercise
+1c74a93 condicionales y metodos
+bf80ceb jdbc example main class
+551b9b4 Adds arrays
+3b06e33 Adds strings package
+6aebdd6 Second commit
