@@ -4,3 +4,6 @@ medallón
 pan
 jamon
 chorizo
+Barbacoa
+Ketchut
+Salsa de ajo
