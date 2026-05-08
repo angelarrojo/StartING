@@ -1,0 +1,59 @@
+1. ¿Qué es un branch?
+Un branch es que divides el repositorio y también son apuntadores llamados commits
+2. ¿Por qué pueden ser útiles los branches?
+Son útiles porque cada persona del proyecto pueden trabajar independientemente en cada branch
+3. ¿Cómo se crea una branch?
+Para crear un branch ponemos este comando: git branch <nombre_de_branch>
+4. ¿Cómo se cambia a una branch?
+Para cambiar de branch utilizamos este comando: git checkpoint <nombre_de_branch>
+5. ¿Cómo se elimina una branch?
+Para eliminar una branch necesitamos poner este comando: git branch -d <nombre_de_branch>
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para crear y también cambiar ponemos este comando: git checkout -b <nombre_de_branch>
+7. ¿Qué es un merge?
+Significa que mezcla los cambios de la rama indicada sobre la rama en la que estás
+8. ¿Cómo se realiza un merge?
+Para realizar un merge necesitamos poner este comando: git merge <nombre_de_branch>
+9. ¿Que es un tag?
+Un tag es como una etiqueta que marca un punto importante del hitorial
+10. ¿Cómo se crea un tag?
+Para crear un tag necesitamos poner este comando: git tag <nombre_del_tag>
+
+5. El git bash no es un comando nativo de Git, utilize uno alterno que te enseña las líneas de commit que he hecho y qu son más avanzado
+* 028d7bd (ejercicio2_erick_pan_github) Agregro erick_pan.txt2
+   | *   007d0d9 (refs/stash) WIP on anana: e268ad1 Agrego anana
+   | |\
+   | | * 9ac529e index on anana: e268ad1 Agrego anana
+   | |/
+   | * e268ad1 (HEAD -> anana) Agrego anana
+   |/
+   | * 083cabf (ejercicio1_erick_pan_github) guardando cambios
+   | * 93a9127 (origin/ejercicio1_erick_pan_github) Subo ejercicio1
+   :
+
+10. me pone que he agregado anana y también su commit
+| * e268ad1 (anana) Agrego anana
+|/
+| * 083cabf (ejercicio1_erick_pan_github) guardando cambios
+| * 93a9127 (origin/ejercicio1_erick_pan_github) Subo ejercicio1
+| * 58d1f14 Agrego salsa
+| * ff458e4 Agrego mi sandwich.txt
+|/
+* c8ff807 (origin/main, origin/HEAD, main) git exercises
+* 555dfee update Readme.md
+
+15. me sale que he hecho merge con anana
+*   649d8c4 (HEAD -> ejercicio2_erick_pan_github) Merge branch 'anana' into ejercicio2_erick_pan_github
+|\
+* | 028d7bd Agregro erick_pan.txt2
+| | * 007d0d9 (refs/stash) WIP on anana: e268ad1 Agrego anana
+| |/|
+| | * 9ac529e index on anana: e268ad1 Agrego anana
+| |/
+| * e268ad1 (anana) Agrego anana
+|/
+
+16. Se han hecho merge anana y ejercicio2_erick_pan_github
+  anana
+* ejercicio2_erick_pan_github
+  main
