@@ -1,0 +1,304 @@
+2. Branchs
+
+Para este ejercicio, se debe crear un archivo nombre_apellido.txt, dentro de la carpeta 2.branchs.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+Ejercicio 2
+
+2.1. Preguntas
+
+¿Qué es un branch?
+-Un brach es una rama donde podemos modificar la información sin afectar al proyecto final.
+
+¿Por qué pueden ser útiles los branches?
+-Las ramas pueden ser útiles para que varias personas trabajen a la vez en un mismo y cada uno este en su propia rama.
+
+¿Cómo se crea una branch?
+-git branch <nombreRama>
+
+¿Cómo se cambia a una branch?
+-git checkout <nombreRama>
+
+¿Cómo se elimina una branch?
+-git branch -d <nombreRama>
+
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+-git checkout –b <nombreRama>
+
+¿Qué es un merge?
+-Un merge es cuando se unen dos ramas para juntar esa información.
+
+¿Cómo se realiza un merge?
+-git merge <nombreRama>
+
+¿Qué es un tag?
+-Un tag es una etiqueta en un commit para señalar algo muy importante.
+
+¿Cómo se crea un tag?
+-git tag -a <lo que queramos decir> -m "mensaje"
+
+2.2. Ejercicio Práctico
+
+Antes de continuar con el ejercicio, se debe agregar un alias para facilitar la visualización de los branches.
+Git config --global alias.graph "log --all --graph --decorate --oneline"
+
+# Pruebe el comando: git graph
+
+git graph
+* 081add3 (HEAD -> ejercicio2_DanielBarrios01_github) Actualizo Daniel_Barrios ejercicio 1
+* f1e10c7 (origin/ejercicio1_DanielBarrios01_github, ejercicio1_DanielBarrios01_github) Ejercicio 1 terminado
+* 2803b92 Elimino sandwich2_feo.txt
+* 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+* 7b75960 Agrego sandwich2.txt
+* e804159 Agrego salsas
+* 98bf4ae Agrego mi sandwich.txt
+| * acc1ea4 (origin/Daniel_Barrios) Guardo cambios antes de cambiar de rama
+| * d662946 Elimino sandwich2_feo.txt
+| * 0cbcdab Agrego salsas
+| * 33bbf8b Agrego mi sandwich.txt
+|/
+| * 558b386 (origin/anana) Agrega anana
+| * bd8af13 Agrega oregano
+| * 055aab8 Agrega albaca
+| * 8480815 (origin/ejercicio1_jorge-esquinas) he modificado el fichero jorge esquinas
+| * 68796ef borrado sandwich2
+| * cd14bbc cambio nombre de sndwich2
+| * a367062 agregar sadwich2
+| * 4a10041 agrego salsas
+| * 0dafa8d agrego mi sandwich.txt
+| * 766878c Enlace roto arreglado
+| | * fadfcda (origin/marcosgarrido2) Agrego oregano
+| | * 30f5328 Agrego albahaca
+| | * fdee8e1 Guardo informe del ejercicio
+| | * b6443de Agrego salsas
+| | * f474ab3 Agrego cambios al sandwich
+| | * a9f082c Agrego cambios al sandwich
+| | * 1d607d2 Agrego mi sandwich.txt
+| |/
+|/|
+| | * 005a6df (origin/ejercicio3_MGT31507_github) Add marcos_garrido.txt
+| |/
+|/|
+| | * f361f09 (origin/ejercicio1_marcosgarridotorres) Restauro sandwich.txt al estado original
+| | * 5c5aa6b Borro sandwich2_feo
+| | * 86a59d0 Renombro sandwich2 a sandwich2_feo
+| | * bafdd5d Agrego sandwich2.txt
+| | * cce0951 Agrego salsas
+| | * b94ffbd Agrego mi sandwich.txt
+| |/
+|/|
+| | * 0aa16fb (origin/ejercicio1_rida_adel) Tarea de Rida terminada
+| | * bc43760 Borro el sandwich feo
+| | * 2eaf183 Renombro sandwich2
+| | * 4961a1f Agrego mi sandwich.txt
+| | * 3d0fa92 Versión final del sándwich
+| | * a8695ef Agrego mi sandwich.txt
+| |/
+| | * a8bb3a7 (origin/fix) Agrego mi sandwich2.txt
+| | * a635eb8 Agrego mi sandwich.txt
+| | * 9ce641a cambio url
+| |/
+|/|
+* | c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio1_Daniel_Barrios_github, origin/HEAD, origin/Dilan, main) git exercises
+* | 555dfee update Readme.md
+|/
+* e868b24 (origin/hotfix) String hands on exercise
+* 1c74a93 condicionales y metodos
+* bf80ceb jdbc example main class
+* 551b9b4 Adds arrays
+* 3b06e33 Adds strings package
+* 6aebdd6 Second commit
+* 3d1cc4f # Esta es una combinación de 2 commits. # Este es el mensaje del 1er commit:
+* bf746a5 First commit
+* d072514 Initial commit
+
+(El git graph nos muestra todos los commits y ramas del repositorio incluido el de mis comañeros).
+
+1.[] Crear una branch ejercicio2_vuestro_usuario_github. (Puede usar el comando git branch ejercicio2_vuestro_usuario_github main).
+-git branch ejercicio2_DanielBarrios01_github (Creamos la rama).
+
+2.Moverse a la branch ejercicio2_vuestro_usuario_github. (Puede usar el comando git checkout).
+-git checkout ejercicio2_DanielBarrios01_github (Nos vamos a esa rama).
+
+3.Verificar que se encuentra en la branch ejercicio2_vuestro_usuario_github. (Puede usar el comando git branch).
+- git branch
+   ejercicio1_DanielBarrios01_github
+ * ejercicio2_DanielBarrios01_github
+   main
+(estamos en la rama del ejercicio 2).
+
+4.Agregarle el condimento albahaca arriba del queso al archivo 2.branchs/pizza.txt y "commitee" los cambios.
+- git commit -m "Agrego albahaca"
+  [ejercicio2_DanielBarrios01_github 0778b19] Agrego albahaca
+  1 file changed, 1 insertion(+)
+
+5.Agregarle el condimento oregano arriba de la albahaca al archivo 2.branchs/pizza.txt y "commitee" los cambios.
+-git commit -m "Agrego oregano"
+ [ejercicio2_DanielBarrios01_github 40aed7f] Agrego oregano
+ 1 file changed, 1 insertion(+)
+
+6.Correr el comando git graph y observar el resultado. ¿Qué observa?
+-git graph
+ * 40aed7f (HEAD -> ejercicio2_DanielBarrios01_github) Agrego oregano
+ * 0778b19 Agrego albahaca
+ * 081add3 Actualizo Daniel_Barrios ejercicio 1
+ * f1e10c7 (origin/ejercicio1_DanielBarrios01_github, ejercicio1_DanielBarrios01_github) Ejercicio 1 terminado
+ * 2803b92 Elimino sandwich2_feo.txt
+ * 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+ * 7b75960 Agrego sandwich2.txt
+ * e804159 Agrego salsas
+ * 98bf4ae Agrego mi sandwich.txt
+ | * acc1ea4 (origin/Daniel_Barrios) Guardo cambios antes de cambiar de rama
+ | * d662946 Elimino sandwich2_feo.txt
+ | * 0cbcdab Agrego salsas
+ | * 33bbf8b Agrego mi sandwich.txt
+
+ (Puedo observar mi rama de ejercicio2, también los commits etc).
+
+7.Quedate en la branch ejercicio2_vuestro_usuario_github.
+
+8.Crear una branch anana. (Puede usar el comando git checkout -b anana).
+- git checkout -b anana
+  Switched to a new branch 'anana'
+
+9.Agregarle el condimento anana debajo del queso al archivo 2.branchs/pizza.txt y "commitee" los cambios.
+ oregano
+ albahaca
+ queso
+ anana
+ salsa de tomate
+ masa de pizza
+
+-git commit -m "Agrego anana"
+ [anana 4354a54] Agrego anana
+ 1 file changed, 1 insertion(+)
+
+10.Correr el comando git graph y observar el resultado. ¿Qué observa?
+-git graph
+ * 4354a54 (HEAD -> anana) Agrego anana
+ * 40aed7f (ejercicio2_DanielBarrios01_github) Agrego oregano
+ * 0778b19 Agrego albahaca
+ * 081add3 Actualizo Daniel_Barrios ejercicio 1
+ * f1e10c7 (origin/ejercicio1_DanielBarrios01_github, ejercicio1_DanielBarrios01_github) Ejercicio 1 terminado
+ * 2803b92 Elimino sandwich2_feo.txt
+ * 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+ * 7b75960 Agrego sandwich2.txt
+ * e804159 Agrego salsas
+ * 98bf4ae Agrego mi sandwich.txt
+ | * acc1ea4 (origin/Daniel_Barrios) Guardo cambios antes de cambiar de rama
+ | * d662946 Elimino sandwich2_feo.txt
+ | * 0cbcdab Agrego salsas
+ | * 33bbf8b Agrego mi sandwich.txt
+
+ (Puedo ver que ahora estoy en la rama anana).
+
+11.Vuelva a la branch ejercicio2_vuestro_usuario_github.
+-git checkout ejercicio2_DanielBarrios01_github
+ Switched to branch 'ejercicio2_DanielBarrios01_github'
+
+12.Agregue el condimento cebolla debajo de la salsa al archivo 2.branchs/pizza.txt y "commitee" los cambios.
+ oregano
+ albahaca
+ queso
+ salsa de tomate
+ cebolla
+ masa de pizza
+
+git commit -m "agrego cebolla"
+[ejercicio2_DanielBarrios01_github a6e5735] agrego cebolla
+ 1 file changed, 1 insertion(+)
+
+13.Correr el comando git graph y observar el resultado. ¿Qué observa?
+ git graph
+ * a6e5735 (HEAD -> ejercicio2_DanielBarrios01_github) agrego cebolla
+ | * 4354a54 (anana) Agrego anana
+ |/
+ * 40aed7f Agrego oregano
+ * 0778b19 Agrego albahaca
+ * 081add3 Actualizo Daniel_Barrios ejercicio 1
+ * f1e10c7 (origin/ejercicio1_DanielBarrios01_github, ejercicio1_DanielBarrios01_github) Ejercicio 1 terminado
+ * 2803b92 Elimino sandwich2_feo.txt
+ * 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+ * 7b75960 Agrego sandwich2.txt
+ * e804159 Agrego salsas
+ * 98bf4ae Agrego mi sandwich.txt
+ | * acc1ea4 (origin/Daniel_Barrios) Guardo cambios antes de cambiar de rama
+ | * d662946 Elimino sandwich2_feo.txt
+ | * 0cbcdab Agrego salsas
+ | * 33bbf8b Agrego mi sandwich.txt
+
+ (Puedo ver que ahora estoy en la rama ejercicio2 pero también puedo ver que hay 2 ramas (ejercicio2 y anana)).
+
+14.Haga un merge de la branch anana a la branch ejercicio2_vuestro_usuario_github. (Puede usar el comando git merge anana).
+-git merge anana
+ Auto-merging src/ejercicios/2.branchs/pizza.txt
+ Merge made by the 'ort' strategy.
+  src/ejercicios/2.branchs/pizza.txt | 1 +
+  1 file changed, 1 insertion(+)
+
+15.Correr el comando git graph y observar el resultado. ¿Qué observa?
+ git graph
+ *   0333e5f (HEAD -> ejercicio2_DanielBarrios01_github) Merge branch 'anana' into ejercicio2_DanielBarrios01_github
+ |\
+ | * 4354a54 (anana) Agrego anana
+ * | a6e5735 agrego cebolla
+ |/
+ * 40aed7f Agrego oregano
+ * 0778b19 Agrego albahaca
+ * 081add3 Actualizo Daniel_Barrios ejercicio 1
+ * f1e10c7 (origin/ejercicio1_DanielBarrios01_github, ejercicio1_DanielBarrios01_github) Ejercicio 1 terminado
+ * 2803b92 Elimino sandwich2_feo.txt
+ * 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+ * 7b75960 Agrego sandwich2.txt
+ * e804159 Agrego salsas
+ * 98bf4ae Agrego mi sandwich.txt
+ | * acc1ea4 (origin/Daniel_Barrios) Guardo cambios antes de cambiar de rama
+ | * d662946 Elimino sandwich2_feo.txt
+ | * 0cbcdab Agrego salsas
+ | * 33bbf8b Agrego mi sandwich.txt
+(se han unido las 2 ramas).
+
+16.¿Qué branches están "mergeadas" a ejercicio2_vuestro_usuario_github? (Puede usar el comando git branch --merged).
+-git branch --merged
+   anana
+   ejercicio1_DanielBarrios01_github
+ * ejercicio2_DanielBarrios01_github
+   main
+
+17.Crear un tag pizza en el último commit. (Puede usar el comando git tag -a pizza -m "Receta de la pizza."").
+-git tag -a pizza -m "Receta de la pizza."
+
+18.Ver los tags creados. (Puede usar el comando git tag).
+-git tag
+ pizza
+
+19.Ver el tag pizza. (Puede usar el comando git show pizza).
+-git show pizza
+ tag pizza
+ Tagger: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+ Date:   Fri May 8 21:21:30 2026 +0200
+
+ Receta de la pizza.
+
+ commit 0333e5f1a22006000eac22e39368e792a4422b09 (HEAD -> ejercicio2_DanielBarrios01_github, tag: pizza)
+ Merge: a6e5735 4354a54
+ Author: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+ Date:   Fri May 8 21:14:08 2026 +0200
+
+     Merge branch 'anana' into ejercicio2_DanielBarrios01_github
+
+ diff --cc src/ejercicios/2.branchs/pizza.txt
+ index 47f4073,a43b2d2..e605624
+ --- a/src/ejercicios/2.branchs/pizza.txt
+ +++ b/src/ejercicios/2.branchs/pizza.txt
+ @@@ -1,6 -1,6 +1,7 @@@
+   oregano
+   albahaca
+   queso
+ + anana
+   salsa de tomate
+  +cebolla
+   masa de pizza
+
+ (podemos ver información del tag, quien lo creo, la fecha etc).
