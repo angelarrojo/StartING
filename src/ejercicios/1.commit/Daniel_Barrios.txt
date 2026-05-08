@@ -12,10 +12,10 @@ Se ejecuta el comando git init.
 -No, solo será controlado por git cuando se usa git add.
 
 4.¿Qué comando se utiliza para agregar un archivo al repositorio local?
--git add (el nombre que queramos).
+-git add <el nombre que queramos>.
 
 5.¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
--git estatus no ayuda a ver los archivos que han cambiado
+-git status nos ayuda a ver los archivos que han cambiado.
 
 6.¿Qué comando se utiliza para hacer un commit?
 -git commit -m "el mensaje que queramos"
@@ -263,7 +263,6 @@ Se ejecuta el comando git init.
 
 19.Inspeccione la bitácora usando git log --stat y explique lo que ve.
 - git log -stat
- Perfecto, pulsa q para salir. Para el archivo solo copia los commits que son tuyos, no todos. Copia esto en tu Daniel_Barrios.txt:
 
  18. git log --stat
 
@@ -288,3 +287,7 @@ Se ejecuta el comando git init.
   1 file changed, 3 insertions(+), 1 deletion(-)
 
 (Con esto veremos los commits que han sido modificados, lineas añadidas, borradas etc.)
+
+git add Daniel_Barrios.txt (Agregamos el txt al repositorio local).
+git commit -m "Ejercicio 1 termiando" (Commit de que hemos terminado).
+git push origin ejercicio1_DanielBarrios01_github (subimos a Github).
