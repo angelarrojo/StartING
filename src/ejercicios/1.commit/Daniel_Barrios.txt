@@ -1,0 +1,290 @@
+Ejercicio 1
+
+1.1. Preguntas
+
+1.¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Se ejecuta el comando git init.
+
+2.¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+-rm -rf .git eso es para borrar la carpeta git.
+
+3.Sí agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+-No, solo será controlado por git cuando se usa git add.
+
+4.¿Qué comando se utiliza para agregar un archivo al repositorio local?
+-git add (el nombre que queramos).
+
+5.¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+-git estatus no ayuda a ver los archivos que han cambiado
+
+6.¿Qué comando se utiliza para hacer un commit?
+-git commit -m "el mensaje que queramos"
+
+7.En sus propias palabras, ¿qué es un commit?
+-Un commit es para guardar la información que hayamos hecho, y lo hacemos cuando sea necesario.
+
+1.2. Ejercicio Práctico
+
+1.[] Crear una branch ejercicio1_vuestro_usuario_github. (Puede usar el comando git branch ejercicio1_vuestro_usuario_github main).
+- git branch ejercicio1_DanielBarrios01_github
+
+2.Moverse a la branch ejercicio1_vuestro_usuario_github. (Puede usar el comando git checkout).
+- git checkout ejercicio1_DanielBarrios01_github
+- Switched to branch 'ejercicio1_DanielBarrios01_github' (Esto es que nos hemos cambiado correctamente a esa rama).
+
+3.Crear un archivo nombre_apellido.txt si no estaba creado previamente.
+- New-Item Daniel_Barrios.txt (Con esto creamos el txt de Daniel_Barrios) (Hay que asegurarnos de estar en 1.commit antes de crear el txt).
+
+4.Agregar a sandwich.txt condimentos e ingredientes que le gusten, simulando que es un sandwich que se va a comer.
+- pan
+- lechuga
+- tomate
+- queso
+- medallón
+- pepinillos
+
+5.Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo nombre_apellido.txt. Para esto, se debe ejecutar el comando git status y copiar el resultado en el archivo nombre_apellido.txt. Explique que significa la salida del comando.
+- git status
+ On branch ejercicio1_DanielBarrios01_github
+ Changes not staged for commit:
+   (use "git add <file>..." to update what will be committed)
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   sandwich.txt
+
+ Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+         Daniel_Barrios.txt
+
+ no changes added to commit (use "git add" and/or "git commit -a")
+
+6.Agregar el archivo sandwich.txt al repositorio local. Para esto, se debe ejecutar el comando git add sandwich.txt.
+-Con git add sandwich.txt agregamos el txt de sandwich al repositorio.
+
+7.Explique que cambio en la salida del comando git status luego de ejecutar el comando git add sandwich.txt.
+- git status
+ On branch ejercicio1_DanielBarrios01_github
+ Changes to be committed:
+   (use "git restore --staged <file>..." to unstage)
+         modified:   sandwich.txt
+
+ Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+         Daniel_Barrios.txt
+
+8.Realizar un commit con el mensaje "Agrego mi sandwich.txt". Para esto, se debe ejecutar el comando git commit -m "Agrego mi sandwich.txt".
+- git commit -m "Agrego mi sandwich.txt"
+  [ejercicio1_DanielBarrios01_github 98bf4ae] Agrego mi sandwich.txt
+  1 file changed, 3 insertions(+), 1 deletion(-)
+  (Con esto hemos hecho un commit despues de agregar el txt de sandwich al repositorio).
+
+9.Explique que cambio en la salida del comando git status luego de ejecutar el comando git commit -m "Agrego mi sandwich.txt".
+- git status
+  On branch ejercicio1_DanielBarrios01_github
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+          Daniel_Barrios.txt
+
+  nothing added to commit but untracked files present (use "git add" to track)
+
+10.Agregar salsas de su preferencia a sandwich.txt y realizar un commit con el mensaje "Agrego salsas".
+- Con git add sandwich.txt
+- git commit -m "Agrego salsas"
+  [ejercicio1_DanielBarrios01_github e804159] Agrego salsas
+  1 file changed, 4 insertions(+), 1 deletion(-)
+  (Con esto añadimos sandwich.txt con git add y luego guardamos con el commit "Agrego salsas").
+
+11.Escriba la salida del comando git log en el archivo nombre_apellido.txt. Y explique que significa. ¿En qué orden aparecen los commits?
+- git log
+  commit e804159fb54091e792113a0a4a7b619a003ec938 (HEAD -> ejercicio1_DanielBarrios01_github)
+  Author: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+  Date:   Fri May 8 13:36:58 2026 +0200
+
+      Agrego salsas
+
+  commit 98bf4aef3dc6a84cfdbf71ce5d2c4634f8b3195b
+  Author: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+  Date:   Fri May 8 13:31:31 2026 +0200
+
+      Agrego mi sandwich.txt
+
+(git log nos muestra el historial de todos los commits desde el más reciente hasta el más antiguo).
+
+12.Pruebe las variaciones del comando git log y explique que observa en cada una de ellas.
+
+12.1. Git log --oneline
+- git log --oneline
+  e804159 (HEAD -> ejercicio1_DanielBarrios01_github) Agrego salsas
+  98bf4ae Agrego mi sandwich.txt
+  c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio1_Daniel_Barrios_github, origin/ejercicio1_DanielBarrios01_github, origin/HEAD, or
+  igin/Dilan, main) git exercises
+  555dfee update Readme.md
+  e868b24 (origin/hotfix) String hands on exercise
+  1c74a93 condicionales y metodos
+  bf80ceb jdbc example main class
+  551b9b4 Adds arrays
+  3b06e33 Adds strings package
+  6aebdd6 Second commit
+  3d1cc4f # Esta es una combinación de 2 commits. # Este es el mensaje del 1er commit:
+  bf746a5 First commit
+  d072514 Initial commit
+
+(Muestra el historial de commits en una sola linea).
+
+12.2.git log --stat
+-git log --stat
+ commit e804159fb54091e792113a0a4a7b619a003ec938 (HEAD -> ejercicio1_DanielBarrios01_github)
+ Author: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+ Date:   Fri May 8 13:36:58 2026 +0200
+
+     Agrego salsas
+
+  src/ejercicios/1.commit/sandwich.txt | 5 ++++-
+  1 file changed, 4 insertions(+), 1 deletion(-)
+
+ commit 98bf4aef3dc6a84cfdbf71ce5d2c4634f8b3195b
+ Author: Daniel_Barrios <fp23eleb0139@aulatomillo.org>
+ Date:   Fri May 8 13:31:31 2026 +0200
+
+     Agrego mi sandwich.txt
+
+  src/ejercicios/1.commit/sandwich.txt | 4 +++-
+  1 file changed, 3 insertions(+), 1 deletion(-)
+
+(Es igual que git log pero añade mas información).
+
+13.Inspeccione diferencias entre los commits, use el comando git diff y explique que significa cada uno de los resultados.
+-diff --git a/src/ejercicios/1.commit/sandwich.txt b/src/ejercicios/1.commit/sandwich.txt
+ index aee4dcb..274adb4 100644
+ --- a/src/ejercicios/1.commit/sandwich.txt
+ +++ b/src/ejercicios/1.commit/sandwich.txt
+ @@ -3,4 +3,7 @@ lechuga
+  tomate
+  queso
+  medallón
+ -pepinillos
+ \ No newline at end of file
+ +pepinillos
+ +Ketchup
+ +Mayonesa
+ +Mostaza
+ \ No newline at end of file
+
+(Esto lo que hace es mostrar las diferencias entre los dos commits).
+
+14.Crear un nuevo archivo dentro de la carpeta 1.commit, llamado sandwich2.txt, y agregarle los ingredientes de su sandwich.
+- New-Item sandwich2.txt (Para crear otro txt).
+
+15.Agregar el archivo sandwich2.txt al repositorio local.
+
+-git add sandwich2.txt
+-git commit -m "Agrego sandwich2.txt"
+ [ejercicio1_DanielBarrios01_github 7b75960] Agrego sandwich2.txt
+ 1 file changed, 9 insertions(+)
+ create mode 100644 src/ejercicios/1.commit/sandwich2.txt
+
+(Agregamos el txt al repositorio y hacemos un commit para guardarlo).
+
+16.Renombrar el archivo sandwich2.txt a sandwich2_feo.txt. Para esto, se debe ejecutar el comando git mv sandwich2.txt sandwich2_feo.txt.Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.
+- git mv sandwich2.txt sandwich2_feo.txt (Cambiamos el nombre).
+- git status
+ On branch ejercicio1_DanielBarrios01_github
+ Changes to be committed:
+   (use "git restore --staged <file>..." to unstage)
+         renamed:    sandwich2.txt -> sandwich2_feo.txt
+
+ Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+         Daniel_Barrios.txt
+
+- git commit -m "Cambio el nombre sandwich2.txt a sandwich2_feo.txt"
+  [ejercicio1_DanielBarrios01_github 48fea39] Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+  1 file changed, 0 insertions(+), 0 deletions(-)
+  rename src/ejercicios/1.commit/{sandwich2.txt => sandwich2_feo.txt} (100%)
+
+- git log --oneline
+   48fea39 (HEAD -> ejercicio1_DanielBarrios01_github) Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+   7b75960 Agrego sandwich2.txt
+   e804159 Agrego salsas
+   98bf4ae Agrego mi sandwich.txt
+   c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio1_Daniel_Barrios_github, origin/ejercicio1_DanielBarrios01_github, origin/HEAD, origin/Dilan, main) git exercises
+   555dfee update Readme.md
+   e868b24 (origin/hotfix) String hands on exercise
+   1c74a93 condicionales y metodos
+   bf80ceb jdbc example main class
+   551b9b4 Adds arrays
+   3b06e33 Adds strings package
+   6aebdd6 Second commit
+   3d1cc4f # Esta es una combinación de 2 commits. # Este es el mensaje del 1er commit:
+   bf746a5 First commit
+   d072514 Initial commit
+
+(Lo que hemos hecho el cambiar el nombre del txt, luego lo hemos comprobado con el status. Luego de esto hemos hecho un commit y seguido un git log para ver toda la información).
+
+17.Borre el archivo sandwich2_feo.txt. Para esto, se debe ejecutar el comando git rm sandwich2_feo.txt.
+- git rm sandwich2_feo.txt
+  rm 'src/ejercicios/1.commit/sandwich2_feo.txt'
+(Borramos el txt).
+
+18.Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.
+- git status
+  On branch ejercicio1_DanielBarrios01_github
+  Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+          deleted:    sandwich2_feo.txt
+
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+          Daniel_Barrios.txt
+
+- git commit -m "Elimino sandwich2_feo.txt"
+  [ejercicio1_DanielBarrios01_github 2803b92] Elimino sandwich2_feo.txt
+   1 file changed, 9 deletions(-)
+   delete mode 100644 src/ejercicios/1.commit/sandwich2_feo.txt
+
+- git log --oneline
+  2803b92 (HEAD -> ejercicio1_DanielBarrios01_github) Elimino sandwich2_feo.txt
+  48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+  7b75960 Agrego sandwich2.txt
+  e804159 Agrego salsas
+  98bf4ae Agrego mi sandwich.txt
+  c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio1_Daniel_Barrios_github, origin/ejercicio1_DanielBarrios01_github, origin/HEAD, origin/Dilan, main) git exercises
+  555dfee update Readme.md
+  e868b24 (origin/hotfix) String hands on exercise
+  1c74a93 condicionales y metodos
+  bf80ceb jdbc example main class
+  551b9b4 Adds arrays
+  3b06e33 Adds strings package
+  6aebdd6 Second commit
+  3d1cc4f # Esta es una combinación de 2 commits. # Este es el mensaje del 1er commit:
+  bf746a5 First commit
+  d072514 Initial commit
+
+(Usamos el git status para comprobar que si se haya borrado el txt, luego hacemos un commit de que lo hemos borrado y finalmente un git log paraver el historial de los commits).
+
+19.Inspeccione la bitácora usando git log --stat y explique lo que ve.
+- git log -stat
+ Perfecto, pulsa q para salir. Para el archivo solo copia los commits que son tuyos, no todos. Copia esto en tu Daniel_Barrios.txt:
+
+ 18. git log --stat
+
+ commit 2803b92 Elimino sandwich2_feo.txt
+  src/ejercicios/1.commit/sandwich2_feo.txt | 9 ---------
+  1 file changed, 9 deletions(-)
+
+ commit 48fea39 Cambio el nombre sandwich2.txt a sandwich2_feo.txt
+  src/ejercicios/1.commit/{sandwich2.txt => sandwich2_feo.txt} | 0
+  1 file changed, 0 insertions(+), 0 deletions(-)
+
+ commit 7b75960 Agrego sandwich2.txt
+  src/ejercicios/1.commit/sandwich2.txt | 9 +++++++++
+  1 file changed, 9 insertions(+)
+
+ commit e804159 Agrego salsas
+  src/ejercicios/1.commit/sandwich.txt | 5 ++++-
+  1 file changed, 4 insertions(+), 1 deletion(-)
+
+ commit 98bf4ae Agrego mi sandwich.txt
+  src/ejercicios/1.commit/sandwich.txt | 4 +++-
+  1 file changed, 3 insertions(+), 1 deletion(-)
+
+(Con esto veremos los commits que han sido modificados, lineas añadidas, borradas etc.)
