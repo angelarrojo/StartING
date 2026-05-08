@@ -302,3 +302,8 @@ git commit -m "agrego cebolla"
    masa de pizza
 
  (podemos ver información del tag, quien lo creo, la fecha etc).
+
+ Ahora lo subimos:
+git add src/ejercicios/2.branchs/Daniel_Barrios.txt
+git commit -m "Ejercicio 2 terminado"
+git push origin ejercicio2_DanielBarrios01_github
