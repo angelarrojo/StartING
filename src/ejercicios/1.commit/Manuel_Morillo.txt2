@@ -1,0 +1,76 @@
+    2.1:Teorico
+    1. ¿Qué es un branch?
+Un branch es como un repositorio donde se puede trabajar paralelamente evitando errores.
+2¿Por qué pueden ser útiles los branches?
+Para probar cosas sin riesgo.
+3. ¿Cómo se crea una branch?
+Con un comando que es  git checkout -b  y el nombre de la rama
+4. ¿Cómo se cambia a una branch?
+se cambia con el mismo comando ya que la crea y la cambia a la vez
+5. ¿Cómo se elimina una branch?
+Para hacer esto deberemos usar el comando git branch -b y su nombre
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Con el comando que dije anteriormente
+7. ¿Qué es un merge?
+Es el historial de dos ramas diferentes
+8. ¿Cómo se realiza un merge?
+Se crea con el comando git merge
+9. ¿Que es un tag?
+Es un punto de referencia que no se mueve que sirve para marcar un commit en un proyecto
+10. ¿Cómo se crea un tag?
+Se crea con git tag-a
+
+### 2.2. Ejercicio Práctico
+1 Para crear una carpeta branch deberemos utilizar este comando
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch ejercicio2_vuestro_Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+2Para moverese a la carpeta necesitaremos utilizar este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout
+A       src/ejercicios/1.commit/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+3Comando para verificar que esta en la branch
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch
+  ejercicio1_vuestro_Manuel-tech0_github
+* ejercicio1_vuestro_Manuel_Morillo_github
+  ejercicio1_vuestro_usuario_github
+  ejercicio2_vuestro_Manuel_Morillo.txt2
+  main
+4
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5Añadir albahaca
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Añadir albahaca en pizza"
+[ejercicio1_vuestro_Manuel_Morillo_github 09a69aa] Añadir albahaca en pizza
+ 2 files changed, 1 insertion(+)
+ create mode 100644 src/ejercicios/1.commit/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5 Es exactamente el mismo comando de antes pero poniendo oregano en vez de albahaca
+
+6
+fatal: pathspec 'src/ejercicios/2.branch/pizza.txt' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git graph
+git: 'graph' is not a git command. See 'git --help'.
+
+The most similar commands are
+        branch
+        grep
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+Hace lo mismo que git log
+7
+
+
+
+
