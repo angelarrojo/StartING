@@ -4,3 +4,6 @@ tomate
 queso
 medallón
 pepinillos
+Ketchup
+Mayonesa
+Mostaza
