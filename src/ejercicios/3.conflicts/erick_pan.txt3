@@ -1,0 +1,32 @@
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+Un conflicto es cuando 2 personas cambia en la misma línea de código, es algo malo porque se guarde el cambio tuyo pero se borra lo del tu compañero del proyecto
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+Si se puede evitar un conflicto, se puede evitar hablando con el equipo del proyecto
+
+13. Este comando nos diferencia entre los dos ramas el suprema y bife
+diff --git a/src/ejercicios/3.conflicts/erick_pan.txt3 b/src/ejercicios/3.conflicts/erick_pan.txt3
+new file mode 100644
+index 0000000..54ed29f
+--- /dev/null
++++ b/src/ejercicios/3.conflicts/erick_pan.txt3
+@@ -0,0 +1,5 @@
++1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
++Un conflicto es cuando 2 personas cambia en la misma línea de código, es algo malo porque se guarde el cambio tuyo pero se borra lo del tu compañero del proyecto
+
+17.
+On branch ejercicio3_erick_pan_github
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   src/ejercicios/3.conflicts/erick_pan.txt3
+        modified:   src/ejercicios/3.conflicts/milanesa.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/3.conflicts/erick_pan.txt3
+
+18.
+pan rallado
+bife
