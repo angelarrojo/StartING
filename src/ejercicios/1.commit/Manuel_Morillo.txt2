@@ -69,7 +69,15 @@ The most similar commands are
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 Hace lo mismo que git log
-7
+7 Me quedo en la branch con git branch ejercicio2_Manuel_Morillo2_github
+
+8 Asi se crea anana con este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b anana
+Switched to a new branch 'anana'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+9
 
 
 
