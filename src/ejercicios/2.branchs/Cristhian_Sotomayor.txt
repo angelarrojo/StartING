@@ -1,0 +1,87 @@
+1. ¿Qué es un branch?
+Un branch es un conjunto llamado commits las ramas depende mucho de la rama master que eso se genera con el primer commit
+2. ¿Por qué pueden ser útiles los branches?
+Los branches pueden ser utiles porque te permite trabajar en nuevas funciones de forma aislada se puede corregir errores sin afectar a la rama principal
+3. ¿Cómo se crea una branch?
+Para poder crear un branch debemos poner git branch y el nombre de la rama
+4. ¿Cómo se cambia a una branch?
+Para poder cambiarlo debemos poner git checkout y nombre de la rama
+5. ¿Cómo se elimina una branch?
+Para poder eleminar un branch debemo poner git branch -d y el nombre de la rama
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Debemos poner git checkout -b y el nombre de la rama
+7. ¿Qué es un merge?
+Un merge es para poder juntar los cambios de una rama a otra
+8. ¿Cómo se realiza un merge?
+Para poder realizar un merge primero hay que estar en la rama donde queremos hacer los cambios y despue ponemos git merge y depsue el nombre de la rama y el origuen
+9. ¿Que es un tag?
+Un tag es como una etiqueta que se utiliza para poder marcar una version
+10. ¿Cómo se crea un tag?
+Para poder crear un tag debemos poner git tag -a el nombre del tag -m mensaje
+6.
+PS C:\Users\2SMR\IdeaProjects\StartING> git graph
+* 19a85ff (HEAD -> ejercicio2_cristhian) Agrego oregano
+* 4e993f7 Agrego albahaca
+* 0a99159 Creo Cristhian_Sotomayor.txt en 2.branchs
+| * 2b5dec9 (ejercicio1_cristhian) Guardo cambios pendientes ejercicio1
+| * 87bf1e0 Creo Cristhian_Sotomayor.txt en 2.branchs
+| * 36880a6 Restauro sandwich.txt a su estado original
+| * a5946da Finalizo ejercicio1
+| * abce833 Borro sandwich2_feo
+Aqui se puede ver que la rama ejercicio 2 tiene hecho 3 commits y por aqui aparece la rama del ejercicio uno que tiene sus propios cambios
+10.
+PS C:\Users\2SMR\IdeaProjects\StartING> git graph
+* c20af95 (HEAD -> anana) Agrego anana
+* 19a85ff (ejercicio2_cristhian) Agrego oregano
+* 4e993f7 Agrego albahaca
+* 0a99159 Creo Cristhian_Sotomayor.txt en 2.branchs
+| * 2b5dec9 (ejercicio1_cristhian) Guardo cambios pendientes ejercicio1
+| * 87bf1e0 Creo Cristhian_Sotomayor.txt en 2.branchs
+| * 36880a6 Restauro sandwich.txt a su estado original
+| * a5946da Finalizo ejercicio1
+:
+Aqui se puede ver que la rama anana tiene un comit  nuevo y esta encima del ejercicio 2
+13.
+PS C:\Users\2SMR\IdeaProjects\StartING> git graph
+* 73fc722 (HEAD -> ejercicio2_cristhian) Agrego cebolla
+| * c20af95 (anana) Agrego anana
+|/
+* 19a85ff Agrego oregano
+* 4e993f7 Agrego albahaca
+* 0a99159 Creo Cristhian_Sotomayor.txt en 2.branchs
+| * 2b5dec9 (ejercicio1_cristhian) Guardo cambios pendientes ejercicio1
+| * 87bf1e0 Creo Cristhian_Sotomayor.txt en 2.branchs
+:
+Aqui se puede ver que la rama anana y el ejercicio 2 salen de un mismo punto pero la diferencia es que cada uno tiene cambios diferentes. Las dos trabajan de manera individual
+15.
+PS C:\Users\2SMR\IdeaProjects\StartING> git graph
+*   71cfd13 (HEAD -> ejercicio2_cristhian) Merge branch 'anana' into ejercicio2_cristhian
+|\
+| * c20af95 (anana) Agrego anana
+* | 73fc722 Agrego cebolla
+|/
+* 19a85ff Agrego oregano
+* 4e993f7 Agrego albahaca
+* 0a99159 Creo Cristhian_Sotomayor.txt en 2.branchs
+Aqui se puede observar que como un commit une las ramas de anana  y del ejercicio2 basicamentes antes estaban separadas ahora estan juntas
+16.
+PS C:\Users\2SMR\IdeaProjects\StartING> git branch --merged
+  anana
+* ejercicio2_cristhian
+  main
+  Aqui se puede observa que las ramas ya han sido unidas al ejercicio 2
+  18.
+PS C:\Users\2SMR\IdeaProjects\StartING> git tag
+pizza
+Aqui se puede observar todos los tags que hay en le repositorio
+19.
+PS C:\Users\2SMR\IdeaProjects\StartING> git show pizza
+tag pizza
+Tagger: Cristhian <fp23hotb0015@aulatomillo.org>
+Date:   Sat May 9 15:44:02 2026 +0200
+
+Receta de la pizza.
+
+commit 71cfd13f7479fbf5ac995f9b9b4800e0ff32e217 (HEAD -> ejercicio2_cristhian, tag: pizza)
+Merge: 73fc722 c20af95
+Aqui vemos que se muestra la informacion tag pizza de quien lo creo y le fecha de cuando se creo
