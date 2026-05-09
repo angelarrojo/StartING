@@ -2,4 +2,5 @@ Oregano
 Albahaca
 queso
 salsa de tomate
+Cebolla
 masa de pizza
