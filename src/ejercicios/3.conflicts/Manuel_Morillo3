@@ -63,4 +63,15 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo lom
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-8
+8 Se a cambiado  con este comando
+ create mode 100644 notepad
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/3.conflicts/milanesa.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambio de lomo a pollo"
+On branch suprema
+nothing to commit, working tree clean
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+9
