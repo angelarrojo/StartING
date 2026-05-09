@@ -105,8 +105,112 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --oneline --graph --
 * 70be4fc Agrego salsas
 :
 
-11
+11 Como volver a la branch del ejercicio2 con el siguiente comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add src ejercicios/2.branchs/Manuel_Morillo.txt2
+fatal: pathspec 'ejercicios/2.branchs/Manuel_Morillo.txt2' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/2.branchs/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo Manuel_Morillo.txt2"
+[ejercicio2_vuestro_Manuel_Morillo2_github efce3bf] Actualizo Manuel_Morillo.txt2
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+12Ahora con el siguinte comando que lo he utilizado anteriormente pongo cebolla de salsa
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/2.branchs/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo Manuel_Morillo.txt2"
+[ejercicio2_vuestro_Manuel_Morillo2_github efce3bf] Actualizo Manuel_Morillo.txt2
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+13 Es un historila del repositorio
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --oneline --graph --all
+* efce3bf (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github) Actualizo Manuel_Morillo.txt2
+* 7b20b9e Añadir anana debajo de queso
+* ac8273b Cambio en ejercicio1
+* f8813bb (ejercicio1_vuestro_Manuel_Morillo_github, anana) Ejercicio 1 terminado
+* 09a69aa Añadir albahaca en pizza
+* 61620db (ejercicio2_vuestro_Manuel_Morillo.txt2) Elimino Manuel_Morillo.txt2
+* cf12cc6 Añado mi archivo Manuel_Morillo
+* 318fc2c (main) Entrega final ejercicio 1
+* d147b5d Eliminar sandwich2_feo.txt
+* eeb85e9 Renombrar sandwich2 a sandwich_feo
+* db91dac Renombrar sandwich2 a sandwich_feo
+:
 
 
+14 Con este comando estaria echa la merge
 
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git merge anana
+Already up to date.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+15 Asi  se ve el historial del repositorio con la merge echa
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git log --graph
+* commit efce3bf65e54261b3786bc16aa062fd494c92f1c (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github)
+| Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+| Date:   Sat May 9 10:34:52 2026 +0200
+|
+|     Actualizo Manuel_Morillo.txt2
+|
+* commit 7b20b9ecfb2d9d088ec3c89586e9789fc2634b06
+| Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+| Date:   Sat May 9 10:22:58 2026 +0200
+|
+|     Añadir anana debajo de queso
+:
+
+16 Se observan las ramas añadidas con merged
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git branch --merged
+  anana
+  ejercicio1_vuestro_Manuel-tech0_github
+  ejercicio1_vuestro_Manuel_Morillo_github
+  ejercicio1_vuestro_usuario_github
+  ejercicio2_vuestro_Manuel_Morillo.txt2
+* ejercicio2_vuestro_Manuel_Morillo2_github
+  main
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+17Este comando es para realizar el tag
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git tag -a pizza -m "Receta de la pizza"
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+18 Con este comando ves los tag creados
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git tag
+pizza
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+19 Es para ver el tag creado
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git show pizza
+tag pizza
+Tagger: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Sat May 9 10:49:45 2026 +0200
+
+Receta de la pizza
+
+commit efce3bf65e54261b3786bc16aa062fd494c92f1c (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github, tag: pizza)
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Sat May 9 10:34:52 2026 +0200
+
+    Actualizo Manuel_Morillo.txt2
+:
 
