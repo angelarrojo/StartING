@@ -1,0 +1,96 @@
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Para inicializar un repositorio debemos poner el comando git init
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Para poder hacerlo debemos borrar la carpeta .git
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+git ya detecta el archivo pero tenemos que añdirlo manualmente con git add
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+El comando que debemos utilizar es git add nombre_del_archivo
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+Para saber que archivos fueron modificados debemo poner el comando git status
+6. ¿Qué comando se utiliza para hacer un commit?
+El comando que debemos utilizar es git commit -m mensaje
+7. En sus propias palabras, ¿qué es un commit?
+Un commit es para poder guardar versiones del proyecto git tambien para se puede volver a versiones anterirores por si nos ocurre algun error y tambien se registra un historial de todo lo que ha ido modificando en el proyecto
+5.
+PS C:\Users\2SMR\IdeaProjects\StartING> git status
+On branch ejercicio1_cristhian
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/Cristhian_sotomayor.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/Cristhian_sotomayor.txt
+        modified:   src/ejercicios/1.commit/sandwich.txt
+El comando git status lo que hace mostra los archivos modificados, los archivos nuevos y tambien en que ramas estan
+7.
+PS C:\Users\2SMR\IdeaProjects\StartING\src\ejercicios\1.commit> git status
+On branch ejercicio1_cristhian
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Cristhian_sotomayor.txt
+        modified:   sandwich.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Cristhian_sotomayor.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../Cristhian_Sotomayor.txt
+Esto signifca que el git ya preparo el archivo para el proximo commit
+9.
+git status
+On branch ejercicio1_cristhian
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Cristhian_sotomayor.txt
+        modified:   sandwich.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Cristhian_sotomayor.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../Cristhian_Sotomayor.txt
+     Esto signifa que no hubo cambios pendientes
+11.
+PS C:\Users\2SMR\IdeaProjects\StartING\src\ejercicios\1.commit> git log
+commit 37d0c84f4f01eb20e42113bc86eea2428f94f9c1 (HEAD -> ejercicio1_cristhian)
+Author: Cristhian <fp23hotb0015@aulatomillo.org>
+Date:   Thu May 7 13:36:10 2026 +0200
+
+    Agrego salsas
+
+commit aa90d31e8d15bfed8572d35abf13665b6989e14f
+Author: Cristhian <fp23hotb0015@aulatomillo.org>
+:
+Esto muestra el historial de commits, quien es el autor,la fecha y mensaje del commit
+12.
+PS C:\Users\2SMR\IdeaProjects\StartING> git log --oneline
+37d0c84 (HEAD -> ejercicio1_cristhian) Agrego salsas
+aa90d31 Agrego mi sandwich.txt
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+e868b24 (origin/hotfix) String hands on exercise
+1c74a93 condicionales y metodos
+bf80ceb jdbc example main class
+551b9b4 Adds arrays
+Esto muestra los commist resumidos
+12.2
+PS C:\Users\2SMR\IdeaProjects\StartING> git log --stat
+commit 37d0c84f4f01eb20e42113bc86eea2428f94f9c1 (HEAD -> ejercicio1_cristhian)
+Author: Cristhian <fp23hotb0015@aulatomillo.org>
+Date:   Thu May 7 13:36:10 2026 +0200
+
+    Agrego salsas
+
+ src/ejercicios/1.commit/sandwich.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+:
+Esto enseña que archivos se cambiaron y y cuantas lineas se agrego y borro
