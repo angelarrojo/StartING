@@ -77,7 +77,35 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b anana
 Switched to a new branch 'anana'
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-9
+9 Para añadir anana debajo de queso tendremos que poner este comando
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add  src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Añadir anana debajo de queso"
+[ejercicio2_vuestro_Manuel_Morillo2_github 7b20b9e] Añadir anana debajo de queso
+ 2 files changed, 1 insertion(+)
+ rename src/ejercicios/{1.commit => 2.branchs}/Manuel_Morillo.txt2 (100%)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+10 Para correr el comando graph he tenido que poner git log y despues graph porque no existe solo graph lo que he observado es que te muestra todas las ramas y en la que estas trabajando.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --oneline --graph --all
+* 7b20b9e (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github) Añadir anana debajo de queso
+* ac8273b Cambio en ejercicio1
+* f8813bb (ejercicio1_vuestro_Manuel_Morillo_github, anana) Ejercicio 1 terminado
+* 09a69aa Añadir albahaca en pizza
+* 61620db (ejercicio2_vuestro_Manuel_Morillo.txt2) Elimino Manuel_Morillo.txt2
+* cf12cc6 Añado mi archivo Manuel_Morillo
+* 318fc2c (main) Entrega final ejercicio 1
+* d147b5d Eliminar sandwich2_feo.txt
+* eeb85e9 Renombrar sandwich2 a sandwich_feo
+* db91dac Renombrar sandwich2 a sandwich_feo
+* 70be4fc Agrego salsas
+:
+
+11
 
 
 
