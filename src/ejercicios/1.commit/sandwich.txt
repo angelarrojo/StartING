@@ -1,4 +1,5 @@
-pan
-queso
-medallón
-pan
+Pan: Baguette
+Jamón
+Queso
+Lechuga
+Tomate
