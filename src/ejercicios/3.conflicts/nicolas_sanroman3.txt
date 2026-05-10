@@ -22,9 +22,15 @@
 13. Haga un `git diff ejercicio3_vuestro_usuario_github suprema` y un `git diff ejercicio3_vuestro_usuario_github bife`. ¿Qué observa?
 14. Moverse a la branch `ejercicio3_vuestro_usuario_github`. Corra un `git status`, ¿qué observa?
 15. Ejecute `git merge bife`. Funcionó?
+- si
 16. Ejecute `git merge suprema`. Funcionó?
 17. Ejecute `git status`. Que observa?
+- Puedo ver el estado
 18. Vea el contenido del archivo `3.conflicts/milanesa.txt`. ¿Qué observa?
+- Ha cambiado y ahora ya no esta el lomo
 19. Aborte el merge. (Puede usar el comando `git merge --abort`).
 20. Vuelva a ejecutar `git merge suprema`.
 21. Resuelva el conflicto manualmente.
+- git merge --abort
+git add 3.conflicts/milanesa.txt
+git commit -m "Resuelvo conflicto entre bife y suprema manualmente"
