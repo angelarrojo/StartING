@@ -1,6 +1,3 @@
 pan rallado
-<<<<<<< HEAD
-bife
-=======
 pollo
->>>>>>> suprema
+

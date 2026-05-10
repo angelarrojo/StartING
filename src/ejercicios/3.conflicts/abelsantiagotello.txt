@@ -1,0 +1,6 @@
+13. Sale un conflicto en milanesa.txt y hay que arreglarlo para hacer un commit
+14. Está todo limpio 
+15. si
+16. No
+17. Aparece como ambos modificados
+18. Se ve que el Head esta en <<<< y el suprema está en >>>
