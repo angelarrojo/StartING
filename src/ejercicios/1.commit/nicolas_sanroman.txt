@@ -1,0 +1,86 @@
+1.1. Preguntas
+
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+- Debemos crear primero una carpeta para trabajar todo el proyecto y para ejecutar comandos abrir la terminal de intelij y poner git init
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+- Hay que meterse en la terminal y poner el siguiente comando: -rf .git
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+- No, porque en ese caso el archivo no controlaria el git, solo lo detectaria, se hace manualmente con git add
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+- git add (nombre del archivo)
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+- Para ver los archivos que han sido modificados usamos el comando git status que se refiere al estado
+6. ¿Qué comando se utiliza para hacer un commit?
+- Muy sencillo, simplemente git commit
+7. En sus propias palabras, ¿qué es un commit?
+- Un commit es el momento que guardamos el proyecto el cual nosotros guardamos todos los cambios que hayamos realzado hasta ese punto junto a un comentario, es como hacer una foto del proyecto en un momento exacto
+
+1.2. Ejercicio Práctico
+
+1. [] Crear una branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio1_vuestro_usuario_github main`).
+2. Moverse a la branch `ejercicio1_vuestro_usuario_github`. (Puede usar el comando `git checkout`).
+3. Crear un archivo `nombre_apellido.txt` si no estaba creado previamente.
+4. Agregar a `sandwich.txt` condimentos e ingredientes que le gusten, simulando que es un sandwich que se va a comer.
+5. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo `nombre_apellido.txt`. Para esto, se debe ejecutar el comando `git status` y copiar el resultado en el archivo `nombre_apellido.txt`. Explique que significa la salida del comando.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/nicolas_sanroman.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/nicolas_sanroman.txt
+        modified:   src/ejercicios/1.commit/sandwich.txt
+On Branch: es el lugar donde estoy trabajando ahora mismo
+Changes to be commited: Un archivo el cual hay que guardar porque hay cambios en el
+Changes not staged for commit: Cambios que todavia no he añadido pero que los detecta Git
+6. Agregar el archivo `sandwich.txt` al repositorio local. Para esto, se debe ejecutar el comando `git add sandwich.txt`.
+7. Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git add sandwich.txt`.
+- Lo que hace ese comando es guardarlo entonces ahora apareceria en verde
+8. Realizar un commit con el mensaje "Agrego mi sandwich.txt". Para esto, se debe ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+9. Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+[main 5c88460] Agrego mi sandwich.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/ejercicios/1.commit/nicolas_sanroman.txt
+- Este fue mi resultado, que significa que hemos realizado un commit correctamente
+10. Agregar salsas de su preferencia a `sandwich.txt` y realizar un commit con el mensaje "Agrego salsas".
+11. Escriba la salida del comando `git log` en el archivo `nombre_apellido.txt`. Y explique que significa. ¿En qué orden aparecen los commits?
+- commit 5c88460de8d77881f38caaf3c5e19e2c0f19709a (HEAD -> main)
+  Author: nicolassanroman <fp25ifcm0171@aulatomillo.org>
+  Date:   Sun May 10 15:40:37 2026 +0200
+
+      Agrego mi sandwich.txt
+
+  commit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio2_DilanNavia, origin/ejercicio1_DilanNavia, origin/anana`, origin/anana, origin/HEAD, origin/Dilan, ejercicio1_nicolassanroman_github)
+  Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+  Date:   Wed May 6 00:03:49 2026 +0200
+
+      git exercises
+
+  commit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573
+  Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+  Date:   Tue May 5 17:41:47 2026 +0200
+
+      update Readme.md
+- El comando gitlog nos dice cuando hemos realizado un commit del proyecto y se ordenan de mas reciente a mas antiguo
+12. Pruebe las variaciones del comando `git log` y explique que observa en cada una de ellas.
+    12.1. `git log --oneline`
+-Es el historial de logs de forma compacta (una sola linea)
+    12.2. `git log --stat`
+- Muestra el historial de forma detallada y detallando donde hay cambios
+13. Inspeccione diferencias entre los commits, use el comando git diff <hash> <hash> y explique que significa cada uno de los resultados.
+- El comando git dif sirve para comparar diferencias de varios proyectos, lo comprobamos con el simbolo +
+14. Crear un nuevo archivo dentro de la carpeta `1.commit`, llamado `sandwich2.txt`, y agregarle los ingredientes de su sandwich.
+15. Agregar el archivo `sandwich2.txt` al repositorio local.
+16. Renombrar el archivo `sandwich2.txt` a `sandwich2_feo.txt`. Para esto, se debe ejecutar el comando `git mv sandwich2.txt sandwich2_feo.txt`. Explique que cambio en la salida del comando `git status` luego de hacer un commit con esos cambios y de `git log --oneline`.
+17. Borre el archivo `sandwich2_feo.txt`. Para esto, se debe ejecutar el comando `git rm sandwich2_feo.txt`. Explique que cambio en la salida del comando `git status` luego de hacer un commit con esos cambios y de `git log --oneline`.
+- error: the following file has staged content different from both the
+  file and the HEAD:
+      src/ejercicios/1.commit/sandwich2_feo.txt
+  (use -f to force removal)
+  PS C:\desktop\StartING\src\ejercicios\1.commit> git rm sandwich2_feo.txt -f
+  rm 'src/ejercicios/1.commit/sandwich2_feo.txt'
+
+  -Git status: podemos ver como nos dice que no hay nada para hacer commit, despues working tree clean significa que el archivo sandwich2_Feo.txt se ha borrado
+18. Inspeccione la bitácora usando `git log --stat` y explique lo que ve.
+git log --stat nos da una lista muy detalada de todos los cambios  que hemos realizado en cada parte de los archivos
