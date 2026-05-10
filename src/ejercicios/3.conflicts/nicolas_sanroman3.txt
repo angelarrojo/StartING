@@ -1,4 +1,4 @@
-### 3.1. Preguntas
+### 3.1. Preguntas.
 
 1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
 - Un conflicto ocurre cuando dos cambios afectan la misma parte de un archivo y no pueden fusionarse automáticamente durante un merge, es algo normal en el trabajo colaborativo

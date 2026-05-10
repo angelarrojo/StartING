@@ -1,4 +1,4 @@
-### 2.1. Preguntas
+### 2.1. Preguntas-
 
 1. ¿Qué es un branch?
 - Un branch es una rama dentro de un repositorio donde se pueden realizar cambios sin afectar la rama main.
