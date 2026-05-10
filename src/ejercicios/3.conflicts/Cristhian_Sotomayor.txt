@@ -1,0 +1,8 @@
+### 3.1. Preguntas
+
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+Un concflito es cuando dos personas haceb cambios diferentes en una misma parte del archivo y el git no sabe cual debe escoger de los dos archivos.
+Suele suceder cuando se hacer un merge . si es malo o  bueno diria que no es malo si se puede solucionar a tiempo con ayuda de tu equipo no hay ningun tipo de problema
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+Se puede evitar si se organiza bien el trabajo en equipo asi cada persona trabaja en su propia rama
+y para hacerlo prodriamos usar algo como git fetch y git merge asi los cambios no se llegan acumular
