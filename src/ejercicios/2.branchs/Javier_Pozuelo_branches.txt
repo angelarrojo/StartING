@@ -1,0 +1,86 @@
+* 61554eb (HEAD -> ejercicio2_JavierPozueloTomillo) Agrego oregano a la pizza
+* 393d8b7 Agrego albahaca a la pizza
+| * b3a169f (ejercicio1_JavierPozueloTomillo) Agrego Javier_Pozuelo.txt con explicaciones
+| * c1b0508 Borro sandwich2_feo
+| * dd520d5 Renombro sandwich2 a sandwich2_feo
+| * 49dcbe9 Agrego salsas
+| * 5cdd5da Agrego mi sandwich.txt
+EXPLICACIÓN PASO 6:
+- Vemos que ejercicio2_JavierPozueloTomillo tiene 2 commits nuevos
+  (oregano y albahaca) por delante de main.
+- main y ejercicio2 se separaron a partir del mismo commit base.
+- El gráfico muestra visualmente cómo divergen las ramas.
+
+* ac5ab53 (HEAD -> anana) Agrego anana a la pizza
+* 61554eb (ejercicio2_JavierPozueloTomillo) Agrego oregano a la pizza
+* 393d8b7 Agrego albahaca a la pizza
+| * b3a169f (ejercicio1_JavierPozueloTomillo) Agrego Javier_Pozuelo.txt con explicaciones
+| * c1b0508 Borro sandwich2_feo
+| * dd520d5 Renombro sandwich2 a sandwich2_feo
+| * 49dcbe9 Agrego salsas
+| * 5cdd5da Agrego mi sandwich.txt
+EXPLICACIÓN PASO 10:
+- Ahora vemos dos ramas separadas: anana y ejercicio2_JavierPozueloTomillo.
+- La rama anana tiene un commit nuevo (anana) por delante de ejercicio2.
+- Las dos ramas parten del mismo punto (commit de oregano).
+- Esto muestra cómo dos ramas pueden divergir desde un mismo commit.
+
+* 7a6302f (HEAD -> ejercicio2_JavierPozueloTomillo) Agrego cebolla a la pizza
+| * ac5ab53 (anana) Agrego anana a la pizza
+|/
+* 61554eb Agrego oregano a la pizza
+* 393d8b7 Agrego albahaca a la pizza
+| * b3a169f (ejercicio1_JavierPozueloTomillo) Agrego Javier_Pozuelo.txt con explicaciones
+| * c1b0508 Borro sandwich2_feo
+| * dd520d5 Renombro sandwich2 a sandwich2_feo
+EXPLICACIÓN PASO 13:
+- Ahora vemos claramente dos ramas divergentes desde el commit de oregano.
+- La rama anana tiene el commit de anana.
+- La rama ejercicio2_JavierPozueloTomillo tiene el commit de cebolla.
+- Ninguna rama tiene los cambios de la otra, son independientes.
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git graph
+*   1df4bc1 (HEAD -> ejercicio2_JavierPozueloTomillo) Merge branch 'anana' into ejercicio2_JavierPozueloTomillo
+|\
+| * ac5ab53 (anana) Agrego anana a la pizza
+* | 7a6302f Agrego cebolla a la pizza
+|/
+* 61554eb Agrego oregano a la pizza
+* 393d8b7 Agrego albahaca a la pizza
+| * b3a169f (ejercicio1_JavierPozueloTomillo) Agrego Javier_Pozuelo.txt con explicaciones
+EXPLICACIÓN PASO 15:
+- Aparece un nuevo commit de merge que une las dos ramas.
+- Las ramas anana y ejercicio2_JavierPozueloTomillo ahora están unidas.
+- El gráfico muestra cómo las dos líneas se juntan en un solo punto.
+- ejercicio2_JavierPozueloTomillo ahora tiene los cambios de anana (piña).
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git branch --merged
+  anana
+* ejercicio2_JavierPozueloTomillo
+  main
+  EXPLICACIÓN PASO 16:
+  - Muestra las ramas que ya han sido mergeadas a la rama actual.
+  - La rama anana aparece como mergeada porque ya unimos sus cambios.
+  - Esto significa que es seguro borrar la rama anana si quisiéramos.
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git tag
+pizza
+pizza_JavierPozuelo
+EXPLICACIÓN PASO 18:
+- git tag muestra todos los tags del repositorio.
+- pizza es un tag creado por otro alumno.
+- pizza_JavierPozuelo es el tag que acabamos de crear.
+
+tag pizza_JavierPozuelo
+Tagger: JavierPozueloTomillo <fp22ifcb0126@aulatomillo.org>
+Date:   Sun May 10 19:35:43 2026 +0200
+
+Receta de la pizza.
+
+commit 1df4bc122e5c95e9b9c93a470fdd159a0058906b (HEAD -> ejercicio2_JavierPozueloTomillo, tag: pizza_JavierPozuelo)
+Merge: 7a6302f ac5ab53
+EXPLICACIÓN PASO 19:
+- git show muestra la información detallada del tag.
+- Aparece quién creó el tag, la fecha y el mensaje.
+- También muestra el commit al que apunta el tag.
+
