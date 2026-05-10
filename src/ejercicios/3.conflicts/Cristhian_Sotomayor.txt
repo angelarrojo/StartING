@@ -18,7 +18,6 @@ index 5255304..1c57c4d 100644
 \ No newline at end of file
 +pollo
 \ No newline at end of file
-explicar luego
 13.2
 PS C:\Users\2SMR\IdeaProjects\StartING> git diff ejercicio3_cristhian bife
 diff --git a/src/ejercicios/3.conflicts/milanesa.txt b/src/ejercicios/3.conflicts/milanesa.txt
@@ -31,7 +30,8 @@ index 5255304..1712737 100644
 \ No newline at end of file
 +bife
 \ No newline at end of file
-Explicar luego
+Aqui podemos observar que las ramas se han cambiado a una misma linea en un mmismo archivo
+pero cada uno tiene un valor diferente y cuando haces un merge git no sabe con cual quedarse
 14.
 PS C:\Users\2SMR\IdeaProjects\StartING> git checkout ejercicio3_cristhian
 M       src/ejercicios/3.conflicts/Cristhian_Sotomayor.txt
@@ -44,4 +44,49 @@ Changes not staged for commit:
         modified:   src/ejercicios/3.conflicts/Cristhian_Sotomayor.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-Explicar luego
+Aqui se puede ver que mi archivo tiene cambios sin guardar en un commit
+15.
+PS C:\Users\2SMR\IdeaProjects\StartING> git merge bife
+Merge made by the 'ort' strategy.
+ src/ejercicios/3.conflicts/milanesa.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\2SMR\IdeaProjects\StartING>
+Aqui se puede observar que el mergue se hizo correctamente y git pudo unirlos automaticamente ya que el ejercicio 3 no tenia cambios
+16.
+PS C:\Users\2SMR\IdeaProjects\StartING> git merge suprema
+Auto-merging src/ejercicios/3.conflicts/milanesa.txt
+CONFLICT (content): Merge conflict in src/ejercicios/3.conflicts/milanesa.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\2SMR\IdeaProjects\StartING>
+Aqui se puede ver que el mergue no se pudo hacer automaticamente porque hubo un conflico en milanesa esto se debe a que la rama bife y suprema se modifico en la misma linea
+17.
+PS C:\Users\2SMR\IdeaProjects\StartING> git status
+On branch ejercicio3_cristhian
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   src/ejercicios/3.conflicts/milanesa.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/3.conflicts/Cristhian_Sotomayor.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Aqui se observa que el conflico que no se resolvio en milanesa aparece en both ya que las dos ramas se modificaron en el mismo archivo
+18.
+PS C:\Users\2SMR\IdeaProjects\StartING> cat src/ejercicios/3.conflicts/milanesa.txt
+pan rallado
+<<<<<<< HEAD
+bife
+=======
+pollo
+>>>>>>> suprema
+PS C:\Users\2SMR\IdeaProjects\StartING>
+19.
+PS C:\Users\2SMR\IdeaProjects\StartING> git merge --abort
+PS C:\Users\2SMR\IdeaProjects\StartING>
+Aqui se observa que se cancelo correctamente con el git merge abort y milansea volvio a su estado normal
