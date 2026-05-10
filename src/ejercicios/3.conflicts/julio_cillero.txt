@@ -2,3 +2,7 @@
 Un conflicto es cuando se detectan dos cambios a la vez, esto puede ocurrir cuando dos personas editan el mismo codigo y puede ser bueno porque te obliga a revisar todos los cambios pero tambien puede ser malo si resuelves el conflicto mal
 ¿Se puede evitar un conflicto? ¿Cómo?
 2. Si se puede evitar, antes de empezar tendriamos que poner git pull para trabajar en la version mas reciente o trabajar en ramas de manera aislada.
+
+Ejercicios practicos:
+
+13. Con el comando git diff muestra las dos versiones del proyecto, en este caso en el archivo milanesa.txt
