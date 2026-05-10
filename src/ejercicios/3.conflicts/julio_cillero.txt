@@ -1,4 +1,4 @@
 1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
 Un conflicto es cuando se detectan dos cambios a la vez, esto puede ocurrir cuando dos personas editan el mismo codigo y puede ser bueno porque te obliga a revisar todos los cambios pero tambien puede ser malo si resuelves el conflicto mal
 ¿Se puede evitar un conflicto? ¿Cómo?
-2. Si se puede evitar, antes de empezar tendriamos que poner git pull para trabajar en la version mas reciente o trabajar en ramas de manera aislada
+2. Si se puede evitar, antes de empezar tendriamos que poner git pull para trabajar en la version mas reciente o trabajar en ramas de manera aislada.
