@@ -42,4 +42,11 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo. > 3.conflicts\Manuel_M
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-5
+5 Ya la he creado anteriormente y este seria el comando que he utilizado.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b suprema
+fatal: a branch named 'suprema' already exists
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+6
