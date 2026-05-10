@@ -33,7 +33,6 @@ git graph
 
 1. [] Crear una branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio2_vuestro_usuario_github main`).
 2. Moverse a la branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git checkout`).
-3. Verificar que se encuentra en la branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git branch`). 
 4. Agregarle el condimento `albahaca` **arriba del queso** al archivo `2.branchs/pizza.txt` y "commitee" los cambios. 
 5. Agregarle el condimento `oregano` **arriba de la albahaca** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
 6. Correr el comando `git graph` y observar el resultado. ¿Qué observa?

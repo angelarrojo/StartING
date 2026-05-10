@@ -1,0 +1,42 @@
+
+1. ¿Qué es un branch?
+Un branch es una rama estan sirven para poder modificar o hacer otras versiones sin dañas las demas.
+Exites distintas ramas y estan tienen distintas funciones y pueden trabajar en distintos entornos.
+Pueden ser ficticios o reales y estos tienen la funcion para darselo a la rama master que es donde se
+ejecutara el proyecto final.
+
+2. ¿Por qué pueden ser útiles los branches?
+Son utiles a la hora de trabajar en equipo para que se pueda modificar el codigo cada uno sin dañar la rama master
+Y en la rama develop puedes tener distintas versiones para poder ponerlas en futuros proyectos.
+
+3. ¿Cómo se crea una branch?
+Para crear una rama necesita poner el comando: git branch <nombre> para crear la rama y tendras que ponerle un nombre de que has puesto en la rama .
+
+4. ¿Cómo se cambia a una branch?
+Si quieres crear una rama y cambairte a ella tienes que poner: git checkout -b <nombre>  el nombre es para crear o buscar la rama si la tienes creada.
+
+5. ¿Cómo se elimina una branch?
+Se elimina con 2 comando: hay 2 comandos y puede los 2 borrar ramas
+ - git branch -d <nombre de la rama> esto hace que borre la rama sin perder el trabajo que lo conecta.
+ - git branch -D <nombre de la rama> borra la rama sin preguntar si se ha guardado o no.
+
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Se tiene que poner el comando: git checkout -b <nombre de la rama>
+Y se creara la rama y podras poner el nombre.
+
+7. ¿Qué es un merge?
+Es un comando que sirve para incluir el codigo y unir las ramas para el la rama master que sera el proyecto para el cliente.
+
+8. ¿Cómo se realiza un merge?
+Para hacer un merger tienes que estar en la rama master y tienes que unir desde el comando de merge.
+Los comandos que habria que utilizar son: git checkout rama master este comando te mandara a la rama master.
+Y el otro camando es: git merge <nombre de la rama> con este comando tu podras combinar las ramas dentro del comando tienes que
+poner el nombre de la rama que  quieres combinar .
+
+9. ¿Que es un tag?
+Un tag es una etiqueta que pones para identificar algo que tu creas que es importante.
+ Normalmente se pone para poner las diferentes versiones que hemos hecho.
+
+10. ¿Cómo se crea un tag?
+Para crear un tag tienes que poner este comando: git tag -a <nombre de la version> -m "mensaje"
+El comando crear la etiqueta y podras pones la fecha y el nombre de quien lo a creado.

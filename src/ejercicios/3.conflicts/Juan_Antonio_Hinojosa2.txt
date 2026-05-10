@@ -1,0 +1,11 @@
+
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+Un conflicto es cuando 2 o mas personas trabajan en una misma rama, esto es bueno porque el Git actua y te dice si cambiarlo o no actua como una alarma de seguridad.
+Y este te pidira que eligas entre los comandos que se han cambiado preguntara a todos de cual quedarse.
+
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+
+Si se puede evitar teniendo un equipo donde hos planificas cada trabajo que haceis y diciendo a tus compañeros que cambios
+hacer en el codigo o rama que se este trabajado tener comunicacion .
+Lo que se debe hacer es preguntar a tus compañeros para que lo revisen y se aseguren de la calidad del codigo y mirar si las sintaxis estan bien formuladas.
+Y teniendo unos arquitectos de stoftwer que revisen que este bien o no.
