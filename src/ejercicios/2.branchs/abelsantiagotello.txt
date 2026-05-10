@@ -1,0 +1,4 @@
+10. se ve los cambios que hice en la pizza.txt y tambien del sandwich.txt
+13. Se ve 2 ramas diferentes de los ingredientes distintos
+15. Las 2 ramas al final se unen en un punto final.
+16. el anana y ejercicio2_abelsantiagotello sale en verde

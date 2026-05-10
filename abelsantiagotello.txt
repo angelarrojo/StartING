@@ -9,3 +9,57 @@ Untracked files:
         abelsantiagotello.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+Git detectó archivos nuevos y modificados que no se han preparado.
+
+On branch ejercicio1_abelsantiagotello
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abelsantiagotello.txt
+
+Pasó de rojo a verde, signficando que están preparados por si necesita un commit.
+
+commit 97b76e751a46999b668e9e0f14caf9f2a59e496c (HEAD -> ejercicio1_abelsantiago
+tello)
+Author: abelsantiagotello <fp25ifcm0174@aulatomillo.org>
+Date:   Sun May 10 17:04:52 2026 +0200
+
+    Agrego salsas
+
+Aparece el autor, la fecha y el orden cornológico inverso de los commits.
+
+12.1.  Aparece unos codigos, los commits puesto y lo que se ha puesto en cada uno
+
+12.2.  commit 97b76e751a46999b668e9e0f14caf9f2a59e496c (HEAD -> ejercicio1_abelsantiagotello)
+Author: abelsantiagotello <fp25ifcm0174@aulatomillo.org>
+Date:   Sun May 10 17:04:52 2026 +0200
+
+    Agrego salsas
+
+ abelsantiagotello.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit fcb9703bf29c6b20f08e9c28e02285b0e48faca7
+Author: abelsantiagotello <fp25ifcm0174@aulatomillo.org>
+Date:   Sun May 10 16:57:11 2026 +0200
+
+    Agrego mi sandwich.txt
+
+ src/ejercicios/1.commit/sandwich.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6 (origin/main, origin/git-clone-https/github.com/angela
+rrojo/StartING.git, origin/ejercicio2_DilanNavia, origin/ejercicio1_DilanNavia, origin/anana`, origin/
+HEAD, origin/Dilan, main)
+Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+Date:   Wed May 6 00:03:49 2026 +0200
+
+Aparecen los cambios hechos, los autores fechas y los commits.
+
+13. Te muestran todos los commits cambios y branch
+
+16. En git status recinice el renamed y el git log --oneline se verá el nuevo commit en la lista simplificada.
+
+17. En git rm lo marca como deleted pero está guardado en el commit
+
+18. Se ve quien y cuadno hizo el commit y también los archivos que han sido cambiado y las lineas que se insertaron y eliminaron.
