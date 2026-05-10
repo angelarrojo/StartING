@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 # 3. Conflicts
 
 Para este ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
 
 En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
 
+=======
+>>>>>>> suprema
 ## Ejercicio 3
 
 ### 3.1. Preguntas
 
 1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+<<<<<<< HEAD
 
 Un conflicto es cuando hay dos personas trabajando al mismo tiempo
 2. ¿Se puede evitar un conflicto? ¿Cómo?
@@ -20,6 +24,23 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch ejercicio3_vuestr
 fatal: a branch named 'ejercicio3_vuestro_Manuel_Morillo_github' already exists
 
 3 Estamos trabajando en la rama actual.
+=======
+Es cuando dos personas estan trabajando en la misma rama es malo ya que se puede perder informacion
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+Si se puede evitar creando ramas aparte en vez de trabajara en una misma.
+
+3.2 Practico
+1 y 2:Estos comandos son para crear la rama y moverse a ella
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch ejercicio3_vuestro_Manuel_Morillo_github
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git switch ejercicio3_vuestro_Manuel_Morillo_github
+A       src/ejercicios/3.conflicts/Manuel_Morillo3
+Switched to branch 'ejercicio3_vuestro_Manuel_Morillo_github'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+3 Este comando es para verificar que esta creada la rama
+>>>>>>> suprema
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch
   anana
@@ -30,6 +51,7 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch
   ejercicio2_vuestro_Manuel_Morillo2_github
 * ejercicio3_vuestro_Manuel_Morillo_github
   main
+<<<<<<< HEAD
   suprema
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
@@ -113,3 +135,52 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
 15
+=======
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+4 Este comando es para un archivo dentro de la carpeta
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> type nul >Manuel_Morillo3.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5 Esta rama la creado con el siguiente comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> type nul >Manuel_Morillo3.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b suprema
+Switched to a new branch 'suprema'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+6 Con este comando me he movido a la rama suprema
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout suprema
+A       src/ejercicios/3.conflicts/Manuel_Morillo3
+Already on 'suprema'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+7Coon este comando actualizo lomo por pollo
+programa o archivo por lotes ejecutable.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo lomo por pollo"
+[suprema bbe0ce0] Actualizo lomo por pollo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/ejercicios/3.conflicts/Manuel_Morillo3
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+8 Se a cambiado  con este comando
+ create mode 100644 notepad
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/3.conflicts/milanesa.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambio de lomo a pollo"
+On branch suprema
+nothing to commit, working tree clean
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+9
+>>>>>>> suprema
