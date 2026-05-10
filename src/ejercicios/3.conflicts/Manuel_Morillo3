@@ -75,4 +75,33 @@ Switched to a new branch 'bife'
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-11
+11 Me he movido a la nueva rama con este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+12 Con este comando cambias la milanesa por el bife
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>notepad src\ejercicios\3.conflicts\milanesa.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+13 Con este comando directamente haremos dos a la vez nos moveremos de rama y guardaremos la anterior
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>notepad src\ejercicios\3.conflicts\milanesa.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git diff ejercicio3_vuestro_Manuel_Morillo_github bife
+diff --git a/src/ejercicios/3.conflicts/Manuel_Morillo3 b/src/ejercicios/3.conflicts/Manuel_Morillo3
+index a96fa32..ee0d91c 100644
+--- a/src/ejercicios/3.conflicts/Manuel_Morillo3
++++ b/src/ejercicios/3.conflicts/Manuel_Morillo3
+@@ -64,3 +64,15 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo por pollo en milanes.txt"
+ [ejercicio3_vuestro_Manuel_Morillo_github 83355e0] Cambiar lomo por pollo en milanes.txt
+  1 file changed, 10 insertions(+)
++
++9 Con este comando nos moveremos a la rama que queremos pero he ejecutado otro el cual guarda la informacion antes de cambiar de rama
++
+:
+14
+
