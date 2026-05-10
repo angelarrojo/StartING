@@ -1,0 +1,27 @@
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+
+El comando git init
+
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+
+Poniendo el comando rd /s /q .git
+
+Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+
+No
+
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+
+Con git add "nombre"
+
+¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+
+Con git status
+
+¿Qué comando se utiliza para hacer un commit?
+
+Con git commit -m "mensaje"
+
+En sus propias palabras, ¿qué es un commit?
+
+Es un punto de guardado acompañado de una etiqueta, por si mas adelante hay fallos para volver de nuevo al punto guardado.
