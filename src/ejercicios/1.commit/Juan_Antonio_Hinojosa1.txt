@@ -1,0 +1,491 @@
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Se ejecuta el comando git init y se podra crear un preyecto (repositorio) donde podremos ejecutar y modificar cambios.
+
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Tienes que poner rm -rf .git para que se elimine el historial que tiene el proyecto.
+Esto hace que Git ya no pueda ver lo que haces.
+
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No, porque cuando ejecutas el comando el archivo siguira sin el segimiento de Git. Hasta que lo pongas.
+
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Para agregar un archivo necesitanmos primero poner el archivo en el area de preparcion de guardado para luego hacer un commit
+ 1º- es git add para poder guardar los archivos que tendras que poner antes del guardarlo en un commit
+ 2º - Pones un commit para guardar los cambios y ponerlos los en el repositorio local.
+- git add <archivo>
+- git commit -m <descripcion del commit>
+
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+Para determinar el archivo tienes que poner git status que para que te muestre con colores el estado del codigo.
+
+6. ¿Qué comando se utiliza para hacer un commit?
+El comando para hacer un commit es git commit -m "mensaje" este comando te permite guardar los cambios en un commit y
+ darles una descripcion para que puedas ver que cambios has hecho en el codigo con la frase que has puesto "".
+
+7. En sus propias palabras, ¿qué es un commit?
+Un commit es para guardar el cambios que has hecho con el codigo y darle un mensaje para saber que accion o que cambios has hecho anteriormente .
+
+
+
+- Explicacion del ejercicio 5:
+
+comando: git status
+- Ejecutamos el comando de status.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git status
+
+On branch ejercicio1_Juan_hinojosa_github     - Esta es la rama donde estamos trabajando
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+        new file:   src/ejercicios/2.branchs/Juan_Antonio_Hinojosa2.txt
+        new file:   src/ejercicios/3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+- Con toda esta fila lo que hacemos y lo que nos dice es que todos los archivos que les agregamos git add
+quedan preparados los archivos. Asi cuando hagamos siguiente commit se podran guardar en el historial del proyecto.
+
+Changes not staged for commit:      - Este es un mensaje que nos avisa que eso no se van a poner en el proximo commit.
+
+ - Los parentesis es el asistente de git que nos dice el problema y te pone la solucion debajo del problema.
+  (use "git add <file>..." to update what will be committed)        - Se mandan los comandos a preparacion de un commit. Se utiliza este comando: add
+  (use "git restore <file>..." to discard changes in working directory)        - Para resetear y volver atras en el proyecto. Utlizar el comando:  git restore
+
+        modified:   src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+        modified:   src/ejercicios/2.branchs/Juan_Antonio_Hinojosa2.txt
+        modified:   src/ejercicios/3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+- todos estos archivos tienen modified que significa que tienen los archivo modificados.
+
+
+Untracked files:                     - git encuentra los archivos o las carpetas que no estan guardados.
+
+  (use "git add <file>..." to include in what will be committed)                -dice que a encontrado una carpeta sin guardar y para guardar utilizar git add.
+        StartING/
+
+Ejercicio 7:
+
+ - git add sandwich.txt no reconocia el archivo porque no habia sido creado.
+PS C:\Users\formacion\IdeaProjects\StartING> git add sandwich.txt
+fatal: pathspec 'sandwich.txt' did not match any files
+
+- lo que hize es crear un archivo con el comando echo que crea un archivo .txt
+PS C:\Users\formacion\IdeaProjects\StartING> echo "sandwich" > sandwinch.txt
+
+- Intento buscar el archivo pero no sale porque no habia creado el archivo.
+PS C:\Users\formacion\IdeaProjects\StartING> git add sandwich.txt
+fatal: pathspec 'sandwich.txt' did not match any files
+
+- Creo otro archivo que se llama Mi sandwich
+ PS C:\Users\formacion\IdeaProjects\StartING> echo "Mi sandwich" > sandwich.txt
+
+- Luego agrego e archivo a la aria de preparacion.
+PS C:\Users\formacion\IdeaProjects\StartING> git add sandwich.txt
+- Para que entre en el repositorio local necesita pasar por stating area , por un commit y luego ya llegara a al repositorio local.
+
+Comando status:
+
+PS C:\Users\formacion\IdeaProjects\StartING> git status
+On branch ejercicio1_Juan_hinojosa_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sandwich.txt
+        new file:   src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+        new file:   src/ejercicios/2.branchs/Juan_Antonio_Hinojosa2.txt
+        new file:   src/ejercicios/3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+        modified:   src/ejercicios/2.branchs/Juan_Antonio_Hinojosa2.txt
+        modified:   src/ejercicios/3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        StartING/
+        sandwinch.txt
+
+ - Lo que hace este comando es preparar los programas para el proximo guardado commit.
+
+ -Ahora finalmente se prepara e programa para ser guardado con commit (git commit) .
+ PS C:\Users\formacion\IdeaProjects\StartING> git add sandwich.txt
+
+- Ejercicio 9
+
+PS C:\Users\formacion\IdeaProjects\StartING> git commit -m "Agrego mi sandwich.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'formacion@MI_PRACTICA.(none)')
+
+- En toda esta parte git me indica que tengo que identificarme para poder hacer un commit.
+Es para que luego se pueda saber quien hizo los cambios.
+
+-Ahora pongo mi identificacion con mi nombre de usuario y el correo electronico que tengo vinculado a mi cuenta de
+githud
+
+PS C:\Users\formacion\IdeaProjects\StartING> git config --global user.email "fp25ifcm0160@aulatomillo.org"
+- Con este comando yo le digo a git que registre mi correo.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git config --global usar.name "Juan hinojosa"
+- Con este otro comando yo le añado mi nombre de usuario de githud.
+
+-  Ejercicio 12
+
+ Explicacion del commando git log: lo que hace este comando es mostrarte el historial de todos los commits que hemos hecho
+ Estan ordenados por el mas reciente al mas antiguo, al principo de cada fila se divide la informacion en commit, autor
+, fecha y la descripcion que tu has dado al commit.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git log             - git log te muestra el historial de commits.
+commit 9e2f068e02b6b2993a216feff996e35f13335c80 (HEAD -> ejercicio1_Juan_hinojosa_github)           - este es codigo del commit que es unico.
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>           -Te muestra quien a hecho el commit (el autor)
+Date:   Sat May 9 21:21:07 2026 +0200                -la fecha que se hizo el commit.
+
+    Agrego salsas               - La descripcion en la que se explica que se ha guardado o cambiado.
+
+commit 2339bc396bad49060b64704f819a683ded8d5d1d
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sat May 9 21:16:05 2026 +0200
+
+    Agrego salsas
+:...skipping...
+commit 9e2f068e02b6b2993a216feff996e35f13335c80 (HEAD -> ejercicio1_Juan_hinojosa_github)
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sat May 9 21:21:07 2026 +0200
+
+    Agrego salsas
+
+commit 2339bc396bad49060b64704f819a683ded8d5d1d
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sat May 9 21:16:05 2026 +0200
+
+    Agrego salsas
+
+commit ee43f56d4f6803ec957f8a7ff1ba38802b80ba43
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sat May 9 21:06:04 2026 +0200
+
+    Agrego alimentos
+
+commit 91cac8eab4877fafcfae313f00089c593f943ed9
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+
+- Ejercicio 12.1 explicacion del comando git  log --oneline
+ - Lo que hace este comando es que cumple la misma funcion pero es mas resumida no muestra la fecha.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git log --oneline
+9e2f068 (HEAD -> ejercicio1_Juan_hinojosa_github) Agrego salsas
+2339bc3 Agrego salsas
+ee43f56 Agrego alimentos
+91cac8e Retiro el sandwich que no esta dentro del proyecto
+d04bcf0 Agrego alimentos
+cd51561 Agrego salsas
+6a6c193 Agrego salsa
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+:
+9e2f068 (HEAD -> ejercicio1_Juan_hinojosa_github) Agrego salsas
+2339bc3 Agrego salsas
+ee43f56 Agrego alimentos
+91cac8e Retiro el sandwich que no esta dentro del proyecto
+d04bcf0 Agrego alimentos
+cd51561 Agrego salsas
+6a6c193 Agrego salsa
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+:
+
+- Ejercicio 12.2 explicacio de comando git log --stat
+- Esta funcion es para ver si los commits han sufrido modificaciones y cuales a sido.
+PS C:\Users\formacion\IdeaProjects\StartING> git log --stat
+commit 9e2f068e02b6b2993a216feff996e35f13335c80 (HEAD -> ejercicio1_Juan_hinojosa_github)
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sat May 9 21:21:07 2026 +0200
+
+    Agrego salsas
+
+ src/ejercicios/1.commit/sandwich.txt | Bin 138 -> 142 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+:
+
+Ejercicio 13: comando git diff
+-Este comando compara los hash que son los identificadores de los commits.
+
+- Dio error porque los commits los puse al reves el ultimo lo puse primero y el primero lo puse ultimo.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git diff 6a6c193 555dfee
+diff --git a/sandwich.txt b/sandwich.txt
+deleted file mode 100644
+index 5f751d8..0000000
+Binary files a/sandwich.txt and /dev/null differ
+diff --git a/src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt b/src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/src/ejercicios/1.commit/README.md b/src/ejercicios/1.commit/README.md
+deleted file mode 100644
+:
+
+
+- Aqui e cambiado el  orden de los hash los identificadores de los commits y ahora los he puesto bien.
+
+PS C:\Users\formacion\IdeaProjects\StartING>     git diff 555dfee (el mas antiguo) 6a6c193 (el mas nuevo)
+diff --git a/sandwich.txt b/sandwich.txt       -Aqui indica con a y b cual es mas antiguo (a) o nuevo (b)
+new file mode 100644           - pone que hay
+index 0000000..5f751d8              - Aqui pone como el commit empezo a crearse con su hash su edintificador.
+Binary files /dev/null and b/sandwich.txt differ         -
+diff --git a/src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt b/src/ejercicios/1.commit/Juan_Antonio_Hinojosa1.txt
+new file mode 100644               - Muestra que el es nuevo con (new)
+index 0000000..e69de29              - Cuando se creaba el identificador
+diff --git a/src/ejercicios/1.commit/README.md b/src/ejercicios/1.commit/README.md
+new file mode 100644
+:
+
+- Ejercicio 13. 11.1
+- Usando el comando git difftool --toolmedl: este comando se usa para poder ver de manera visual los commits.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git difftool --tool=meld 555dfee
+
+Viewing (1/10): 'README.md'
+Launch 'meld' [Y/n]? y
+The diff tool meld is not available as 'meld'                 - El comando falla porque no tengo el programa meld.
+fatal: external diff died, stopping at README.md
+                                                             - Se veria de forma mas visual,con el programa meld.
+
+
+- Ejercicio 13.11.2
+- Usando git difftool --tool=opendiff: este comando fuciona como el anterior pero, este funciona para el sistema operativo Mac.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git difftool --tool=opendiff 555dfee
+
+Viewing (1/10): 'README.md'
+Launch 'opendiff' [Y/n]? y
+The diff tool opendiff is not available as 'opendiff'
+fatal: external diff died, stopping at README.md
+
+- Ejercicio 16: cambiar el nombre a sandwich2.txt a sandwich2_feo.txt
+- Comando que utilizamos es el rm : con este comando nosotros podemos cambiar el nombre al fichero
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git mv sandwich2.txt sandwich2_feo.txt
+
+- Al ejecutar los comandos este me dio un fallo que dicia que el sandwich2.txt no estaba creado.
+
+PS C:\Users\formacion\IdeaProjects\StartING> git mv sandwich2.txt sandwich2_feo.txt
+fatal: bad source, source=sandwich2.txt, destination=sandwich2_feo.txt
+
+- Mire las carpetas haber si nose habia registrado y no estaba los comandos para ver las carpetas son ls y dir.
+
+
+PS C:\Users\formacion\IdeaProjects\StartING> ls
+
+
+    Directorio: C:\Users\formacion\IdeaProjects\StartING
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09/05/2026     21:24                .idea
+d-----        07/05/2026     10:29                src
+d-----        05/05/2026     14:04                StartING
+-a----        05/05/2026     13:55            166 .gitignore
+-a----        10/05/2026     14:53             22 1.commit
+-a----        05/05/2026     13:55           1104 pom.xml
+-a----        07/05/2026     21:51            153 README.md
+-a----        09/05/2026     20:53             20 sandwich.txt
+
+
+PS C:\Users\formacion\IdeaProjects\StartING> dir
+
+
+    Directorio: C:\Users\formacion\IdeaProjects\StartING
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09/05/2026     21:24                .idea
+d-----        07/05/2026     10:29                src
+d-----        05/05/2026     14:04                StartING
+-a----        05/05/2026     13:55            166 .gitignore
+-a----        10/05/2026     14:53             22 1.commit
+-a----        05/05/2026     13:55           1104 pom.xml
+-a----        07/05/2026     21:51            153 README.md
+-a----        09/05/2026     20:53             20 sandwich.txt
+
+
+Cuando estaba investigando me ponia que el git no podia modificar los archivos no registrados y me puso que hiciera una copia
+
+PS C:\Users\formacion\IdeaProjects\StartING> copy sandwich.txt sandwich2.txt
+
+- Me cambie de directorio porque el sandwich se hizo en otro lado que no son en la rama de ejercicios y me cambie a (ejercicicios commits)
+ - Para cambiarme de directorio utilice el comando: cd
+ - En el primer cd me cambie al ejercicio y el siguiente me dio error porque el comando lo utilice 2 veces
+
+ PS C:\Users\formacion\IdeaProjects\StartING> cd src\ejercicios\1.commit             - El que salio bien
+ PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> cd src/ejercicios/1.commit           - Salio mal porque lo volvi a repetir estando en ese mismo directorio.
+ cd : No se encuentra la ruta de acceso 'C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit\src\ejercicios\1.commit' porque no existe.
+ En línea: 1 Carácter: 1
+ + cd src/ejercicios/1.commit
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~
+     + CategoryInfo          : ObjectNotFound: (C:\Users\formac...cicios\1.commit:String) [Set-Location], ItemNotFoundException
+     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+- Ahora tenia que hacer git status para prepara el proximo commit
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git status
+On branch ejercicio1_Juan_hinojosa_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    sandwich2.txt -> sandwich2_feo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../../../README.md
+        modified:   Juan_Antonio_Hinojosa1.txt
+        modified:   README.md
+        modified:   ../2.branchs/Juan_Antonio_Hinojosa2.txt
+        modified:   ../3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../1.commit
+        ../../../StartING/
+        ../../../sandwich.txt
+        ../../../sandwich2.txt
+
+- Ahora necesitaba hacer el commmit para que se termine de guardarlo.
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git status
+On branch ejercicio1_Juan_hinojosa_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    sandwich2.txt -> sandwich2_feo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../../../README.md
+        modified:   Juan_Antonio_Hinojosa1.txt
+        modified:   README.md
+        modified:   ../2.branchs/Juan_Antonio_Hinojosa2.txt
+        modified:   ../3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../1.commit
+        ../../../StartING/
+        ../../../sandwich.txt
+        ../../../sandwich2.txt
+
+- Ahora lo guardardo con un commit :
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git commit -m "Cambio de nombre a sandwich2_feo.txt"
+[ejercicio1_Juan_hinojosa_github 6d3a50e] Cambio de nombre a sandwich2_feo.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename src/ejercicios/1.commit/{sandwich2.txt => sandwich2_feo.txt} (100%)
+
+ - Ejecuto el comando git log --oneline
+
+ PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git log --oneline
+ 6d3a50e (HEAD -> ejercicio1_Juan_hinojosa_github) Cambio de nombre a sandwich2_feo.txt
+ f4c5034 = el identificador de cada commit (hash) sandwich2.txt = descripcion o mensaje (mensaje del commit)
+ 9e2f068 Agrego salsas      - Se repite la informacion de arriba
+ 2339bc3 Agrego salsas
+ ee43f56 Agrego alimentos
+ 91cac8e Retiro el sandwich que no esta dentro del proyecto
+ d04bcf0 Agrego alimentos
+ cd51561 Agrego salsas
+ 6a6c193 Agrego salsa
+ c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, origin/Dilan, main) git exercises
+ 555dfee update Readme.md
+ e868b24 (origin/hotfix) String hands on exercise
+
+- Ejercicio 17: borrar el archivo
+ - Pata borrar el archivo e utilizado el rm = remueve o elimina.
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git rm sandwich2_feo.txt
+rm 'src/ejercicios/1.commit/sandwich2_feo.txt'
+
+- Explicacion del git status.
+ - Lo que ha hecho el git status el guardar la eliminacion del sandwich2_feo , despues se a hecho uncommit.
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git status
+On branch ejercicio1_Juan_hinojosa_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sandwich2_feo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../../../README.md
+        modified:   Juan_Antonio_Hinojosa1.txt
+        modified:   README.md
+        modified:   ../2.branchs/Juan_Antonio_Hinojosa2.txt
+        modified:   ../3.conflicts/Juan_Antonio_Hinojosa2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../1.commit
+        ../../../StartING/
+        ../../../sandwich.txt
+        ../../../sandwich2.txt
+
+- Se ha hecho el commit para guardar esta accion: "el borrado de commit"
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git commit -m "borrado de sandwich2_feo.txt"
+[ejercicio1_Juan_hinojosa_github be8b283] borrado de sandwich2_feo.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 src/ejercicios/1.commit/sandwich2_feo.txt
+
+- Despues se ha hecho un log --oneline para poder ver los hash.
+- Al hacer la accion de crear el arcivo, despues cambiarle el nombre y luego borrarlo.
+ -El sandwich a dejado un historial. Donde podremos ver los cambios que a tenido y su eliminacion
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git log --oneline
+be8b283 (HEAD -> ejercicio1_Juan_hinojosa_github) borrado de sandwich2_feo.txt       -  Cuando se elimino.
+6d3a50e Cambio de nombre a sandwich2_feo.txt        - Cuando se cambio el nombre.
+f4c5034 sandwich2.txt                - La creacion del sandwich 2.
+9e2f068 Agrego salsas
+2339bc3 Agrego salsas
+ee43f56 Agrego alimentos
+91cac8e Retiro el sandwich que no esta dentro del proyecto
+d04bcf0 Agrego alimentos
+cd51561 Agrego salsas
+6a6c193 Agrego salsa
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+:
+
+Ejercicio 18: bitacora con comando git log --stat explcacion de salida:
+- Lo que hace el comando es que nos da la informacion de cada commit
+- Nos permite ver el autor, los cambios del commit y el tamaño del mensaje. Nos da la informacion del commit.
+
+PS C:\Users\formacion\IdeaProjects\StartING\src\ejercicios\1.commit> git log --stat
+commit be8b283abb92f7d50cb8836a75624fafe7e1c58d (HEAD -> ejercicio1_Juan_hinojosa_github)
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sun May 10 17:10:33 2026 +0200
+
+    borrado de sandwich2_feo.txt
+
+ src/ejercicios/1.commit/sandwich2_feo.txt | Bin 64 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6d3a50e43db50279d902053943174e86508415bc
+Author: Juan hinojosa <fp25ifcm0160@aulatomillo.org>
+Date:   Sun May 10 16:05:32 2026 +0200
+
