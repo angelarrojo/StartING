@@ -6,3 +6,42 @@ Suele suceder cuando se hacer un merge . si es malo o  bueno diria que no es mal
 2. ¿Se puede evitar un conflicto? ¿Cómo?
 Se puede evitar si se organiza bien el trabajo en equipo asi cada persona trabaja en su propia rama
 y para hacerlo prodriamos usar algo como git fetch y git merge asi los cambios no se llegan acumular
+13.
+PS C:\Users\2SMR\IdeaProjects\StartING> git diff ejercicio3_cristhian suprema
+diff --git a/src/ejercicios/3.conflicts/milanesa.txt b/src/ejercicios/3.conflicts/milanesa.txt
+index 5255304..1c57c4d 100644
+--- a/src/ejercicios/3.conflicts/milanesa.txt
++++ b/src/ejercicios/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++pollo
+\ No newline at end of file
+explicar luego
+13.2
+PS C:\Users\2SMR\IdeaProjects\StartING> git diff ejercicio3_cristhian bife
+diff --git a/src/ejercicios/3.conflicts/milanesa.txt b/src/ejercicios/3.conflicts/milanesa.txt
+index 5255304..1712737 100644
+--- a/src/ejercicios/3.conflicts/milanesa.txt
++++ b/src/ejercicios/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
++bife
+\ No newline at end of file
+Explicar luego
+14.
+PS C:\Users\2SMR\IdeaProjects\StartING> git checkout ejercicio3_cristhian
+M       src/ejercicios/3.conflicts/Cristhian_Sotomayor.txt
+Switched to branch 'ejercicio3_cristhian'
+PS C:\Users\2SMR\IdeaProjects\StartING> git status
+On branch ejercicio3_cristhian
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/3.conflicts/Cristhian_Sotomayor.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Explicar luego
