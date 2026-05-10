@@ -58,5 +58,9 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>notepad src\ejercicios\3.con
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-8
+8Con este comando se comitea
 
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo por pollo en milanes.txt"
+[ejercicio3_vuestro_Manuel_Morillo_github 83355e0] Cambiar lomo por pollo en milanes.txt
+ 1 file changed, 10 insertions(+)
