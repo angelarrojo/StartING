@@ -134,53 +134,20 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-15
+15 Intenta traer los cambios de la anterior con la nueva
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git merge bife
+Already up to date.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+
+16 Con este comando  se fusina la rama suprema con la nueva que es la bife
 =======
 
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-4 Este comando es para un archivo dentro de la carpeta
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> type nul >Manuel_Morillo3.txt
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git merge suprema
+Already up to date.
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-5 Esta rama la creado con el siguiente comando
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> type nul >Manuel_Morillo3.txt
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b suprema
-Switched to a new branch 'suprema'
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-
-6 Con este comando me he movido a la rama suprema
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout suprema
-A       src/ejercicios/3.conflicts/Manuel_Morillo3
-Already on 'suprema'
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-
-7Coon este comando actualizo lomo por pollo
-programa o archivo por lotes ejecutable.
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo lomo por pollo"
-[suprema bbe0ce0] Actualizo lomo por pollo
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 src/ejercicios/3.conflicts/Manuel_Morillo3
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-
-8 Se a cambiado  con este comando
- create mode 100644 notepad
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/3.conflicts/milanesa.txt
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambio de lomo a pollo"
-On branch suprema
-nothing to commit, working tree clean
-
-C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
-
-9
->>>>>>> suprema
+17
