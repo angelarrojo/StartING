@@ -103,5 +103,13 @@ index a96fa32..ee0d91c 100644
 +9 Con este comando nos moveremos a la rama que queremos pero he ejecutado otro el cual guarda la informacion antes de cambiar de rama
 +
 :
-14
+14 Con este comando estaras en el commit correcto.
 
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo por bife en milanesa.txt y actualizar conflicto"
+[bife 51a2ba3] Cambiar lomo por bife en milanesa.txt y actualizar conflicto
+ 2 files changed, 31 insertions(+), 2 deletions(-)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+15
