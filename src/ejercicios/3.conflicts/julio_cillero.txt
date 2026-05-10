@@ -9,4 +9,7 @@ Ejercicios practicos:
 
 14. Me sale nothing to commit, working tree clean
 
+16. Me pone already up to date.
+
+17. Me pone already up to date
 
