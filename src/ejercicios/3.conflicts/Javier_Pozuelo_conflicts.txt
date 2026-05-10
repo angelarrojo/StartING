@@ -1,0 +1,79 @@
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git diff ejercicio3_JavierPozueloTomillo suprema
+diff --git a/src/ejercicios/1.commit/README.md b/src/ejercicios/1.commit/README.md
+index 889f2cd..8b57906 100644
+--- a/src/ejercicios/1.commit/README.md
++++ b/src/ejercicios/1.commit/README.md
+@@ -9,12 +9,20 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
+ ### 1.1. Preguntas
+
+ 1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git diff ejercicio3_JavierPozueloTomillo bife
+diff --git a/src/ejercicios/3.conflicts/milanesa.txt b/src/ejercicios/3.conflicts/milanesa.txt
+index 5255304..1712737 100644
+--- a/src/ejercicios/3.conflicts/milanesa.txt
++++ b/src/ejercicios/3.conflicts/milanesa.txt
+@@ -1,2 +1,2 @@
+ pan rallado
+-lomo
+\ No newline at end of file
+EXPLICACIÓN PASO 13:
+- El primer diff muestra que suprema cambió lomo por pollo.
+- El segundo diff muestra que bife cambió lomo por bife.
+- Las dos ramas modificaron la misma línea del mismo archivo.
+- Esto va a causar un conflicto cuando intentemos mergearlas.
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git status
+On branch ejercicio3_JavierPozueloTomillo
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/2.branchs/Javier_Pozuelo_branches.txt
+        src/ejercicios/3.conflicts/Javier_Pozuelo_conflicts.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+EXPLICACIÓN PASO 14:
+- git status muestra que estamos en ejercicio3_JavierPozueloTomillo.
+- El working directory está limpio, sin cambios pendientes.
+- Esto es porque los cambios están en sus respectivas ramas (suprema y bife).
+
+EXPLICACIÓN PASO 15:
+- El merge funcionó sin conflicto con Fast-forward.
+- Fast-forward significa que git simplemente movió el puntero hacia adelante
+  sin necesidad de crear un commit de merge.
+- No hubo conflicto porque ejercicio3 no tenía cambios en milanesa.txt.
+
+EXPLICACIÓN PASO 16:
+- El merge falló porque suprema cambió lomo por pollo y bife cambió
+  lomo por bife, las dos ramas tocaron la misma línea.
+- Git no sabe cuál de los dos cambios conservar y nos avisa del conflicto.
+- Hay que resolverlo manualmente.
+
+On branch ejercicio3_JavierPozueloTomillo
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/2.branchs/README.md
+        modified:   src/ejercicios/3.conflicts/README.md
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   src/ejercicios/3.conflicts/milanesa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/2.branchs/Javier_Pozuelo_branches.txt
+        src/ejercicios/3.conflicts/Javier_Pozuelo_conflicts.txt
+EXPLICACIÓN PASO 17:
+- Aparece "both modified: milanesa.txt" indicando que hay un conflicto.
+- Git está en medio de un merge y está esperando que resolvamos el conflicto.
+- No se puede hacer ningún commit hasta que el conflicto esté resuelto.
+
+EXPLICACIÓN PASO 18:
+- <<<<<<< HEAD: es el cambio de la rama actual (bife).
+- =======: separador entre los dos cambios.
+- >>>>>>> suprema: es el cambio de la rama suprema (pollo).
+- Git no sabe si quedarse con bife o con pollo y nos lo muestra
+  para que decidamos nosotros manualmente.
+
