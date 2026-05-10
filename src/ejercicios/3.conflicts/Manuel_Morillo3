@@ -64,3 +64,15 @@ C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo por pollo en milanes.txt"
 [ejercicio3_vuestro_Manuel_Morillo_github 83355e0] Cambiar lomo por pollo en milanes.txt
  1 file changed, 10 insertions(+)
+
+9 Con este comando nos moveremos a la rama que queremos pero he ejecutado otro el cual guarda la informacion antes de cambiar de rama
+
+
+10Con este comando he creado una nueva rama  llamada bife
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b bife
+Switched to a new branch 'bife'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+11
