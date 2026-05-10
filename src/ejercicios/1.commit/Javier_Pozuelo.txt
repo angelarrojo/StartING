@@ -1,0 +1,178 @@
+On branch ejercicio1_JavierPozueloTomillo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/1.commit/Javier_Pozuelo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+EXPLICACIÓN:
+- sandwich.txt aparece como "modified" porque lo editamos pero aún no está
+  listo para commitear (no está en staging).
+- Javier_Pozuelo.txt aparece como "Untracked" porque es un archivo nuevo
+  que git nunca ha visto antes.
+- Ningún archivo está listo para un commit todavía.
+
+On branch ejercicio1_JavierPozueloTomillo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/ejercicios/1.commit/sandwich.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/1.commit/Javier_Pozuelo.txt
+EXPLICACIÓN PASO 7:
+- sandwich.txt pasó de "not staged" a "to be committed", significa que
+  ahora está en el staging area listo para el commit.
+- README.md sigue como "not staged" porque no hicimos git add sobre él.
+- Javier_Pozuelo.txt sigue como "Untracked" porque tampoco hicimos git add.
+
+On branch ejercicio1_JavierPozueloTomillo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/1.commit/Javier_Pozuelo.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+EXPLICACIÓN PASO 9:
+- sandwich.txt desapareció de la lista porque ya fue commiteado.
+- El working directory está limpio respecto a él.
+- Solo quedan README.md y Javier_Pozuelo.txt como pendientes.
+
+commit 49dcbe96d3d0de9c43ed98e6091f577188e34779 (HEAD -> ejercicio1_JavierPozueloTomillo)
+Author: JavierPozueloTomillo <fp22ifcb0126@aulatomillo.org>
+Date:   Sun May 10 19:00:37 2026 +0200
+
+    Agrego salsas
+
+commit 5cdd5da9cab1541de7b5c208f21a589ef84db100
+Author: JavierPozueloTomillo <fp22ifcb0126@aulatomillo.org>
+EXPLICACIÓN PASO 11:
+- Cada bloque es un commit guardado en el repositorio.
+- "commit + hash": ID único de 40 caracteres de ese commit.
+- "Author": nombre y email de quien hizo el commit.
+- "Date": fecha y hora exacta.
+- Los commits aparecen del MÁS RECIENTE al MÁS ANTIGUO.
+
+commit 49dcbe96d3d0de9c43ed98e6091f577188e34779 (HEAD -> ejercicio1_JavierPozueloTomillo)
+Author: JavierPozueloTomillo <fp22ifcb0126@aulatomillo.org>
+Date:   Sun May 10 19:00:37 2026 +0200
+
+    Agrego salsas
+
+ src/ejercicios/1.commit/sandwich.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ EXPLICACIÓN PASO 12.2:
+ - Igual que git log pero muestra qué archivos cambiaron en cada commit.
+ - Muestra cuántas líneas se insertaron (+) y cuántas se borraron (-).
+ - Útil para ver el impacto de cada commit sin ver el diff completo.
+ EXPLICACIÓN PASO 12.2:
+ - Igual que git log pero muestra qué archivos cambiaron en cada commit.
+ - Muestra cuántas líneas se insertaron (+) y cuántas se borraron (-).
+ - Útil para ver el impacto de cada commit sin ver el diff completo.
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git diff c8ff807 5cdd5da
+diff --git a/src/ejercicios/1.commit/sandwich.txt b/src/ejercicios/1.commit/sandwich.txt
+index 7dd1b48..f587744 100644
+--- a/src/ejercicios/1.commit/sandwich.txt
++++ b/src/ejercicios/1.commit/sandwich.txt
+@@ -1,4 +1,5 @@
+-pan
+-queso
+-medallón
+
+PS C:\Users\formacion.FTSMR20\IdeaProjects\Projecto ING\StartING> git diff 5cdd5da 49dcbe9
+diff --git a/src/ejercicios/1.commit/sandwich.txt b/src/ejercicios/1.commit/sandwich.txt
+index f587744..fa2b4f0 100644
+--- a/src/ejercicios/1.commit/sandwich.txt
++++ b/src/ejercicios/1.commit/sandwich.txt
+@@ -2,4 +2,5 @@ Pan: Baguette
+ Jamón
+ Queso
+ Lechuga
+ EXPLICACIÓN PASO 13:
+ - "--- a/archivo" es la versión vieja (primer hash).
+ - "+++ b/archivo" es la versión nueva (segundo hash).
+ - Líneas con "+" son líneas AGREGADAS.
+ - Líneas con "-" son líneas ELIMINADAS.
+ - Líneas sin prefijo son contexto, no cambiaron.
+
+On branch ejercicio1_JavierPozueloTomillo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/1.commit/Javier_Pozuelo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dd520d5 (HEAD -> ejercicio1_JavierPozueloTomillo) Renombro sandwich2 a sandwich2_feo
+49dcbe9 Agrego salsas
+5cdd5da Agrego mi sandwich.txt
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio2_DilanNavia, origin/ejercicio1_DilanNavia, origin/anana`, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+e868b24 (origin/hotfix) String hands on exercise
+1c74a93 condicionales y metodos
+EXPLICACIÓN PASO 16:
+- git mv renombra el archivo y lo registra en staging automáticamente.
+- Después del commit git status queda limpio.
+- En git log --oneline aparece el nuevo commit de renombrado arriba del todo.
+
+On branch ejercicio1_JavierPozueloTomillo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/ejercicios/1.commit/Javier_Pozuelo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c1b0508 (HEAD -> ejercicio1_JavierPozueloTomillo) Borro sandwich2_feo
+dd520d5 Renombro sandwich2 a sandwich2_feo
+49dcbe9 Agrego salsas
+5cdd5da Agrego mi sandwich.txt
+c8ff807 (origin/main, origin/git-clone-https/github.com/angelarrojo/StartING.git, origin/ejercicio2_DilanNavia, origin/ejercicio1_DilanNavia, origin/anana`, origin/HEAD, origin/Dilan, main) git exercises
+555dfee update Readme.md
+e868b24 (origin/hotfix) String hands on exercise
+EXPLICACIÓN PASO 17:
+- git rm elimina el archivo del disco y lo registra en staging como eliminado.
+- Después del commit el archivo ya no existe en el working directory.
+- En git log --oneline aparece el commit de borrado arriba del todo.
+- IMPORTANTE: aunque el archivo fue borrado, git conserva toda la historia.
+  Se puede recuperar haciendo checkout de un commit anterior donde existía.
+
+  commit c1b050865041e3d5a0c62b86e41490098375a17a (HEAD -> ejercicio1_JavierPozueloTomillo)
+  Author: JavierPozueloTomillo <fp22ifcb0126@aulatomillo.org>
+  Date:   Sun May 10 19:08:32 2026 +0200
+
+      Borro sandwich2_feo
+
+   src/ejercicios/1.commit/sandwich2_feo.txt | 4 ----
+   1 file changed, 4 deletions(-)
+   EXPLICACIÓN PASO 18:
+   - Muestra la historia completa con estadísticas de cada commit.
+   - Podemos ver el ciclo de vida completo de sandwich2.txt:
+     1. Fue creado (líneas con +++)
+     2. Fue renombrado a sandwich2_feo ({sandwich2.txt => sandwich2_feo.txt})
+     3. Fue borrado (líneas con ---)
+   - Cada operación queda registrada con autor, fecha y descripción.
+   - Se puede navegar hacia cualquier punto del pasado.
+
