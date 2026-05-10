@@ -6,3 +6,7 @@ Un conflicto es cuando se detectan dos cambios a la vez, esto puede ocurrir cuan
 Ejercicios practicos:
 
 13. Con el comando git diff muestra las dos versiones del proyecto, en este caso en el archivo milanesa.txt
+
+14. Me sale nothing to commit, working tree clean
+
+
