@@ -1,0 +1,70 @@
+### 2.1. Preguntas
+
+1. ¿Qué es un branch?
+- Un branch es una rama dentro de un repositorio donde se pueden realizar cambios sin afectar la rama main.
+2. ¿Por qué pueden ser útiles los branches?
+- Los branches son útiles porque permiten trabajar nuevas funcionalidades sin modificar directamente el código principal.
+3. ¿Cómo se crea una branch?
+- Con el comando "git branch"
+4. ¿Cómo se cambia a una branch?
+- "git checkout"
+5. ¿Cómo se elimina una branch?
+- "git branch -d"
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+- "git checkout -b nombre-rama"
+7. ¿Qué es un merge?
+- Un merge es la acción de unir los cambios de una branch dentro de otra branch.
+8. ¿Cómo se realiza un merge?
+- Un merge se realiza cambiando primero a la rama destino y ejecutando "git merge"
+9. ¿Que es un tag?
+- Un tag es una etiqueta que se usa para marcar versiones importantes de un proyecto, como una release
+10. ¿Cómo se crea un tag?
+- git tag nombre-tag
+
+### 2.2. Ejercicio Práctico
+
+1. [] Crear una branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git branch ejercicio2_vuestro_usuario_github main`).
+2. Moverse a la branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git checkout`).
+- A       src/ejercicios/2.branchs/nicolas_sanroman.txt
+  A       src/ejercicios/3.conflicts/nicolas_sanroman.txt
+  Switched to branch 'ejercicio2_nicolassanroman'
+3. Verificar que se encuentra en la branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git branch`).
+-  ejercicio1_nicolassanroman_github
+  * ejercicio2_nicolassanroman
+    main
+4. Agregarle el condimento `albahaca` **arriba del queso** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
+5. Agregarle el condimento `oregano` **arriba de la albahaca** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
+6. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+- Observo que git graph no es un comando de git y me dice varios resultados similares
+7. Quedate en la branch `ejercicio2_vuestro_usuario_github`.
+8. Crear una branch `anana`. (Puede usar el comando `git checkout -b anana`).
+- Switched to a new branch 'anana'
+9. Agregarle el condimento `anana` **debajo del queso** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
+10. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+11. Vuelva a la branch `ejercicio2_vuestro_usuario_github`.
+12. Agregue el condimento `cebolla` **debajo de la salsa** al archivo `2.branchs/pizza.txt` y "commitee" los cambios.
+13. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+14. Haga un merge de la branch `anana` a la branch `ejercicio2_vuestro_usuario_github`. (Puede usar el comando `git merge anana`).
+- Already up to date.
+15. Correr el comando `git graph` y observar el resultado. ¿Qué observa?
+16. ¿Qué branches están "mergeadas" a ejercicio2_vuestro_usuario_github? (Puede usar el comando `git branch --merged`).
+-  anana
+    ejercicio1_nicolassanroman_github
+  * ejercicio2_nicolassanroman
+    main
+17. Crear un tag `pizza` en el último commit. (Puede usar el comando `git tag -a pizza -m "Receta de la pizza.""`).
+- git tag -a pizza -m "Receta de la pizza." me dice que el tag pizza ya existe
+18. Ver los tags creados. (Puede usar el comando `git tag`).
+- Pizza
+19. Ver el tag `pizza`. (Puede usar el comando `git show pizza`).
+-tag pizza
+ Tagger: 1SMR <fp25adgb0165@gmail.com>
+ Date:   Thu May 7 13:07:32 2026 +0200
+
+ receta
+
+ commit a8bb3a756b6a600262c8d9eff1af29b716803eaa (tag: pizza, origin/fix)
+ Author: 1SMR <fp25adgb0165@gmail.com>
+ Date:   Wed May 6 13:57:51 2026 +0200
+
+     Agrego mi sandwich2.txt
