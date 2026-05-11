@@ -11,4 +11,6 @@ Ejercicios:
 13. Cuando pones el primero comando veras que tienes una que tiene pollo. y con el segundo comando veras que tienes bife
 14. Que se ve todo limpio
 15. Si, funciona correctamente
-16
+16. No funciona porque la rama bife ya cambia la parte de lomo.
+17. Ves los errores que tienes y puedes elegir si arreglarlos o no.
+18. Se ven las mismas marcas que en el apartado anterior.
