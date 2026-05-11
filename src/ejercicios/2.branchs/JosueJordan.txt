@@ -21,6 +21,13 @@ Ejercicios:
 6. Cuando pones el comando lo primero que veras es una linea recta de commits, todo esta en orden como si fuera una fila.
 10. Ahora verás que la línea se ha movido un paso más en la rama anana.
 13. La linea se divide en dos una parte sigue la rama de anana y la otra parte sigue la rama de cebolla.
+15. Las lineas que estaban separadas se vuelven a juntar en un punto.
+16. Me salen estas ramas "PS C:\Users\1SMR\IdeaProjects\StartING> git branch --merged
+                            anana
+                          * ejercicio2_JosueJordan-AI
+                            main
+"
+
 
 
 
