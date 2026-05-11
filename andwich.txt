@@ -1,0 +1,84 @@
+[33mcommit a635eb89f7995f7440fc6b7e3aa96303b43c001d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfix[m[33m)[m
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 13:31:02 2026 +0200
+
+    Agrego mi sandwich.txt
+
+[33mcommit 9ce641a21df0545eaf3c9a2e9b2ac3b62fa0920d[m
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 12:59:36 2026 +0200
+
+    cambio url
+
+[33mcommit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/git-clone-https/github.com/angelarrojo/StartING.git[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mejercicio1_DenisMoron[m[33m)[m
+Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+Date:   Wed May 6 00:03:49 2026 +0200
+
+    git exercises
+
+[33mcommit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573[m
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+Date:   Tue May 5 17:41:47 2026 +0200
+
+    update Readme.md
+
+[33mcommit e868b2477f24884d1b7cb298c052321f99756a9f[m[33m ([m[1;31morigin/hotfix[m[33m)[m
+Author: Paulo Franklim dos Santos de Carvalho <paulo.franklim.dos.santos.de.carvalho@ing.com>
+Date:   Tue Feb 27 11:58:42 2024 +0100
+
+    String hands on exercise
+
+[33mcommit 1c74a938ec89a208dd3daec9027ba079971cb01e[m
+Author: gonzazea <gonzalo.zea.grijalba@gmail.com>
+Date:   Mon Feb 26 20:58:58 2024 +0100
+
+    condicionales y metodos
+
+[33mcommit bf80cebb597aa2bf958fc4bf793ac14f9a40c338[m
+Author: Paulo Franklim <paulofranklim@hotmail.com>
+Date:   Sun Feb 25 21:01:17 2024 +0100
+
+    jdbc example main class
+
+[33mcommit 551b9b4b40a1308d76a6399fb29a5aebd3822117[m
+Author: Roberto Gomez Diaz <rogomdi@gmail.com>
+Date:   Wed Feb 21 14:21:38 2024 +0100
+
+    Adds arrays
+
+[33mcommit 3b06e33c8445c47116f2fedc0bb96ed0eee3628a[m
+Author: Roberto Gomez Diaz <rogomdi@gmail.com>
+Date:   Wed Feb 21 11:18:57 2024 +0100
+
+    Adds strings package
+
+[33mcommit 6aebdd6da742610a34580c0f895e42b34df40384[m
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Fri Feb 9 11:35:21 2024 +0100
+
+    Second commit
+
+[33mcommit 3d1cc4fc33cb45a2b95536a03ac9648c2429833c[m
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Thu Feb 1 17:27:52 2024 +0100
+
+    # Esta es una combinación de 2 commits.
+    # Este es el mensaje del 1er commit:
+    
+    First commit
+    
+    # Este es el mensaje del commit #2:
+    
+    First commit
+
+[33mcommit bf746a5d776f0b96ca6dcd9b8fb0967336e60b4e[m
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Thu Feb 1 17:01:55 2024 +0100
+
+    First commit
+
+[33mcommit d0725142b82f7905e21aab0a71e562e421ee830e[m
+Author: Angel <angelarrojo@gmail.com>
+Date:   Thu Feb 1 13:30:50 2024 +0100
+
+    Initial commit

@@ -4,4 +4,4 @@ Introducción al lenguaje Java
 ### Installation
 Clone the repo
    ```sh
-git clone https://github.com/angelarrojo/StartING.git
+git clone https://github.com/angelarrojo/AlgelRojo.git

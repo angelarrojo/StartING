@@ -1,0 +1,76 @@
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DenisMoron.txt
+
+El comando nos muestra todo lo que hemos cambiado pero aun no esta guardado
+
+(use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/DenisMoron.txt
+        modified:   src/ejercicios/1.commit/README.md
+        modified:   src/ejercicios/1.commit/sandwich.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DenisMoron.txt
+
+  Aparece una nueva entrada de sandwich.txt en color rojo
+
+  PS C:\Users\1SMR\Desktop\Nueva carpeta> git status
+  On branch fix
+  Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+          modified:   src/ejercicios/1.commit/DenisMoron.txt
+          modified:   src/ejercicios/1.commit/README.md
+          modified:   src/ejercicios/1.commit/sandwich.txt
+
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+          DenisMoron.txt
+
+  no changes added to commit (use "git add" and/or "git commit -a")
+
+  Aparece una linea final indicando el commit que hemos realizado
+
+
+commit a635eb89f7995f7440fc6b7e3aa96303b43c001d (HEAD -> fix)
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 13:31:02 2026 +0200
+
+    Agrego mi sandwich.txt
+
+commit 9ce641a21df0545eaf3c9a2e9b2ac3b62fa0920d
+
+aparece en el orden segun las cosas realizadas
+
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 12:59:36 2026 +0200
+
+    cambio url
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git log --stat
+commit a635eb89f7995f7440fc6b7e3aa96303b43c001d (HEAD -> fix)
+Author: 1SMR <fp25adgb0165@gmail.com>
+Date:   Wed May 6 13:31:02 2026 +0200
+
+    Agrego mi sandwich.txt
+
+ src/ejercicios/1.commit/DenisMoron.txt | 0
+
+me aparecn cosas pero no se que signican
+
+PS C:\Users\1SMR\Desktop\Nueva carpeta> git difftool --tool=meld <hash>
+En línea: 1 Carácter: 26
++ git difftool --tool=meld <hash>
++                          ~
+El operador '<' está reservado para uso futuro.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+  me da error no se porque
