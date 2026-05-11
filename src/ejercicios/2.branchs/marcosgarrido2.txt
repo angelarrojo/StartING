@@ -1,0 +1,128 @@
+# 2. Branchs
+
+Para este ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `2.branchs`.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+## Ejercicio 2
+
+### 2.1. Preguntas
+
+1. ¿Qué es un branch?
+2. ¿Por qué pueden ser útiles los branches?
+3. ¿Cómo se crea una branch?
+4. ¿Cómo se cambia a una branch?
+5. ¿Cómo se elimina una branch?
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+7. ¿Qué es un merge?
+8. ¿Cómo se realiza un merge?
+9. ¿Que es un tag?
+10. ¿Cómo se crea un tag?
+
+### 2.2. Ejercicio Práctico
+
+$ git switch -c marcosgarrido2
+Switched to a new branch 'marcosgarrido2'
+
+$ git checkout marcosgarrido2
+M       src/ejercicios/1.commit/marcosgarrido1.txt
+M       src/ejercicios/1.commit/sandwich.txt
+A       src/ejercicios/2.branchs/marcosgarrido2.txt
+Already on 'marcosgarrido2'
+
+$ git branch
+  main
+  marcosgarrido1
+* marcosgarrido2
+
+$ git add 2.branchs/pizza.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (marcosgarrido2)
+$ git commit -m "Agrego albahaca"
+[marcosgarrido2 30f5328] Agrego albahaca
+ 3 files changed, 3 insertions(+), 4 deletions(-)
+ create mode 100644 src/ejercicios/2.branchs/marcosgarrido2.txt
+
+$ notepad 2.branchs/pizza.txt
+
+$ git add 2.branchs/pizza.txt
+
+$ git add 2.branchs/pizza.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (marcosgarrido2)
+$ git commit -m "Agrego oregano"
+[marcosgarrido2 fadfcda] Agrego oregano
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git graph
+* fadfcda (HEAD -> marcosgarrido2) Agrego oregano
+* 30f5328 Agrego albahaca
+
+$ git checkout -b anana
+Switched to a new branch 'anana'
+
+$ git add 2.branchs/pizza.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (anana)
+$ git commit -m "Agrego anana"
+[anana 577ae4c] Agrego anana
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+$ git graph
+* 577ae4c (HEAD -> anana) Agrego anana
+* fadfcda (marcosgarrido2) Agrego oregano
+* 30f5328 Agrego albahaca
+
+$ git add 2.branchs/pizza.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (anana)
+$ git commit -m "Agrego cebolla"
+[anana 5360469] Agrego cebolla
+ 1 file changed, 1 insertion(+)
+
+$ git graph
+* 5360469 (HEAD -> anana) Agrego cebolla
+* 577ae4c Agrego anana
+* fadfcda (marcosgarrido2) Agrego oregano
+* 30f5328 Agrego albahaca
+
+$ git branch --merged
+* anana
+  main
+  marcosgarrido1
+  marcosgarrido2
+
+$ git tag -a pizza -m "Receta de la pizza."
+
+$ git tag
+pizza
+
+$ git checkout <commit_id> -- 2.branchs/pizza.txt
+bash: commit_id: No such file or directory
+
+ git branch
+* anana
+  main
+  marcosgarrido1
+  marcosgarrido2
+
+$ git checkout marcosgarrido2
+M       src/ejercicios/1.commit/marcosgarrido1.txt
+M       src/ejercicios/1.commit/sandwich.txt
+M       src/ejercicios/2.branchs/marcosgarrido2.txt
+Switched to branch 'marcosgarrido2'
+
+$ git push origin marcosgarrido2
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (44/44), 4.75 KiB | 286.00 KiB/s, done.
+Total 44 (delta 19), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (19/19), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'marcosgarrido2' on GitHub by visiting:
+remote:      https://github.com/angelarrojo/StartING/pull/new/marcosgarrido2
+remote:
+To https://github.com/angelarrojo/StartING
+ * [new branch]      marcosgarrido2 -> marcosgarrido2

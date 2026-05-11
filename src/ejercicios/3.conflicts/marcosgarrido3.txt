@@ -1,0 +1,42 @@
+# 3. Conflicts
+
+Para este ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+## Ejercicio 3
+
+### 3.1. Preguntas
+
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+
+### 3.2. Ejercicio Práctico
+
+$ git branch ejercicio3_marcosgarrido3_github main
+
+<<<<<<< HEAD
+$ git commit -am "Cambio de lomo a pollo"
+[ejercicio3_marcosgarrido_github c9026a6] Cambio de lomo a pollo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ notepad 3.conflicts/milanesa.txt
+
+$ git add 3.conflicts/milanesa.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (ejercicio3_marcosgarrido_github)
+$ git commit -m "Cambio de lomo a bife"
+[ejercicio3_marcosgarrido_github 9c0313e] Cambio de lomo a bife
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+ create mode 100644 src/ejercicios/3.conflicts/marcosgarrido3.txt
+
+1SMR@FT10Deloitte10 MINGW64 ~/IdeaProjects/StartING/src/ejercicios (ejercicio3_marcosgarrido_github)
+$ git diff ejercicio3_marcosgarrido_github suprema
+diff --git a/src/ejercicios/1.commit/marcosgarrido1.txt b/src/ejercicios/1.commit/marcosgarrido1.txt
+new file mode 100644
+index 0000000..494275c
+--- /dev/null
++++ b/src/ejercicios/1.commit/marcosgarrido1.txt
+@@ -0,0 +1,65 @@
+
+
