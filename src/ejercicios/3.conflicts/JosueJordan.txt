@@ -1,0 +1,10 @@
+Ejercicio 3
+
+Preguntas:
+
+1. Un conflicto es cuando por ejemplo dos trabajadores editan el mismo archivo y intentan hacer un merge entonces Git no sabe cual elegir, no es ni bueno ni malo
+2. Si, se puede evitar teniendo una buena comunicacion entre las personas que trabajan dentro del proyecto.
+
+
+Ejercicios:
+
