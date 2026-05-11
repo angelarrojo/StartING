@@ -20,7 +20,8 @@ Ejercicios:
 
 6. Cuando pones el comando lo primero que veras es una linea recta de commits, todo esta en orden como si fuera una fila.
 10. Ahora verás que la línea se ha movido un paso más en la rama anana.
-13. La linea se divide en dos un camino va hacia la rama anana y el otro camino va hacia la cebolla.
+13. La linea se divide en dos una parte sigue la rama de anana y la otra parte sigue la rama de cebolla.
+
 
 
 
