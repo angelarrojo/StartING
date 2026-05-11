@@ -1,0 +1,216 @@
+    2.1:Teorico
+    1. ¿Qué es un branch?
+Un branch es como un repositorio donde se puede trabajar paralelamente evitando errores.
+2¿Por qué pueden ser útiles los branches?
+Para probar cosas sin riesgo.
+3. ¿Cómo se crea una branch?
+Con un comando que es  git checkout -b  y el nombre de la rama
+4. ¿Cómo se cambia a una branch?
+se cambia con el mismo comando ya que la crea y la cambia a la vez
+5. ¿Cómo se elimina una branch?
+Para hacer esto deberemos usar el comando git branch -b y su nombre
+6. ¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Con el comando que dije anteriormente
+7. ¿Qué es un merge?
+Es el historial de dos ramas diferentes
+8. ¿Cómo se realiza un merge?
+Se crea con el comando git merge
+9. ¿Que es un tag?
+Es un punto de referencia que no se mueve que sirve para marcar un commit en un proyecto
+10. ¿Cómo se crea un tag?
+Se crea con git tag-a
+
+### 2.2. Ejercicio Práctico
+1 Para crear una carpeta branch deberemos utilizar este comando
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch ejercicio2_vuestro_Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+2Para moverese a la carpeta necesitaremos utilizar este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout
+A       src/ejercicios/1.commit/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+3Comando para verificar que esta en la branch
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch
+  ejercicio1_vuestro_Manuel-tech0_github
+* ejercicio1_vuestro_Manuel_Morillo_github
+  ejercicio1_vuestro_usuario_github
+  ejercicio2_vuestro_Manuel_Morillo.txt2
+  main
+4
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5Añadir albahaca
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Añadir albahaca en pizza"
+[ejercicio1_vuestro_Manuel_Morillo_github 09a69aa] Añadir albahaca en pizza
+ 2 files changed, 1 insertion(+)
+ create mode 100644 src/ejercicios/1.commit/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5 Es exactamente el mismo comando de antes pero poniendo oregano en vez de albahaca
+
+6
+fatal: pathspec 'src/ejercicios/2.branch/pizza.txt' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git graph
+git: 'graph' is not a git command. See 'git --help'.
+
+The most similar commands are
+        branch
+        grep
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+Hace lo mismo que git log
+7 Me quedo en la branch con git branch ejercicio2_Manuel_Morillo2_github
+
+8 Asi se crea anana con este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b anana
+Switched to a new branch 'anana'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+9 Para añadir anana debajo de queso tendremos que poner este comando
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add  src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Añadir anana debajo de queso"
+[ejercicio2_vuestro_Manuel_Morillo2_github 7b20b9e] Añadir anana debajo de queso
+ 2 files changed, 1 insertion(+)
+ rename src/ejercicios/{1.commit => 2.branchs}/Manuel_Morillo.txt2 (100%)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+10 Para correr el comando graph he tenido que poner git log y despues graph porque no existe solo graph lo que he observado es que te muestra todas las ramas y en la que estas trabajando.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --oneline --graph --all
+* 7b20b9e (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github) Añadir anana debajo de queso
+* ac8273b Cambio en ejercicio1
+* f8813bb (ejercicio1_vuestro_Manuel_Morillo_github, anana) Ejercicio 1 terminado
+* 09a69aa Añadir albahaca en pizza
+* 61620db (ejercicio2_vuestro_Manuel_Morillo.txt2) Elimino Manuel_Morillo.txt2
+* cf12cc6 Añado mi archivo Manuel_Morillo
+* 318fc2c (main) Entrega final ejercicio 1
+* d147b5d Eliminar sandwich2_feo.txt
+* eeb85e9 Renombrar sandwich2 a sandwich_feo
+* db91dac Renombrar sandwich2 a sandwich_feo
+* 70be4fc Agrego salsas
+:
+
+11 Como volver a la branch del ejercicio2 con el siguiente comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add src ejercicios/2.branchs/Manuel_Morillo.txt2
+fatal: pathspec 'ejercicios/2.branchs/Manuel_Morillo.txt2' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/2.branchs/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo Manuel_Morillo.txt2"
+[ejercicio2_vuestro_Manuel_Morillo2_github efce3bf] Actualizo Manuel_Morillo.txt2
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+12Ahora con el siguinte comando que lo he utilizado anteriormente pongo cebolla de salsa
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git add src/ejercicios/2.branchs/Manuel_Morillo.txt2
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Actualizo Manuel_Morillo.txt2"
+[ejercicio2_vuestro_Manuel_Morillo2_github efce3bf] Actualizo Manuel_Morillo.txt2
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+13 Es un historila del repositorio
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>code src/ejercicios/2.branchs/pizza.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --oneline --graph --all
+* efce3bf (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github) Actualizo Manuel_Morillo.txt2
+* 7b20b9e Añadir anana debajo de queso
+* ac8273b Cambio en ejercicio1
+* f8813bb (ejercicio1_vuestro_Manuel_Morillo_github, anana) Ejercicio 1 terminado
+* 09a69aa Añadir albahaca en pizza
+* 61620db (ejercicio2_vuestro_Manuel_Morillo.txt2) Elimino Manuel_Morillo.txt2
+* cf12cc6 Añado mi archivo Manuel_Morillo
+* 318fc2c (main) Entrega final ejercicio 1
+* d147b5d Eliminar sandwich2_feo.txt
+* eeb85e9 Renombrar sandwich2 a sandwich_feo
+* db91dac Renombrar sandwich2 a sandwich_feo
+:
+
+
+14 Con este comando estaria echa la merge
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git merge anana
+Already up to date.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+15 Asi  se ve el historial del repositorio con la merge echa
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git log --graph
+* commit efce3bf65e54261b3786bc16aa062fd494c92f1c (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github)
+| Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+| Date:   Sat May 9 10:34:52 2026 +0200
+|
+|     Actualizo Manuel_Morillo.txt2
+|
+* commit 7b20b9ecfb2d9d088ec3c89586e9789fc2634b06
+| Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+| Date:   Sat May 9 10:22:58 2026 +0200
+|
+|     Añadir anana debajo de queso
+:
+
+16 Se observan las ramas añadidas con merged
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git branch --merged
+  anana
+  ejercicio1_vuestro_Manuel-tech0_github
+  ejercicio1_vuestro_Manuel_Morillo_github
+  ejercicio1_vuestro_usuario_github
+  ejercicio2_vuestro_Manuel_Morillo.txt2
+* ejercicio2_vuestro_Manuel_Morillo2_github
+  main
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+17Este comando es para realizar el tag
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git tag -a pizza -m "Receta de la pizza"
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+18 Con este comando ves los tag creados
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git tag
+pizza
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+19 Es para ver el tag creado
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git show pizza
+tag pizza
+Tagger: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Sat May 9 10:49:45 2026 +0200
+
+Receta de la pizza
+
+commit efce3bf65e54261b3786bc16aa062fd494c92f1c (HEAD -> ejercicio2_vuestro_Manuel_Morillo2_github, tag: pizza)
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Sat May 9 10:34:52 2026 +0200
+
+    Actualizo Manuel_Morillo.txt2
+:
+

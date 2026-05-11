@@ -23,6 +23,7 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
 
 Antes de continuar con el ejercicio, se debe agregar un alias para facilitar la visualización de los branches.
 
+
 ```bash
 git config --global alias.graph "log --all --graph --decorate --oneline"
 

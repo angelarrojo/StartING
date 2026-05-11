@@ -2,7 +2,7 @@ package ejercicios.string;
 
 public class Ejercicio00 {
     public static void main(String[] args) {
-
+String test;
         // 1. Abre la documentación oficial de la clase String:
         // https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
         // Baja hasta la sección Method Summary
