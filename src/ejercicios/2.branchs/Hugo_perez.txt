@@ -1,0 +1,79 @@
+2.1. Preguntas
+¿Qué es un branch?
+Es para poder hacer funciones nuevas y corregir errores
+¿Por qué pueden ser útiles los branches?
+Para trabajar en equipo, probar ideas y organizar cada su trabajo
+¿Cómo se crea una branch?
+Git branch (nombre que queramos)
+¿Cómo se cambia a una branch?
+Git checkout (nombre que hayamos puesto)
+¿Cómo se elimina una branch?
+Git checkout -d nombre que hayamos puesto
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Git checkout -b nombre que hayamos puesto
+¿Qué es un merge?
+Es para unir dos ramas en una
+¿Cómo se realiza un merge?
+Git checkout merge nombre que hayamos puesto
+¿Qué es un tag?
+Es para marcar algo en específico
+¿Cómo se crea un tag?
+Git tag -a nombre que queramos en el tag -m "breve descripción"
+
+2.2 Práctico
+1- crear un branch
+git branch ejercicio2_HugoPerezhp_github main
+2- Moverse al branch
+PS C:\Users\formacion\Desktop\Hp> git checkout ejercicio2_HugoPerezhp_github
+src/ejercicios/1.commit/hugo_perez.txt
+src/ejercicios/2.branchs/Hugo_perez.txt
+Already on 'ejercicio2_HugoPerezhp_github'
+4- Agregar condimentos
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agregó nuevo engridente"
+[ejercicio2_HugoPerezhp_github 2b24e1e] Se agrego nuevo engridente
+ 3 files changed, 109 insertions(+)
+ create mode 100644 src/ejercicios/1.commit/hugo_perez.txt
+ create mode 100644 src/ejercicios/2.branchs/Hugo_perez.txt
+ 5-Agregar oregano
+ PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego oregano en pizza"
+ [ejercicio2_HugoPerezhp_github 2c833d8] Se agrego oregano en pizza
+  2 files changed, 7 insertions(+)
+5- Correr el comando git graph y observar el resultado. ¿Qué observa?
+Veo como un historial de los commit y de las cosas que he borrado o creado
+6- Quedate en la branch
+PS C:\Users\formacion\Desktop\Hp> git branch
+  ejercicio1_Hugoperezhp_github
+* ejercicio2_HugoPerezhp_github
+  main
+7- Crear branch
+PS C:\Users\formacion\Desktop\Hp> git checkout -b anana
+Switched to a new branch 'anana'
+8- Agregar commit
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Se agrego anana debajo del queso"
+[anana e4b660c] Se agrego anana debajo del queso
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+9- Correr el comando git graph y observar el resultado. ¿Qué observa?
+observo todas los m¡commit o cosas creadas pero mucho mas extendido
+10- Agregar cebolla
+PS C:\Users\formacion\Desktop\Hp> git commit -m "Agregue cebolla debajo de la salsa"
+[ejercicio2_HugoPerezhp_github 1d051c6] Agregue cebolla debajo de la salsa
+2 files changed, 21 insertions(+), 1 deletion(-)
+11- Correr el comando git graph y observar el resultado. ¿Qué observa?
+Veo en que rama estoy y lo que he cambiado y he guardado
+12-Correr el comando git graph y observar el resultado. ¿Qué observa? (al usar merge anana)
+Veo como que esta unido a mi arhcivo principal
+13- ¿Qué branches están "mergeadas" a ejercicio2_vuestro_usuario_github? (Puede usar el comando git branch --merged).
+PS C:\Users\formacion\Desktop\Hp> git branch --merged
+  anana
+* ejercicio2_HugoPerezhp_github
+  main
+14-Ver los tags creados. (Puede usar el comando git tag).
+PS C:\Users\formacion\Desktop\Hp> git tag
+pizza
+15- Ver el tag pizza. (Puede usar el comando git show pizza).
+PS C:\Users\formacion\Desktop\Hp> git show pizza
+tag pizza
+Tagger: Angel-RG08 <fp24ifcm0132@aulatomillo.org>
+Date:Wed May 6 23:59:49 2026 +0200
+
+Receta de la pizza.
