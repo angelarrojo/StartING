@@ -1,0 +1,314 @@
+commit 70be4fc0a2fe3aecd09e6cbe386d6721f8ba4b1f
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Thu May 7 15:46:35 2026 +0200
+
+    Agrego salsas
+
+ src/ejercicios/1.commit/`Manuel_Morillo.txt | 43 +++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+
+commit b54649ea16a7c1fabb28bc7bd0160de966a05c9b
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Thu May 7 15:34:13 2026 +0200
+
+    Agrego sandwich
+
+ src/ejercicios/1.commit/`Manuel_Morillo.txt | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+commit ef636155d4b580740f48569a96f7e8552177a4b7
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Thu May 7 13:27:33 2026 +0200
+
+    Solucionado ejercicio 1
+
+ src/ejercicios/1.commit/README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit c0aa6c9f68796703215084d5269603bd7ab40aa1
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Thu May 7 12:30:30 2026 +0200
+
+    commit
+
+ src/ejercicios/1.commit/README.md           |  4 ++--
+ src/ejercicios/1.commit/`Manuel_Morillo.txt | 20 ++++++++++++++++++++
+ src/ejercicios/1.commit/sandwich.txt        |  4 +++-
+ 3 files changed, 25 insertions(+), 3 deletions(-)
+
+commit c8ff8074ef9cf03cc0d74191dd6579c34f5f17a6
+Author: Angel Arrojo <jose.angel.arrojo.huesca@ing.com>
+Date:   Wed May 6 00:03:49 2026 +0200
+
+    git exercises
+
+ src/ejercicios/1.commit/README.md       | 57 +++++++++++++++++++++++++++
+ src/ejercicios/1.commit/sandwich.txt    |  4 ++
+ src/ejercicios/2.branchs/README.md      | 70 +++++++++++++++++++++++++++++++++
+ src/ejercicios/2.branchs/pizza.txt      |  3 ++
+ src/ejercicios/3.conflicts/README.md    | 51 ++++++++++++++++++++++++
+ src/ejercicios/3.conflicts/milanesa.txt |  2 +
+ 6 files changed, 187 insertions(+)
+
+commit 555dfee62ca91a9f9e0532ab2c9e388d8e98e573
+Author: JorgeeTomilloo <fp22ifcb0123@aulatomillo.org>
+Date:   Tue May 5 17:41:47 2026 +0200
+
+    update Readme.md
+
+ README.md | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit e868b2477f24884d1b7cb298c052321f99756a9f
+Author: Paulo Franklim dos Santos de Carvalho <paulo.franklim.dos.santos.de.carvalho@ing.com>
+Date:   Tue Feb 27 11:58:42 2024 +0100
+
+    String hands on exercise
+
+ README.md                      |  6 ++++++
+ src/strings/StringHandsOn.java | 22 ++++++++++++++++++++++
+ 2 files changed, 28 insertions(+)
+
+commit 1c74a938ec89a208dd3daec9027ba079971cb01e
+Author: gonzazea <gonzalo.zea.grijalba@gmail.com>
+Date:   Mon Feb 26 20:58:58 2024 +0100
+
+    condicionales y metodos
+
+ src/condicionales/IfElse.java | 14 ++++++++++++++
+ src/condicionales/Switch.java | 20 ++++++++++++++++++++
+ src/metodos/Duplicar.java     | 13 +++++++++++++
+ src/metodos/Invertir.java     | 20 ++++++++++++++++++++
+ 4 files changed, 67 insertions(+)
+
+commit bf80cebb597aa2bf958fc4bf793ac14f9a40c338
+Author: Paulo Franklim <paulofranklim@hotmail.com>
+Date:   Sun Feb 25 21:01:17 2024 +0100
+
+    jdbc example main class
+
+ pom.xml                     |  31 ++++++++++++
+ src/jdbc/DatabaseUtils.java |  41 ++++++++++++++++
+ src/jdbc/JDBCMain.java      | 113 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 185 insertions(+)
+
+commit 551b9b4b40a1308d76a6399fb29a5aebd3822117
+Author: Roberto Gomez Diaz <rogomdi@gmail.com>
+Date:   Wed Feb 21 14:21:38 2024 +0100
+
+    Adds arrays
+
+ src/arrays/ArrayExample.java |  25 +++++
+ src/arrays/BattleShips.java  | 227 +++++++++++++++++++++++++++++++++++++++++++
+ src/arrays/ListsExample.java |  29 ++++++
+ 3 files changed, 281 insertions(+)
+
+commit 3b06e33c8445c47116f2fedc0bb96ed0eee3628a
+Author: Roberto Gomez Diaz <rogomdi@gmail.com>
+Date:   Wed Feb 21 11:18:57 2024 +0100
+
+    Adds strings package
+
+ src/strings/BetterLeftMostNonRepeatEle.java  | 23 ++++++++++++++++++++++
+ src/strings/CheckingStringRotations.java     | 20 +++++++++++++++++++
+ src/strings/EfficientPalindromeChecking.java | 21 ++++++++++++++++++++
+ src/strings/FreuencyImplementation.java      | 17 ++++++++++++++++
+ src/strings/NaviePalindromeChecking.java     | 13 +++++++++++++
+ src/strings/StringCompareTo.java             | 22 +++++++++++++++++++++
+ src/strings/StringConcatenation.java         | 25 ++++++++++++++++++++++++
+ src/strings/StringContains.java              | 11 +++++++++++
+ src/strings/StringExample.java               | 19 ++++++++++++++++++
+ src/strings/StringIndexOf.java               | 20 +++++++++++++++++++
+ src/strings/StringReferenceCompare.java      | 29 ++++++++++++++++++++++++++++
+ 11 files changed, 220 insertions(+)
+
+commit 6aebdd6da742610a34580c0f895e42b34df40384
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Fri Feb 9 11:35:21 2024 +0100
+
+    Second commit
+
+ src/{ => suite1}/ConversionDeTipos.java            |  2 ++
+ src/{ => suite1}/HolaMundo.java                    |  2 ++
+ src/suite1/IntroducePassword.java                  | 28 +++++++++++++++++++
+ src/{ => suite1}/PrimitivosBoolean.java            |  2 ++
+ src/{ => suite1}/PrimitivosCaracteres.java         |  2 ++
+ src/{ => suite1}/PrimitivosEnteros.java            |  2 ++
+ src/{ => suite1}/PrimitivosFloat.java              |  2 ++
+ src/{ => suite1}/SistemasNumericos.java            |  2 ++
+ .../SistemasNumericosEntradaScanner.java           |  2 ++
+ src/suite2/CaracterASCIIApp.java                   | 17 ++++++++++++
+ src/suite2/CodigoASCIIApp.java                     | 17 ++++++++++++
+ src/suite2/DivisibleApp.java                       | 19 +++++++++++++
+ src/suite2/DivisiblesWhileApp.java                 | 17 ++++++++++++
+ src/suite2/Ecuacion2GradoApp.java                  | 32 ++++++++++++++++++++++
+ src/suite2/MuestraNumForApp.java                   | 11 ++++++++
+ src/suite2/MuestraNumWhileApp.java                 | 15 ++++++++++
+ src/suite2/NumeroMayorApp.java                     | 22 +++++++++++++++
+ src/suite2/OperacionesApp.java                     | 21 ++++++++++++++
+ src/suite2/PrecioProductoApp.java                  | 17 ++++++++++++
+ src/suite2/SaludoApp.java                          | 10 +++++++
+ src/suite2/SaludoPersonalizadoApp.java             | 16 +++++++++++
+ src/suite2/VentasApp.java                          | 29 ++++++++++++++++++++
+ 22 files changed, 287 insertions(+)
+
+commit 3d1cc4fc33cb45a2b95536a03ac9648c2429833c
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Thu Feb 1 17:27:52 2024 +0100
+
+    # Esta es una combinación de 2 commits.
+    # Este es el mensaje del 1er commit:
+    
+    First commit
+    
+    # Este es el mensaje del commit #2:
+    
+    First commit
+
+ .gitignore                                               |  13 +++++++++++++
+ HolaMundo.iml                                            |  11 -----------
+ out/production/HolaMundo/ArgumentosLineaComando.class    | Bin 1195 -> 0 bytes
+ .../HolaMundo/ArgumentosLineaComandoCalculadora.class    | Bin 2118 -> 0 bytes
+ out/production/HolaMundo/AutoboxingInteger.class         | Bin 1538 -> 0 bytes
+ out/production/HolaMundo/ConversionDeTipos.class         | Bin 2554 -> 0 bytes
+ .../HolaMundo/EjemploAsignarPropiedadesDeSistema.class   | Bin 2124 -> 0 bytes
+ out/production/HolaMundo/EjemploClaseMath.class          | Bin 2525 -> 0 bytes
+ out/production/HolaMundo/EjemploClaseMathRandom.class    | Bin 1658 -> 0 bytes
+ out/production/HolaMundo/EjemploEjecutarProgramaSO.class | Bin 2023 -> 0 bytes
+ out/production/HolaMundo/EjemploJavaUtilCalendar.class   | Bin 2264 -> 0 bytes
+ out/production/HolaMundo/EjemploJavaUtilDate.class       | Bin 1757 -> 0 bytes
+ out/production/HolaMundo/EjemploJavaUtilDateParse.class  | Bin 2477 -> 0 bytes
+ out/production/HolaMundo/EjemploMetodoGetClass.class     | Bin 2155 -> 0 bytes
+ .../HolaMundo/EjemploPropiedadesDeSistema.class          | Bin 1761 -> 0 bytes
+ out/production/HolaMundo/EjemploString.class             | Bin 1646 -> 0 bytes
+ .../HolaMundo/EjemploStringConcatenacion.class           | Bin 1599 -> 0 bytes
+ .../HolaMundo/EjemploStringExtensionArchivo.class        | Bin 1379 -> 0 bytes
+ out/production/HolaMundo/EjemploStringInmutable.class    | Bin 2342 -> 0 bytes
+ out/production/HolaMundo/EjemploStringMetodos.class      | Bin 3260 -> 0 bytes
+ .../HolaMundo/EjemploStringMetodosArreglo.class          | Bin 2102 -> 0 bytes
+ .../HolaMundo/EjemploStringTestRendimientoConcat.class   | Bin 1711 -> 0 bytes
+ out/production/HolaMundo/EjemploStringValidar.class      | Bin 1655 -> 0 bytes
+ out/production/HolaMundo/EjemploVariablesDeEntorno.class | Bin 2495 -> 0 bytes
+ out/production/HolaMundo/HolaMundo.class                 | Bin 1595 -> 0 bytes
+ out/production/HolaMundo/OperadorInstanceOf.class        | Bin 1939 -> 0 bytes
+ .../HolaMundo/OperadorInstanceOfTiposGenericos.class     | Bin 2436 -> 0 bytes
+ out/production/HolaMundo/OperadorTernario.class          | Bin 1892 -> 0 bytes
+ .../HolaMundo/OperadorTernarioNumeroMayor.class          | Bin 1768 -> 0 bytes
+ out/production/HolaMundo/OperadoresAritmeticos.class     | Bin 1935 -> 0 bytes
+ out/production/HolaMundo/OperadoresAsignacion.class      | Bin 1434 -> 0 bytes
+ out/production/HolaMundo/OperadoresIncrementales.class   | Bin 1322 -> 0 bytes
+ out/production/HolaMundo/OperadoresLogico.class          | Bin 1657 -> 0 bytes
+ out/production/HolaMundo/OperadoresLogicosLogin.class    | Bin 1933 -> 0 bytes
+ out/production/HolaMundo/OperadoresRelacionales.class    | Bin 1831 -> 0 bytes
+ out/production/HolaMundo/OperadoresUnarios.class         | Bin 1131 -> 0 bytes
+ out/production/HolaMundo/PasarPorReferencia.class        | Bin 1635 -> 0 bytes
+ out/production/HolaMundo/PasarPorReferencia2.class       | Bin 1621 -> 0 bytes
+ out/production/HolaMundo/PasarPorValor.class             | Bin 1348 -> 0 bytes
+ out/production/HolaMundo/Persona.class                   | Bin 535 -> 0 bytes
+ out/production/HolaMundo/PrecedenciaOperadores.class     | Bin 1307 -> 0 bytes
+ out/production/HolaMundo/PrimitivosBoolean.class         | Bin 1356 -> 0 bytes
+ out/production/HolaMundo/PrimitivosCaracteres.class      | Bin 1878 -> 0 bytes
+ out/production/HolaMundo/PrimitivosEnteros.class         | Bin 2334 -> 0 bytes
+ out/production/HolaMundo/PrimitivosFloat.class           | Bin 1697 -> 0 bytes
+ out/production/HolaMundo/SentenciaFor.class              | Bin 1287 -> 0 bytes
+ out/production/HolaMundo/SentenciaForArreglo.class       | Bin 2139 -> 0 bytes
+ out/production/HolaMundo/SentenciaForEach.class          | Bin 1519 -> 0 bytes
+ out/production/HolaMundo/SentenciaIfElse.class           | Bin 1441 -> 0 bytes
+ out/production/HolaMundo/SentenciaIfElseNumDiasMes.class | Bin 1556 -> 0 bytes
+ out/production/HolaMundo/SentenciaSwitchCase.class       | Bin 2566 -> 0 bytes
+ .../HolaMundo/SentenciaSwitchCaseNumDiasMes.class        | Bin 1578 -> 0 bytes
+ out/production/HolaMundo/SentenciaWhile.class            | Bin 1250 -> 0 bytes
+ out/production/HolaMundo/SentenciasBucleEtiquetas.class  | Bin 1647 -> 0 bytes
+ .../HolaMundo/SentenciasBucleEtiquetasBuscar.class       | Bin 1618 -> 0 bytes
+ out/production/HolaMundo/SistemasNumericos.class         | Bin 2457 -> 0 bytes
+ .../HolaMundo/SistemasNumericosEntradaScanner.class      | Bin 2131 -> 0 bytes
+ out/production/HolaMundo/WrapperBoolean.class            | Bin 2061 -> 0 bytes
+ out/production/HolaMundo/WrapperInteger.class            | Bin 2253 -> 0 bytes
+ .../HolaMundo/WrapperOperadoresRelacionales.class        | Bin 1857 -> 0 bytes
+ out/production/HolaMundo/config.properties               |   5 -----
+ 61 files changed, 13 insertions(+), 16 deletions(-)
+
+commit bf746a5d776f0b96ca6dcd9b8fb0967336e60b4e
+Author: ud17ir <jose.angel.arrojo.huesca@ing.com>
+Date:   Thu Feb 1 17:01:55 2024 +0100
+
+    First commit
+
+ HolaMundo.iml                                      |  11 ++++++
+ .../HolaMundo/ArgumentosLineaComando.class         | Bin 0 -> 1195 bytes
+ .../ArgumentosLineaComandoCalculadora.class        | Bin 0 -> 2118 bytes
+ out/production/HolaMundo/AutoboxingInteger.class   | Bin 0 -> 1538 bytes
+ out/production/HolaMundo/ConversionDeTipos.class   | Bin 0 -> 2554 bytes
+ .../EjemploAsignarPropiedadesDeSistema.class       | Bin 0 -> 2124 bytes
+ out/production/HolaMundo/EjemploClaseMath.class    | Bin 0 -> 2525 bytes
+ .../HolaMundo/EjemploClaseMathRandom.class         | Bin 0 -> 1658 bytes
+ .../HolaMundo/EjemploEjecutarProgramaSO.class      | Bin 0 -> 2023 bytes
+ .../HolaMundo/EjemploJavaUtilCalendar.class        | Bin 0 -> 2264 bytes
+ out/production/HolaMundo/EjemploJavaUtilDate.class | Bin 0 -> 1757 bytes
+ .../HolaMundo/EjemploJavaUtilDateParse.class       | Bin 0 -> 2477 bytes
+ .../HolaMundo/EjemploMetodoGetClass.class          | Bin 0 -> 2155 bytes
+ .../HolaMundo/EjemploPropiedadesDeSistema.class    | Bin 0 -> 1761 bytes
+ out/production/HolaMundo/EjemploString.class       | Bin 0 -> 1646 bytes
+ .../HolaMundo/EjemploStringConcatenacion.class     | Bin 0 -> 1599 bytes
+ .../HolaMundo/EjemploStringExtensionArchivo.class  | Bin 0 -> 1379 bytes
+ .../HolaMundo/EjemploStringInmutable.class         | Bin 0 -> 2342 bytes
+ .../HolaMundo/EjemploStringMetodos.class           | Bin 0 -> 3260 bytes
+ .../HolaMundo/EjemploStringMetodosArreglo.class    | Bin 0 -> 2102 bytes
+ .../EjemploStringTestRendimientoConcat.class       | Bin 0 -> 1711 bytes
+ .../HolaMundo/EjemploStringValidar.class           | Bin 0 -> 1655 bytes
+ .../HolaMundo/EjemploVariablesDeEntorno.class      | Bin 0 -> 2495 bytes
+ out/production/HolaMundo/HolaMundo.class           | Bin 0 -> 1595 bytes
+ out/production/HolaMundo/OperadorInstanceOf.class  | Bin 0 -> 1939 bytes
+ .../OperadorInstanceOfTiposGenericos.class         | Bin 0 -> 2436 bytes
+ out/production/HolaMundo/OperadorTernario.class    | Bin 0 -> 1892 bytes
+ .../HolaMundo/OperadorTernarioNumeroMayor.class    | Bin 0 -> 1768 bytes
+ .../HolaMundo/OperadoresAritmeticos.class          | Bin 0 -> 1935 bytes
+ .../HolaMundo/OperadoresAsignacion.class           | Bin 0 -> 1434 bytes
+ .../HolaMundo/OperadoresIncrementales.class        | Bin 0 -> 1322 bytes
+ out/production/HolaMundo/OperadoresLogico.class    | Bin 0 -> 1657 bytes
+ .../HolaMundo/OperadoresLogicosLogin.class         | Bin 0 -> 1933 bytes
+ .../HolaMundo/OperadoresRelacionales.class         | Bin 0 -> 1831 bytes
+ out/production/HolaMundo/OperadoresUnarios.class   | Bin 0 -> 1131 bytes
+ out/production/HolaMundo/PasarPorReferencia.class  | Bin 0 -> 1635 bytes
+ out/production/HolaMundo/PasarPorReferencia2.class | Bin 0 -> 1621 bytes
+ out/production/HolaMundo/PasarPorValor.class       | Bin 0 -> 1348 bytes
+ out/production/HolaMundo/Persona.class             | Bin 0 -> 535 bytes
+ .../HolaMundo/PrecedenciaOperadores.class          | Bin 0 -> 1307 bytes
+ out/production/HolaMundo/PrimitivosBoolean.class   | Bin 0 -> 1356 bytes
+ .../HolaMundo/PrimitivosCaracteres.class           | Bin 0 -> 1878 bytes
+ out/production/HolaMundo/PrimitivosEnteros.class   | Bin 0 -> 2334 bytes
+ out/production/HolaMundo/PrimitivosFloat.class     | Bin 0 -> 1697 bytes
+ out/production/HolaMundo/SentenciaFor.class        | Bin 0 -> 1287 bytes
+ out/production/HolaMundo/SentenciaForArreglo.class | Bin 0 -> 2139 bytes
+ out/production/HolaMundo/SentenciaForEach.class    | Bin 0 -> 1519 bytes
+ out/production/HolaMundo/SentenciaIfElse.class     | Bin 0 -> 1441 bytes
+ .../HolaMundo/SentenciaIfElseNumDiasMes.class      | Bin 0 -> 1556 bytes
+ out/production/HolaMundo/SentenciaSwitchCase.class | Bin 0 -> 2566 bytes
+ .../HolaMundo/SentenciaSwitchCaseNumDiasMes.class  | Bin 0 -> 1578 bytes
+ out/production/HolaMundo/SentenciaWhile.class      | Bin 0 -> 1250 bytes
+ .../HolaMundo/SentenciasBucleEtiquetas.class       | Bin 0 -> 1647 bytes
+ .../HolaMundo/SentenciasBucleEtiquetasBuscar.class | Bin 0 -> 1618 bytes
+ out/production/HolaMundo/SistemasNumericos.class   | Bin 0 -> 2457 bytes
+ .../SistemasNumericosEntradaScanner.class          | Bin 0 -> 2131 bytes
+ out/production/HolaMundo/WrapperBoolean.class      | Bin 0 -> 2061 bytes
+ out/production/HolaMundo/WrapperInteger.class      | Bin 0 -> 2253 bytes
+ .../HolaMundo/WrapperOperadoresRelacionales.class  | Bin 0 -> 1857 bytes
+ out/production/HolaMundo/config.properties         |   5 +++
+ src/ConversionDeTipos.java                         |  44 +++++++++++++++++++++
+ src/HolaMundo.java                                 |  33 ++++++++++++++++
+ src/PrimitivosBoolean.java                         |  19 +++++++++
+ src/PrimitivosCaracteres.java                      |  24 +++++++++++
+ src/PrimitivosEnteros.java                         |  37 +++++++++++++++++
+ src/PrimitivosFloat.java                           |  22 +++++++++++
+ src/SistemasNumericos.java                         |  40 +++++++++++++++++++
+ src/SistemasNumericosEntradaScanner.java           |  31 +++++++++++++++
+ 68 files changed, 266 insertions(+)
+
+commit d0725142b82f7905e21aab0a71e562e421ee830e
+Author: Angel <angelarrojo@gmail.com>
+Date:   Thu Feb 1 13:30:50 2024 +0100
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)

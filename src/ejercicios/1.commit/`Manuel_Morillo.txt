@@ -1,0 +1,190 @@
+ 1.1 PREGUNTAS TEORICAS.¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Tienes  que crear una carpeta para tu proyecto y abres la terminal en esa carpeta y pones el comando git init
+
+ ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Debo de utilizar el siguiente comando git rm --cached -r
+. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No tiene porque ya que para que esre controlado tendrias que poner tu mismo  un comando.
+
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+ Se utilizan dos comandos git add para preparar el archivo y luego git commit para guardarlo permanentemente en el repositorio local
+
+ Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+ Con git status ves los archivos organizados por colores y cuales fueron modificados.
+
+ ¿Qué comando se utiliza para hacer un commit?
+  se utiliza el comando git commit -m esa -m funcona para poner  la descripcion que quieras.
+
+  En sus propias palabras, ¿qué es un commit?
+  Un commit es una descripcion de un proyecto tiene que ser detllaada ya que es muy importante tanto para ti como los demas a la hora de traabajar.
+1.2 PRACTICO.  Esto es la explicacion del ejercicio 1ya que la salida del comando  estan todos los datos guardados.
+  C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git status
+  On branch main
+  Your branch is ahead of 'origin/main' by 2 commits.
+    (use "git push" to publish your local commits)
+
+  nothing to commit, working tree clean
+
+  C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+
+2git add sandwich.txt
+fatal: pathspec 'sandwich.txt' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git add 1.commit/sandwich.txt
+fatal: pathspec '1.commit/sandwich.txt' did not match any files
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>cd src\ejercicios
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>git add 1.commit/sandwich.txt
+
+3C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.commit/`Manuel_Morillo.txt
+
+4todos los comandos que utilizado para agregar el sandwich ya que tenia que ir a la otr carpeta porque no era esta .
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>git commit -m "Agrego sandwich
+[main b54649e] Agrego sandwich
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+5C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>
+
+
+6C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src\ejercicios>git commit-m "Agrego mi sandwich.txt"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+7Pasa lo mismo que el anterior tendremos que realizar la misma tarea.
+
+
+7C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src> git add 1.commit/Manuel.Morillo.txt
+warning: could not open directory 'src/1.commit/': No such file or directory
+fatal: pathspec '1.commit/Manuel.Morillo.txt' did not match any files
+
+8C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src> git add .
+
+9C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src> git commit "Agrego salsas"
+error: pathspec 'Agrego salsas' did not match any file(s) known to git
+
+10C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src> git commit -m "Agrego salsas"
+[main 70be4fc] Agrego salsas
+ 1 file changed, 43 insertions(+)
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src>
+
+11Sale en la salida  de redigirador de un archivo y sirve para recuperar archivos.
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src>git log>Manuel.Morillo.txt
+
+12 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src>
+Sirve para ver los commits en fila.
+sers\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src>git log --oneline>Manuel.Morillo.txt
+Y este sirve para ver las estadisticas y los archivos   que han cambiado del commit.
+:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2\src>git log --stat>Manuel_Morillo.txt
+13 Este comando sirve para inspeccionar el archivo.
+Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git diff b54649e 70be4fc
+diff --git a/src/ejercicios/1.commit/`Manuel_Morillo.txt b/src/ejercicios/1.commit/`Manuel_Morillo.txt
+index 3b84f17..3d54c3c 100644
+--- a/src/ejercicios/1.commit/`Manuel_Morillo.txt
++++ b/src/ejercicios/1.commit/`Manuel_Morillo.txt
+@@ -26,3 +26,46 @@ No tiene porque ya que para que esre controlado tendrias que poner tu mismo  un
+   nothing to commit, working tree clean
+
+   C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
++
++
++git add sandwich.txt
+:
+ 14 Este sirve para lo mismo que el de meld pero para Linux
+it difftool --tool=opendiff <hash>`
+
+15 Para agregar un nuevo archivo en la carpeta ingredientes deberemeos hacer lo siguiente.
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo "pan" >> sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo "queso" >> sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo "medallon" >> sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo "cebolla" >> sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo "salsa"  >> sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+15.1 He tenido que mover el archivo de sandwich2.txt  ya que  lo he creado en otro lado ya estaria bien.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> move sandwich2.txt src\ejercicios\1.commit\
+Se han movido         1 archivos.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+16 Para cambiar el nombre del archivo
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git mv sandwich2.txt sandwich2_feo.txt
+fatal: bad source, source=sandwich2.txt, destination=sandwich2_feo.txt
+
+16.1 Este siguiente comando sirve para confirmar que lo has renombrado.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m  "Renombrar sandwich2 a sandwich_feo"
+[main db91dac] Renombrar sandwich2 a sandwich_feo
+ 2 files changed, 5 insertions(+)
+ create mode 100644 src/ejercicios/1.commit/sandwich.txt2.js
+ create mode 100644 src/ejercicios/1.commit/sandwich2.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+El cambio de git status y git log es  que git  status encuentra archivos y git log --oneline te muestra la lista de archivos
+
+17 Para eliminarlo he ejecutado este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git rm -f src/ejercicios/1.commit/sandwich2_feo.txt
+rm 'src/ejercicios/1.commit/sandwich2_feo.txt'
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Eliminar sandwich2_feo.txt"
+[main d147b5d] Eliminar sandwich2_feo.txt
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 src/ejercicios/1.commit/sandwich2_feo.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+17.1 Lo que hace el git status es pasar de cambios listos para commit a working tree en cambio
+git log --online lo que hace es lo siguiente añade un nuevo commit al historial de borrado.
+
+18 Lo que veo al inspeccionar la bitacora con el comando git log --stat son todos los  datos que he creado.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git log --stat
+commit d147b5db4a8fd0f813d60d2e36cd3838b929bb4f (HEAD -> main)
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+Date:   Fri May 8 08:55:36 2026 +0200
+
+    Eliminar sandwich2_feo.txt
+
+ src/ejercicios/1.commit/sandwich2_feo.txt | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit eeb85e950524b62d0d846cac3bdd2e37f1ccd04e
+Author: 1SMR <fp25ifcm0164@aulatomillo.org>
+:
+19 Para subirlo a mi repositorio remoto hice lo siguiente
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b ejercicio1_vuestro_Manuel_Morillo_github
+Switched to a new branch 'ejercicio1_vuestro_Manuel_Morillo_github'
+
+Final Esto lo que ha hecho es devolver el archivo otr vez como estaba al principio
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout c0aa6c9 -- src/ejercicios/1.commit/sandwich.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
