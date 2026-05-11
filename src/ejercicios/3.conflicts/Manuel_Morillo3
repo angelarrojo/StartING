@@ -1,0 +1,66 @@
+# 3. Conflicts
+
+Para este ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro de la carpeta `1.commit`.
+
+En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
+
+## Ejercicio 3
+
+### 3.1. Preguntas
+
+1. ¿Qué es un conflicto? Cuando ocurre? ¿Es bueno o malo?
+
+Un conflicto es cuando hay dos personas trabajando al mismo tiempo
+2. ¿Se puede evitar un conflicto? ¿Cómo?
+Se puede evitar creando ramas aparte
+3.1 PRACTICO
+1 y 2 Con este comando creamos la rama y nos movemos a ella.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch ejercicio3_vuestro_Manuel_Morillo_github
+fatal: a branch named 'ejercicio3_vuestro_Manuel_Morillo_github' already exists
+
+3 Estamos trabajando en la rama actual.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git branch
+  anana
+  ejercicio1_vuestro_Manuel-tech0_github
+  ejercicio1_vuestro_Manuel_Morillo_github
+  ejercicio1_vuestro_usuario_github
+  ejercicio2_vuestro_Manuel_Morillo.txt2
+  ejercicio2_vuestro_Manuel_Morillo2_github
+* ejercicio3_vuestro_Manuel_Morillo_github
+  main
+  suprema
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+4 Con este comando creamos la carpeta.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>mkdir 3.conflicts
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>echo. > 3.conflicts\Manuel_Morillo.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+5 Ya la he creado anteriormente y este seria el comando que he utilizado.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git checkout -b suprema
+fatal: a branch named 'suprema' already exists
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+6
+
+
+7 Con este comando se te abrira el bloc de notas y tendras que cambiar el lomo por pollo
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>notepad src\ejercicios\3.conflicts\milanesa.txt
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+8Con este comando se comitea
+
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> git commit -m "Cambiar lomo por pollo en milanes.txt"
+[ejercicio3_vuestro_Manuel_Morillo_github 83355e0] Cambiar lomo por pollo en milanes.txt
+ 1 file changed, 10 insertions(+)
