@@ -1,0 +1,44 @@
+Preguntas:
+
+1. Lo tienes que hacer abriendo la terminal y luego tienes que escribir el comando "git init"
+2. Lo que tienes que hacer es escribir en la terminal el comando "rmdir /s .git" lo que hace es eliminar la carpeta .git
+3. Si pertenece a Git, pero hasta que no guardes los cambios con el comando "git commit" no se guardaran los cambios en el repositorio
+4. Tienes que utilizar el comando "git add nombre_archivo"
+5. Para poder ver los archivos que se han modificado tienes que poner el comando "git status"
+6. El comando que tienes que utilizar es "git commit -m "mensaje cualquiera""
+7. Un commit es un comando que pones en la terminal para guardar cambios del proyecto.
+
+
+Ejercicio 2:
+
+5. Lo que me sale es esto "Changes to be committed:
+                             (use "git restore --staged <file>..." to unstage)
+                                   new file:   src/ejercicios/1.commit/JosueJordan.txt
+
+                           Changes not staged for commit:
+                             (use "git add <file>..." to update what will be committed)
+                             (use "git restore <file>..." to discard changes in working directory)
+                                   modified:   src/ejercicios/1.commit/JosueJordan.txt
+                                   modified:   src/ejercicios/1.commit/sandwich.txt"
+Los archivos que salen en rojo significa que Git sabe que estan ahi pero es como que pasa de ellos.
+7. Ahora el archivo sandwich.txt ahora sale en verde que significa que lo hemos metido en la zona de de preparacion
+9. Ahora el ya no aparece eso quiere decir que ya no hay nada en la zona de preparacion, y el archivo sandwich.txt ya no sale en verde porque ya no esta en la zona de preparacion, ahora el archivo sandwich.txt sale en blanco porque ya se guardo el cambio en el repositorio
+11. Lo que hace ese comando es mostrar todos los commits que se hicieron en el proyecto, y aparecen del más nuevo al más antiguo, esto es lo que me sale "commit 98f3850272392ae97824c968a50a9654d3911220 (HEAD -> ejercicio1_JosueJordan-AI)
+                                                                                                                                                          Author: Jordan <fp25ifcm0161@aulatomillo.org>
+                                                                                                                                                          Date:   Mon May 11 02:55:33 2026 +0200
+
+                                                                                                                                                              Agrego salsas a sandwich.txt
+
+                                                                                                                                                          commit bde26422b91aca01230b9eef80995b6ec1cc155f
+                                                                                                                                                          Author: Jordan <fp25ifcm0161@aulatomillo.org>
+                                                                                                                                                          Date:   Mon May 11 02:52:40 2026 +0200
+
+                                                                                                                                                              Agrego mi sandwich.txt
+"
+
+12. El comando "git log --oneline" lo que hace es que muestra todo el historial resumido en una línea, y el comando "git log --stat" además de mostrarte los commits te muestra cuantas líneas han cambiado y qué archivos fueron modificados
+13.1. El comando "git difftool --tool=meld <hash>" que es de windows te enseña una ventana con dos paneles el de la izquierda es el archivo antiguo y el de la derecha es el nuevo
+13.2 El comando "git difftool --tool=opendiff <hash>" es de linux, funciona casi igual que el de windows, pero en vez de mostrarte una ventana con dos paneles, te muestra una ventana con tres paneles, el de la izquierda es el archivo antiguo, el del medio es el nuevo y el de la derecha es un panel donde puedes editar el código
+16. Cuando ejecutas el comando "git status" despues de hacer el "git mv" aparece el mensaje de New File, luego al poner el comando "git log --oneline" veras una linea nueva con el mensaje y un codigo.
+17 . Después de hacer el commit del borrado, el git status aparece borrado, ya no sale nada en rojo ni en verde porque Git ya procesó que el archivo sandwich2_feo.txt fue eliminado oficialmente, el directorio de trabajo coincide con el repositorio, y el cambio con el comando "git log --oneline" aparece una nueva linea con el mensaje del commit y un código nuevo.
+18. Lo que ves al poner el comando "git log --stat" ves un desglose de archivos que cambiaron en todos los commits que hicistes es decir como un historial de todo lo que has hecho en el proyecto.
