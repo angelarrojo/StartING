@@ -1,0 +1,25 @@
+Ejercicio 2.
+
+Preguntas:
+
+1. Una rama es una copia del proyecto con el cual podemos guardar versiones del proyecto con las que podemos trabajar.
+2. Porque te permiten trabajar en varias funciones diferentes a la vez.
+3. Para poder crear una rama tienes que utilizar el comando "git branch nombre_de_la_rama"
+4. Para poder moverte a otra rama tienes que utilizar el comando "git checkout nombre_de_la_rama"
+5. Para eliminar una rama tienes que usar el comando "git branch -d nombre_de_la_rama"
+6. Para poder crear una rama y poder moverte a ella a la misma vez que la creas tienes que usar el comando "git checkout -b nombre_de_la_rama"
+7. Un merge es la fusion entre una rama secundaria con una principal.
+8. Para poder hacer un merge lo primero que tienes que hacer es estar situado en la rama principal y luego tienes que usar el comando "git merge nombre_de_la_rama_secundaria"
+9. Es una etiqueta que se pone a un commit.
+10.Para poder crear un tag tienes que usar el comando "git tag nombre_del_tag"
+
+
+
+
+Ejercicios:
+
+6. Cuando pones el comando lo primero que veras es una linea recta de commits, todo esta en orden como si fuera una fila.
+7.
+
+
+
