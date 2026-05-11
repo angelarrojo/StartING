@@ -150,4 +150,34 @@ Already up to date.
 
 C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
 
-17
+17 Se observa que la rama esta limpia.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git status
+On branch bife
+nothing to commit, working tree clean
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+18 Con este comando te muestra lo que tiene el archivo
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2> type src\ejercicios\3.conflicts\milanesa.txt
+pan rallado
+bife
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+19 Con el comando que nos da tambien se puede hacer pero yo lo hice mediante un commit pero en realidad git merge abort es el mejor y mas corto
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Resolver conflicto con suprema"
+[bife daf9642] Resolver conflicto con suprema
+
+20 Hice de nuevo este comando
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git merge suprema
+Already up to date.
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>
+
+21  Ya esta resolvido ya que hice el commit anteriormente
+
+C:\Users\1SMR.FT10DELOITTE04\IdeaProjects\StartING2>git commit -m "Resolver conflicto con suprema"
+[bife daf9642] Resolver conflicto con suprema
