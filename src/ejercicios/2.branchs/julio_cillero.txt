@@ -1,0 +1,31 @@
+¿Qué es un branch?
+Un branch es una copia independiente del codigo original para poder trabajar sobre ella sin afectar a la original
+¿Por qué pueden ser útiles los branches?
+Para probar cosas y si salen mal no afectr el codigo principal, para organizar el desarrollo o para trabajar mejor en equipo
+¿Cómo se crea una branch?
+Para crear una branch vamos a tener que poner en la terminal git branch "nombre del branch"
+¿Cómo se cambia a una branch?
+Para cambiar a una branch vamos a tener que poner en la terminal git checkout "nombre del branch"
+¿Cómo se elimina una branch?
+Para eliminar una branch vamos a tener que poner en la terminal git branch -d "nombre de la rama"
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+Para hacerlo a la vez vamos a tener que poner en la terminal git checkout -b "nombre de la rama"
+¿Qué es un merge?
+Un merge es el proceso de unir los cambios de una branch con otra en Git
+¿Cómo se realiza un merge?
+Para realizar un merge primero tendremos que ponernos en la rama principal poniendo git switch main y luego ejecutar el merge uniendo la otra branch con el comando git merge "nombre de la rama"
+¿Que es un tag?
+Un tag es una etiqueta se pone sobre un git para poder identificar una version
+¿Cómo se crea un tag?
+Para crear un tag tendremos que poner en la terminal git tag "nombre del tag"
+
+Parte Practica:
+6. Poniendo el comando git graph se ve que las primeras frases son de los commits que hemos hecho
+
+10. Poniendo git graph se ve el historial de commits que he hecho, tambien se ven en verde las 3 ramas que se han usado para los commits
+
+13. Se ve que el nuevo commit que hemos hecho sale con la rama que hemos utilizado y con la etiqueta de head
+
+15. Vemos que el merge que hemos hecho se ha hecho correctamente ya que esta en la rama que tiene que estar con la etiqueta head
+
+16. Aparece la rama anana y la rama main
