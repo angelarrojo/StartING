@@ -19,7 +19,7 @@ Preguntas:
 Ejercicios:
 
 6. Cuando pones el comando lo primero que veras es una linea recta de commits, todo esta en orden como si fuera una fila.
-7.
+10. Ahora verás que la línea se ha movido un paso más en la rama anana.
 
 
 
