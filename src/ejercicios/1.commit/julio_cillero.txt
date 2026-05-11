@@ -1,0 +1,56 @@
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+Tendriamos que crear una carpeta en la que fueramos a trabajar, despues dentro del proyecto meternos en la terminal (ALT+F12) y escribir git init
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Tendriamos que meternos en la terminal y poner el comando rm -rf .git
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No, el archivo detectaria el git pero no lo controlaria ya que para eso lo tendriamos que poner nosotros con el comando git add
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+Para agregar un archivo vamos a tener que poner el comando git add "nombre del archivo"
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+Para ver los archivos que han sido modificados vamos a utilizar el comando git status
+6. ¿Qué comando se utiliza para hacer un commit?
+Para hacer un commit vamos a tener que poner git commit -m "El mensaje que queramos poner"
+7. En sus propias palabras, ¿qué es un commit?
+Un commit es un guardado que nosotros hacemos junto a un comentario para poder volver a esa version cuando queramos
+
+Ejercicios Practicos:
+5. On branch ejercicio1_JulioCillero12_github
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/ejercicios/1.commit/julio_cillero.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/julio_cillero.txt
+        modified:   src/ejercicios/1.commit/sandwich.txt
+
+Explicacion:
+On branch: me dice donde estoy trabajando
+Changes to be commited: El archivo que guarde pero lo tengo que volver a guardar porque escribi en el
+Changed not staged for commit: Son los cambios nuevos que Git detecta pero que aun no los he añadido con el comando git add
+
+7. Antes el archivo sandwich.txt estaba en rojo y significa que no estaba guardado, ahora esta en verde entonces significa que esta en el repositorio local
+
+9. Los archivos que salian en "Changes to be commited" no salen ya que han sido procesados, basicamente han pasado al repositorio local
+
+11. commit ebd375a8ff0fecac7228dfc5ee60ee426dea034f (HEAD -> ejercicio1_JulioCillero12_github)
+    Author: Julio Cillero <fp25ifcm0157@aulatomillo.org>
+    Date:   Thu May 7 14:27:10 2026 +0200
+
+        Agrego salsas
+
+    commit 14485f8f5dc5ca40e87ff87ef7027954b320949c
+    Author: Julio Cillero <fp25ifcm0157@aulatomillo.org>
+    Date:   Thu May 7 14:15:07 2026 +0200
+Explicacion:
+git log muestra el historial de commits que hemos hecho en el repositorio, su orden va que los mas recientes arriba y los primeros abajo, por orden de hora
+
+12. git log --oneline: Muestra el historial de commits de forma compacta
+git log --stat: Muestra el historial detallando archivos modificados o eliminaciones
+13. El comando git diff sirve para comparar las diferencias entre dos versiones del proyecto, las lineas con un + representan lo que se ha añadido y - lo que se ha quitado
+
+17. Git status: Despues de poner el commit se ve un mensaje que pone nothing "to commit, working tree clean" esto significa que se ha borrado correctamente
+git log  --oneline: Aparece el commit que he puesto con un identificador
+
+18. Poniendo git log --stat nos muestra un historial super preciso, incluyendo todos los commits o las estadisticas de los archivos
