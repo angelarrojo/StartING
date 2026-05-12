@@ -6,6 +6,8 @@ public class Ejercicio01 {
         // TODO:
         // Declara un String con tu nombre
         // Muéstralo por pantalla con System.out.println
+        String nombre = "Dani";
+        System.out.println("Dani");
 
     }
 }

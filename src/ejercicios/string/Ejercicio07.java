@@ -8,6 +8,10 @@ public class Ejercicio07 {
 
         String s1 = "Texto";
         String s2 = new String("Texto");
+        System.out.println(x==y);
+        System.out.println(s1==s2);
+        System.out.println(s1.equals(s2));
+
 
         // TODO:
         // 1. Compara x e y con ==

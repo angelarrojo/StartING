@@ -4,6 +4,8 @@ public class Ejercicio04 {
     public static void main(String[] args) {
 
         String texto = "Mensaje";
+        System.out.println(texto.charAt(0));
+        System.out.println(texto.charAt(texto.length()-1));
 
         // TODO:
         // 1. Muestra el primer carácter

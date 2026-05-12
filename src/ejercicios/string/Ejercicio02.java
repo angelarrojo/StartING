@@ -8,6 +8,8 @@ public class Ejercicio02 {
         // 2. Declara otro String con el texto "Hola"
         // 3. Concatena ambos y muéstralos por pantalla
         // Ejemplo: "Hola Ana"
-
+        String nombre = "Dani";
+        String Hola = "Hola";
+        System.out.println(Hola+" "+nombre);
     }
 }
