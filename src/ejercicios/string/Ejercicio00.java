@@ -1,4 +1,4 @@
-package ejercicios.string;
+
 
 public class Ejercicio00 {
     public static void main(String[] args) {
@@ -14,13 +14,16 @@ public class Ejercicio00 {
         //    - qué tipo devuelven (return)
 
         // 3. Elige UN método de String que NO hayamos usado en clase.
+        contains
 
         // 4. Escribe aquí el nombre del método elegido (solo como comentario)
+             contains
 
         // 5. Explica con tus palabras qué hace ese método (solo un comentario, no código)
+        En via si es verdadero si la tiene y falso si no la tiene.
 
         // 6. Indica un ejemplo de uso del método (solo escribe qué resultado esperas, no hace falta que funcione)
-
+              "hola mundo"  .contains("mundo") meda verdadero.
         // IMPORTANTE:
         // - Este ejercicio NO es para ejecutar código
         // - Se evalúa que sepas buscar, leer y entender la API
