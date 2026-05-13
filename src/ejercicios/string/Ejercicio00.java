@@ -14,11 +14,11 @@ public class Ejercicio00 {
         //    - qué tipo devuelven (return)
 
         // 3. Elige UN método de String que NO hayamos usado en clase.
-
+ - Char
         // 4. Escribe aquí el nombre del método elegido (solo como comentario)
-
+ - int index
         // 5. Explica con tus palabras qué hace ese método (solo un comentario, no código)
-
+ - Este metodo te da el valor especifico
         // 6. Indica un ejemplo de uso del método (solo escribe qué resultado esperas, no hace falta que funcione)
 
         // IMPORTANTE:
