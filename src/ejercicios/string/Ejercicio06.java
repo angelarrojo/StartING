@@ -6,10 +6,8 @@ public class Ejercicio06 {
         String s1 = "Java";
         String s2 = "java";
 
-        // TODO:
-        // 1. Compara usando equals
-        // 2. Compara usando equalsIgnoreCase
-        // 3. Muestra los resultados
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equalsIgnoreCase(s2));
 
     }
 }
