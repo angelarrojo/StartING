@@ -1,0 +1,47 @@
+Actualizado dia 13 de mayo
+
+Ejercicio 6: git graph explicacion de lo que hay.
+
+ - Con este comando puedes ver la creacion de las ramas visualmente .
+
+PS C:\Users\formacion\IdeaProjects\StartING> git graph
+* 5422087 (main) Borro repositorio clonado por error del principio
+- En esta parte de la rama yo borre un clonado que hice por error en la primera practica. lo borre con el comando rm .
+
+- Toda esta parte va junto
+*   4152af4 (origin/main, origin/HEAD) Merge pull request #25 from angelarrojo/T0511
+|\
+| * a4618e7 (origin/T0511) string 0511                                                        -
+|/
+- Lo que a pasado aqui es que la rama de julien (creo que se llama asi) T0511 hizo una rama donde modifico y creo un codigo para poner los ejercicios string.
+- La accion que el hizo es la de hacer una rama aparte y despues meterla a main. donde le pidio a angelarrojo. permiso para poder meter los ejercicios.
+
+
+| * 79d62e9 (HEAD -> ejercicio2_Juan_hinojosa_github) update exercise
+| *   410748c (tag: pizza) Merge branch 'anana' into ejercicio2_Juan_hinojosa_github
+
+Ejercicio 10:
+| |\           - Estos simbolos significan que hemos creado una rama y el * es una rama con un commit
+| | * 0f1a478 (anana) Agregar anana    - Cree una rama donde le puse el nombre anana y esta rama me valio para poner el condimento dentro de ella y luego.
+aplicar esta rama al archivo pizza.txt.
+
+Ejercicio 13:
+El ejercicio 13 sigue con la rama que hizimos anteriormente que es anana que esta en otra parte sin interferirse con la principal del ejercicio2.
+| |\
+| | * 0f1a478 (anana) Agregar anana                      - La rama anana aislada
+| * | c14cf1b Agrego cebolla                            - Aqui se crea un nuevo commit donde le agregamos cebolla al sandwich.
+| |/                         - Aqui unimos la rama anana, y la juntamos con el nuevo ingrediente que es cebolla.
+
+Ejercicio 6:
+Estos son los commits iniciales que cree donde todavia no e creado ninguna rama.
+
+| * 47c2cac Agrego oregano                        -     Commit oregano
+| * 4585ed9 Agregar albahaca                     - Commit albahaca
+
+
+Ejercicio 16:
+ Con este comando puedes ver las ramas, con el * se puede ver en que rama estas y te permite ver las que estan fusionadas.
+PS C:\Users\formacion\IdeaProjects\StartING> git branch --merged
+  anana
+* ejercicio2_Juan_hinojosa_github
+  ejercicio2_Juan_hinojosa_githud
