@@ -5,6 +5,8 @@ public class Ejercicio03 {
 
         String texto = "Java";
 
+        System.out.println(texto.length());
+
         // TODO:
         // Muestra por pantalla la longitud del String
 

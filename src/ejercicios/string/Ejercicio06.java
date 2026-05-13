@@ -6,10 +6,12 @@ public class Ejercicio06 {
         String s1 = "Java";
         String s2 = "java";
 
-        // TODO:
-        // 1. Compara usando equals
-        // 2. Compara usando equalsIgnoreCase
-        // 3. Muestra los resultados
+        boolean a = s1.equals(s2);
+        boolean b = s1.equalsIgnoreCase(s2);
+
+        System.out.println("equals: " + a);
+        System.out.println("equalsIgnoreCase: " + b);
+
 
     }
 }
