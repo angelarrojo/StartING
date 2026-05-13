@@ -8,6 +8,8 @@ public class Ejercicio05 {
         // TODO:
         // 1. Muestra "Hola"
         // 2. Muestra "Mundo"
-
+        1. Muestra "Hola"
+            System.out.pritln("Hola ");
+        System.out.pritln("Mundo");
     }
 }
