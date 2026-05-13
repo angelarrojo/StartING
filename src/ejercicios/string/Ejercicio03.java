@@ -7,6 +7,6 @@ public class Ejercicio03 {
 
         // TODO:
         // Muestra por pantalla la longitud del String
-
+        System.out.println(texto.length());
     }
 }

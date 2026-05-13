@@ -7,7 +7,11 @@ public class Ejercicio05 {
 
         // TODO:
         // 1. Muestra "Hola"
+        String saludo = "Hola"
         // 2. Muestra "Mundo"
+        String mensaje = "Mundo";
 
+        System.out.println(saludo);
+        System.out.println(mensaje);
     }
 }
