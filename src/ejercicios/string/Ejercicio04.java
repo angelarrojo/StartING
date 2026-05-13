@@ -7,7 +7,12 @@ public class Ejercicio04 {
 
         // TODO:
         // 1. Muestra el primer carácter
-        // 2. Muestra el último carácter
+        //2.Muestra su ultimo caracter
+        1. Muestra el primer carácter
+        String texto = "Mensaje";
+                System.out.pritln(texto.charAt(0));
+             2. Muestra su ultimo caracter
+        System.out.pritln(texto.chart(texto.length()-1));
 
     }
 }

@@ -8,5 +8,10 @@ public class Ejercicio03 {
         // TODO:
         // Muestra por pantalla la longitud del String
 
+        1  // TODO:
+        String texto = "Java";
+        2  // Muestra por pantalla la longitud del String
+        System.out.println(texto.length));
+
     }
 }

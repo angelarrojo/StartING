@@ -14,6 +14,17 @@ public class Ejercicio07 {
         // 2. Compara s1 y s2 con ==
         // 3. Compara s1 y s2 con equals
         // 4. Explica por qué los resultados son distintos entre punto 2 y 3
+        1. Compara x e y con ==
+                System.out.println(x == y);
+        2. Compara s1 y s2 con ==
+                System.out.pritln(s1 == s2);
+        3. Compara s1 y s2 con equals
+                System.out.println(s1.equals(s2));
+        4. Explica por qué los resultados son distintos entre punto 2 y 3
+            Son diferentes ya que sin equals apuntan al mismo objectivo pero con equals tienen las mismas cadenas y apuntan al mismo texto
+
+
+
 
     }
 }
