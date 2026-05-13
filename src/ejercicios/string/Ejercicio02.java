@@ -9,5 +9,8 @@ public class Ejercicio02 {
         // 3. Concatena ambos y muéstralos por pantalla
         // Ejemplo: "Hola Ana"
 
+        String nombre = "Ivan";
+        String saludo = "Hola";
+        System.out.println(saludo + " " + nombre);
     }
 }

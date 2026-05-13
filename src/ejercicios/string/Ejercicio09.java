@@ -36,7 +36,7 @@ public class Ejercicio09 {
         // - Usa SOLO métodos de la clase String
         //      - NO uses bucles (for, while, do-while)
         //      - NO uses arrays
-        //      - NO uses split ni expresiones regulares
+        //      - NO uses split ni expresiones regulares4
         //      - etc.
         // - NO vale escribir directamente los resultados (por ejemplo: System.out.println("ana") -> MAL)
         // - No vale meter directamente en número la posición de la letra al método substring, salvo que sea 0

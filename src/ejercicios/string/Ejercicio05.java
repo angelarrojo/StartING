@@ -7,7 +7,9 @@ public class Ejercicio05 {
 
         // TODO:
         // 1. Muestra "Hola"
+        System.out.println(texto.substring(0, 4));
         // 2. Muestra "Mundo"
+        System.out.println(texto.substring(5));
 
     }
 }

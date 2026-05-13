@@ -1,0 +1,4 @@
+Ejercicio 4
+Porque s1 = "texto"" java lo guarda en string pool
+Porque en el 2 (s2 = new string) java crea un objeto nuevo con distinta direccion
+por eso da false ( distinta direccion ) pero equals da true ( mismo texto )
