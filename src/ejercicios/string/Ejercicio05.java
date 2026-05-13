@@ -5,9 +5,13 @@ public class Ejercicio05 {
 
         String texto = "Hola Mundo";
 
+        System.out.println(texto.substring(0 , 4));
+        System.out.println(texto.substring(5));
+
         // TODO:
         // 1. Muestra "Hola"
         // 2. Muestra "Mundo"
 
     }
 }
+
