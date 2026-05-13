@@ -8,29 +8,40 @@ public class Ejercicio09 {
         // Muestra en la pantalla el email completo
         // Resultado esperado:
         // ana.perez@empresa.com
+        System.out.println(email);
 
         // Muestra en la pantalla el nombre
         // Resultado esperado:
         // ana
+        System.out.println(email.substring(0,email.indexOf(".")));
+
 
         // Muestra en la pantalla el apellido
         // Resultado esperado:
         // perez
+        System.out.println(email.substring(email.indexOf(".")+1,email.indexOf("@")));
 
         // Muestra en la pantalla el usuario completo
         // Resultado esperado:
         // ana.perez
-
+        System.out.println(email.substring(0,email.indexOf("@")));
         // Muestra en la pantalla el nombre de la empresa
         // Resultado esperado:
         // empresa
+        System.out.println(email.substring(email.indexOf("@")+1,email.lastIndexOf(".")));
+
 
         // Muestra en la pantalla la extensión del dominio
         // Resultado esperado:
         // com
+        System.out.println(email.substring(email.lastIndexOf(".")+1,email.length()));
+
 
         // Muestra en la pantalla la siguiente frase:
         // Usuario: ANA PEREZ
+
+        System.out.println(email.substring(0,email.indexOf(".")).toUpperCase()+" "+ email.substring(email.indexOf(".")+1,email.indexOf("@")).toUpperCase());
+
 
         // RESTRICCIONES IMPORTANTES:
         // - Usa SOLO métodos de la clase String
@@ -42,6 +53,7 @@ public class Ejercicio09 {
         // - No vale meter directamente en número la posición de la letra al método substring, salvo que sea 0
         // (por ejemplo: System.out.println(texto.substring(0, 3)); no vale meter directamente 3 -> MAL)
         // - Los resultados deben salir a partir de la variable email
+
 
         // Pista: indexOf
     }

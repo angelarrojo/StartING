@@ -14,5 +14,13 @@ public class Ejercicio08 {
         // 6. Muestra solo la segunda palabra
         // 7. Comprueba si el texto es igual a "hola mundo" usando equalsIgnoreCase
         // 8. Muestra una frase final como: "El texto tiene X caracteres"
+        System.out.println(texto);
+        System.out.println(texto.length());
+        System.out.println(texto.charAt(0));
+        System.out.println(texto.charAt(texto.length()-1));
+        System.out.println(texto.substring(0,4));
+        System.out.println(texto.substring(5,texto.length()));
+        System.out.println(texto.equalsIgnoreCase("hola mundo"));
+        System.out.println("El texto tiene "+texto.length()+" caracteres");
     }
 }

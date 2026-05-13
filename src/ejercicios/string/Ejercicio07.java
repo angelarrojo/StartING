@@ -14,6 +14,10 @@ public class Ejercicio07 {
         // 2. Compara s1 y s2 con ==
         // 3. Compara s1 y s2 con equals
         // 4. Explica por qué los resultados son distintos entre punto 2 y 3
+        // en los 2 = compara a donde apunatn las 2 variables en memoria mientras que el equals su contenido.
+        System.out.println(x == y);
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
 
     }
 }

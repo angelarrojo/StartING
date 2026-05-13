@@ -16,10 +16,17 @@ public class Ejercicio00 {
         // 3. Elige UN método de String que NO hayamos usado en clase.
 
         // 4. Escribe aquí el nombre del método elegido (solo como comentario)
+        // split
 
         // 5. Explica con tus palabras qué hace ese método (solo un comentario, no código)
+        // nos permite dividir una cadena string en varias cadenas y guardarlas en un array
 
         // 6. Indica un ejemplo de uso del método (solo escribe qué resultado esperas, no hace falta que funcione)
+
+        //String texto = "Hola mundo";
+        //String[] textoDividido = texto.split(" ");
+        // textoDividido[0]; "Hola"
+        // textoDividido[1]; "mundo"
 
         // IMPORTANTE:
         // - Este ejercicio NO es para ejecutar código
