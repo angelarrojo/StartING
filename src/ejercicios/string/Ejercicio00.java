@@ -15,11 +15,12 @@ public class Ejercicio00 {
 
         // 3. Elige UN método de String que NO hayamos usado en clase.
 
-        // 4. Escribe aquí el nombre del método elegido (solo como comentario)
+        // 4. Escribe aquí el nombre del método elegido (trim)
 
-        // 5. Explica con tus palabras qué hace ese método (solo un comentario, no código)
+        // 5. Explica con tus palabras qué hace ese método (El metodo  trim lo que hace es quitar los espacios que pueden sobrar al principio y final del texto )
 
-        // 6. Indica un ejemplo de uso del método (solo escribe qué resultado esperas, no hace falta que funcione)
+        // 6. Indica un ejemplo de uso del método (String texto = " Hola cristhian ":
+        // Sytem.out.println(texto.trim)
 
         // IMPORTANTE:
         // - Este ejercicio NO es para ejecutar código
