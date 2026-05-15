@@ -9,12 +9,19 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
 ### 1.1. Preguntas
 
 1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+   git init
 2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+   rm -rf .git
 3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No
 4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+   git add 
 5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
-6. ¿Qué comando se utiliza para hacer un commit? 
+   git status
+6. ¿Qué comando se utiliza para hacer un commit?
+   git commit -m
 7. En sus propias palabras, ¿qué es un commit?
+   Es un comentario que pones de un momento exacto del proyecto para así indicar a otras personas lo que has editado del código
 
 ### 1.2. Ejercicio Práctico
 
@@ -31,7 +38,6 @@ En este archivo, se va a guardar las respuestas teóricas y algunos resultados d
 11. Escriba la salida del comando `git log` en el archivo `nombre_apellido.txt`. Y explique que significa. ¿En qué orden aparecen los commits?
 12. Pruebe las variaciones del comando `git log` y explique que observa en cada una de ellas.
     12.1. `git log --oneline`
-    12.2. `git log --stat`
 13. Inspeccione diferencias entre los commits, use el comando git diff <hash> <hash> y explique que significa cada uno de los resultados.
     11.1. En Windows, pruebe `git difftool --tool=meld <hash>`
     11.2. En Linux, pruebe `git difftool --tool=opendiff <hash>`

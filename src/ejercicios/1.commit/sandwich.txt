@@ -1,4 +1,8 @@
 pan
 queso
-medallón
+jamon
+mermelada
+pavo
+mostaza
+barbacoa
 pan
