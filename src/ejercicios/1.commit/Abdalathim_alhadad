@@ -1,0 +1,38 @@
+1.1. Preguntas
+
+1. ¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+El comando es git init este cpmando sirve para hacer un directorio oculto se va a llamar .git en la carpeta actual ahi se guarda toda la infromacion del repsitorio.
+2. ¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+Lo que se hace es elimina la carpeta para que el directorio deje de estar controlado por git con elcomando rm -rf .git
+3. Si agrego un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+no
+4. ¿Qué comando se utiliza para agregar un archivo al repositorio local?
+git add <nombre_archivo>
+5. ¿Cómo determino que archivos fueron modificados? (que comando se debe ejecutar?)
+git status
+6. ¿Qué comando se utiliza para hacer un commit?
+git commit –m <mensaje>
+7. En sus propias palabras, ¿qué es un commit?
+un comit es guaradar el momento exacto de lo que has echo
+5. Antes de realizar cualquier acción con git, guarde el estado actual del directorio en el archivo `nombre_apellido.txt`. Para esto, se debe ejecutar el comando `git status` y copiar el resultado en el archivo `nombre_apellido.txt`. Explique que significa la salida del comando.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/ejercicios/1.commit/Abdalathim_alhadad
+        modified:   src/ejercicios/1.commit/sandwich.txt
+Esto significa que git a encontardo los archivos modificados perodice que todavia no esta preparado para guardarlo
+Tambien dice que el archivo esta cambiado y explica que podemos usar git add y git restore
+
+7. Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git add sandwich.txt`.
+antes decia que el atchivo estba cambiado y luego dice que esta preparado para guardarse con el comando commit
+9. Explique que cambio en la salida del comando `git status` luego de ejecutar el comando `git commit -m "Agrego mi sandwich.txt"`.
+Nos dice que los cambios ya estan guardados y que no hay nada pediente
+11. Escriba la salida del comando `git log` en el archivo `nombre_apellido.txt`. Y explique que significa. ¿En qué orden aparecen los commits?
+el comado git log nos enseña el historial de los commits que cada uno tiene un codigo que seria el hash tambien nos dice quien lo a echo la fecha y un mensaje que pone cada uno para que los demas entiendan que es y aparecen yodos los commits ordenados de el mas reciente al mas antigo
+13. Inspeccione diferencias entre los commits, use el comando git diff <hash> <hash> y explique que significa cada uno de los resultados.
+El comando este nos deja comparar dos commits nos dice que linea an metido yque liena se a borrado
+Renombrar el archivo sandwich2.txt a sandwich2_feo.txt. Para esto, se debe ejecutar el comando git mv sandwich2.txt sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.
+el mensaje que nos saldria seria que se a detdctadoque el archivo a sido renombrado git status significa que queda limpio y git log -online nos enseña un commit nuevo con el cambio
+Borre el archivo sandwich2_feo.txt. Para esto, se debe ejecutar el comando git rm sandwich2_feo.txt. Explique que cambio en la salida del comando git status luego de hacer un commit con esos cambios y de git log --oneline.
+significa que el archivo a sido eliminado despues del commit ya no abrian cambios  y git log --online nos enseña el nuevo commit que registra git status
+el borrado

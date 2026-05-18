@@ -1,0 +1,20 @@
+¿Qué es un branch?
+Es una copia donde se hacen cambios sin afectar a la rama principal
+¿Por qué pueden ser útiles los branches?
+para trabajar varios a la vez para hacer nuevas fuciones probar cambios corregir errores
+¿Cómo se crea una branch?
+git branch
+¿Cómo se cambia a una branch?
+git checkout
+¿Cómo se elimina una branch?
+git branch
+¿Cómo se crea una branch y se cambia a ella en un solo paso?
+git checkout -b
+¿Qué es un merge?
+une los cambios de 2 ramas
+¿Cómo se realiza un merge?
+git checkout main
+¿Que es un tag?
+tag es una identificador de una version importante por ejemplo v1.0
+¿Cómo se crea un tag?
+git tag
